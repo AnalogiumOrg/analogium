@@ -1,0 +1,29 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/HeaderES.astro';
+import Footer from '../../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header title={SITE_TITLE} />
+		<main>
+			<h1>BIENVENIDO A ANALOGIUM</h1>
+			<p>
+				ANALOGIUM es una sociedad comprometida a documentar universos retorcidos, mentes demenciales y criaturas incomprensibles por un humano
+				cualquiera, asi como las almas que han dado su tiempo y salud mental para desarrollarlos.
+			</p>
+			<p>
+				Imagina un mundo donde los Estados Unidos resguarden criaturas extrañas entre sus monumentos; imagina un condado aterrorizado por
+				<i>"Doppelgängers"</i> de sus habitantes; imagina un humano atrapado en una máquina olvidada en el fondo del oceano. Todas estas y más
+				historias documentadas de forma limpia en un solo lugar.
+			</p>
+		</main>
+		<Footer />
+	</body>
+</html>

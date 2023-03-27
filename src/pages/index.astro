@@ -1,0 +1,37 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Lang.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<br><br><br><br><br>
+		<header>
+			<h1/>
+			<img src="/Logo.png" class="logo"/>
+		</header>
+		<style>
+			header {
+				margin: 0em 0 2em;
+			}
+			.h1{
+				margin: 2em 0;
+			}
+			.logo{
+				width: 35rem;
+				height: 20rem;
+		
+			}
+		</style>
+		<main>
+			<h1>        WHAT'S YOUR VOICE?</h1>
+			<Header title={SITE_TITLE} />
+		</main>
+	</body>
+</html>

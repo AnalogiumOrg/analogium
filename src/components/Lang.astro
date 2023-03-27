@@ -1,0 +1,23 @@
+---
+import HeaderLink from './HeaderLink.astro';
+import { SITE_TITLE } from '../consts';
+---
+
+<header>
+	<h2>
+	<nav>
+		<HeaderLink href="/en">ENGLISH</HeaderLink>
+		<HeaderLink href="/es">ESPAÑOL</HeaderLink>
+	</nav>
+</header>
+<style>
+	header {
+		margin: 2em 5 2em;
+		text-align: center;
+		align-items: center;
+		justify-content: center;
+	}
+	h2 {
+		margin: 1.5em 0;
+	}
+</style>
