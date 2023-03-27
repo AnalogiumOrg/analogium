@@ -24,6 +24,9 @@ jobs:
       - uses: actions/download-artifact@v3
         with:
           name: dist
+          path: .
+      - name: Unzip Artifact
+        run: ls -a && unzip dist
       - uses: appleboy/scp-action@master
         with:
           host: ${{ secrets.DEPLOY_HOST }}
