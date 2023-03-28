@@ -4,7 +4,7 @@ description: "NO ONE IS GONE FOREVER"
 heroImage: "/mm.png"
 ---
 
-The Monument Mythos is a tale developed by MISTER MANTICORE (Alex Kansas) via YouTube. The series have 2 full seasons, a third one in development and a Spin-Off known as [THE NIXONVERSE](../en/data/the-nixonverse).
+The Monument Mythos is a tale developed by MISTER MANTICORE (Alex Kansas) via YouTube. The series have 2 full seasons, a third one in development and a Spin-Off known as [THE NIXONVERSE](../the-nixonverse).
 
 ## SYNOPSIS
 
