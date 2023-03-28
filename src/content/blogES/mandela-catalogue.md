@@ -1,7 +1,7 @@
 ---
 title: "THE MANDELA CATALOGUE"
 description: "I AM INSIDE YOUR HOME"
-heroImage: "/mc.jpg"
+heroImage: "/mc.png"
 ---
 
 
