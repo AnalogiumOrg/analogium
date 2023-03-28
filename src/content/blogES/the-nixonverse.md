@@ -1,6 +1,6 @@
 ---
 title: "THE NIXONVERSE"
-description: "Lorem ipsum dolor sit amet"
+description: "GRIEF CAN MAKE YOU A MONSTER"
 heroImage: "/nv.png"
 ---
 
