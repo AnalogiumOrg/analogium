@@ -24,7 +24,7 @@ La primera misión que hizo aterrizar humanos en la Luna no fue tan normal como 
 
 <img src="/johndeath.png" class="logo"/>
 
-> <font style="color: rgb(255, 255, 255)">Certificado de la muerte de John Glenn y su causa: <b>un encuentro con un Lunarian</b>.<br>
+> <font style="color: rgb(255, 255, 255)">Certificado y causa de la muerte de John Glenn: <b>un encuentro Lunarian</b>.<br>
 
 Ahora que ya conocemos a nuestros protagonistas, podemos pasar a nuestro antagonista: Estados Unidos.
 
