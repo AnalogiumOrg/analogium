@@ -4,7 +4,7 @@ description: "Lorem ipsum dolor sit amet"
 heroImage: "/nv.png"
 ---
 
-THE NIXONVERSE is a tale developed by MISTER MANTICORE (Alex Kansas) via YouTube. The series is a Spin-Off of his main story,  [THE MONUMENT MYTHOS](../en/data/the-monument-mythos).
+THE NIXONVERSE is a tale developed by MISTER MANTICORE (Alex Kansas) via YouTube. The series is a Spin-Off of his main story,  [THE MONUMENT MYTHOS](the-monument-mythos).
 
 ## SYNOPSIS
 
