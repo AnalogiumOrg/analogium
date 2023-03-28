@@ -20,7 +20,7 @@ Nuestra historia comienza con El Último Hijo, un verdadero superhéroe que siem
 
 En realidad no es nuestro único héroe, hay otro bautizado El Caballero del Día D, quien salvó al ejército estadounidense en el campo de batalla aquel día de 1944. Nos dio esperanza y fe a todos desde su intervención en Normandía, y nadie más que Alice Avenue le tenía un gran respeto y cariño. Ese es el comienzo de nuestro planeta, pero y si vamos más arriba? A algún lugar como... <i>la Luna</i>.
 
-La primera misión que hizo aterrizar humanos en la Luna no fue tan normal como podría pensarse, porque Ed Dwight (el primer hombre en la Luna) y su equipo encontraron a la Reina de los Lunarians, y fueron testigos de las primeras palabras grabadas en nuestro satélite natural. Desgraciadamente, una pequeña mancha de sangre cubrió el momento, porque después de ordenar a Ed que le disparara, John Glenn fue <i>>evadido de la realidad</i>.
+La primera misión que hizo aterrizar humanos en la Luna no fue tan normal como podría pensarse, porque Ed Dwight (el primer hombre en la Luna) y su equipo encontraron a la Reina de los Lunarians, y fueron testigos de las primeras palabras grabadas en nuestro satélite natural. Desgraciadamente, una pequeña mancha de sangre cubrió el momento, porque después de ordenar a Ed que le disparara, John Glenn fue <i>evadido de la realidad</i>.
 
 <img src="/johndeath.png" class="logo"/>
 
