@@ -1,15 +1,31 @@
 ---
 title: "THE NIXONVERSE"
 description: "Lorem ipsum dolor sit amet"
-heroImage: "/placeholder-hero.jpg"
+heroImage: "/nv.png"
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
+THE NIXONVERSE is a tale developed by MISTER MANTICORE (Alex Kansas) via YouTube. The series is a Spin-Off of his main story,  [THE MONUMENT MYTHOS](the-monument-mythos).
 
-Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc. Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus arcu felis bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra massa massa ultricies mi.
+## SYNOPSIS
 
-Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam sit amet nisl suscipit. Lacus viverra vitae congue eu consequat ac felis donec. Egestas integer eget aliquet nibh praesent tristique magna sit amet. Eget magna fermentum iaculis eu non diam. In vitae turpis massa sed elementum. Tristique et egestas quis ipsum suspendisse ultrices. Eget lorem dolor sed viverra ipsum. Vel turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat semper viverra nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim praesent elementum facilisis. Ultrices tincidunt arcu non sodales neque. Tempus egestas sed sed risus pretium quam vulputate. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare. Fringilla urna porttitor rhoncus dolor purus non. Amet dictum sit amet justo donec enim.
+The series take place after the events of the second season of MONUMENT MYTHOS, in a different universe with a familiar form; the story connects four entities very similar and powerful: the Son, the Knight, the Queen and... <i>God</i>.
 
-Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut consequat semper viverra. Tellus mauris a diam maecenas sed enim ut sem viverra. Venenatis urna cursus eget nunc scelerisque viverra mauris in. Arcu ac tortor dignissim convallis aenean et tortor at. Curabitur gravida arcu ac tortor dignissim convallis aenean et tortor. Egestas tellus rutrum tellus pellentesque eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices tincidunt arcu. Id cursus metus aliquam eleifend mi.
+With these entities, there are some eyes that glow more than others, those being from Alice Avenue, Ed Dwight, and the egocentric self of the United States, always obsessed with power.
 
-Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus imperdiet. Id porta nibh venenatis cras sed felis eget velit. Ipsum a arcu cursus vitae. Facilisis magna etiam tempor orci eu lobortis elementum. Tincidunt dui ut ornare lectus sit. Quisque non tellus orci ac. Blandit libero volutpat sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin gravida. Egestas integer eget aliquet nibh praesent tristique magna.
+## INTERPRETATION
+
+<b><i>Faster than an airplane! More powerful than a locomotive! Impervious to bullets! Up in the sky, look! It's a bird! It's a plane! It's - -</i></b>
+
+Our story begins with The Last Son, an actual superhero that's always there to save us all, and yet some people have the constant fear that he'll turn against us and conquer us.
+
+He's not actually our only hero, there's someone else named as The D-Day Knight, the one that saved the U.S Army on the battlefield that day on 1944. He gave hope and faith to all of us since his intervention on Normandy, and no one else than Alice Avenue had a big love for him. That's the start of our planet, but what if we go up? Somewhere like... <i>the Moon</i>.
+
+The first mission that made humans step on the Moon wasn't as normal as you may think, because Ed Dwight and his team founded the Queen of the Lunarians, and testified the first recorded words on our natural satellite. Unfortunely a little blood stain covered the moment, because after commanding Ed to shot her, John Glenn was <i>evicted from reality</i>.
+
+<img src="/johndeath.png" class="logo"/>
+
+> <font style="color: rgb(255, 255, 255)">Certificate of John Glenn's death and its cause: <b>a Lunarian encounter</b>.<br>
+
+Now that we know our main characters, now we can pass to our antagonist: The United States.
+
+<i>"After interfering in the Korean War, THE LAST SON returned to his fortress in Alaska. <b>Nuclear missiles followed him home.</b>"</i>
