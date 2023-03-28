@@ -4,7 +4,7 @@ description: "NO ONE IS GONE FOREVER"
 heroImage: "/mm.png"
 ---
 
-THE MONUMENT MYTHOS es un relato desarrollado por MISTER MANTICORE (Alex Kansas) en la plataforma de YouTube. La serie posee 2 temporadas completas, una tercera en desarrollo y un Spin-Off conocido como [THE NIXONVERSE](the-nixonverse).
+THE MONUMENT MYTHOS es un relato desarrollado por MISTER MANTICORE (Alex Kansas) en la plataforma de YouTube. La serie posee 2 temporadas completas, una tercera en desarrollo y un Spin-Off conocido como [THE NIXONVERSE](../data/the-nixonverse).
 
 ## SINOPSIS
 
