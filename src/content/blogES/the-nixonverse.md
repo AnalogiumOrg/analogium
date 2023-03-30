@@ -29,3 +29,14 @@ La primera misión que hizo aterrizar humanos en la Luna no fue tan normal como 
 Ahora que ya conocemos a nuestros protagonistas, podemos pasar a nuestro antagonista: Estados Unidos.
 
 <i>"Luego de interferir en la Guerra de Corea, EL ÚLTIMO HIJO regresó a su fortaleza en Alaska. <b>Misiles nucleares lo siguieron a casa.</b>"</i>
+
+Luego de que la misión del Apolo 11 revelara las propiedades de la anatomía lunarian, Estados Unidos no tardó en enviar al Apolo 12 para traer el ingrediente perfecto para cumplir retorcido plan: un Ojo Lunarian. La fase uno fue completada, pero aun faltaba algo... o mejor dicho, <i>alguien</i>. Un ojo de una raza alienígena y el equivalente a Superman, para que querrá el proclamado país de la libertad estos elementos? Facil, <b>crear a su propio Jesús</b>.
+
+Luego de lavarle el cerebro al Último Hijo y crear a un imitador del Señor, Estados Unidos trató de brindar su propia versión de Paz durante la Guerra de Vietnam; este falso tratado se referenciaba como la Ecuación de la Paz.
+
+> <font style="color: rgb(255, 255, 255)"> NUESTRA LIBERTAD ᐳ TU LIBERTAD<br>NUESTRO CRISTO ᐳ TU CRISTO<br>= PAZ MUNDIAL
+
+Pero si existe Jesus (o al menos una copia de el), donde esta El Creador? Está con su "hija" en el lugar que Ed siempre soñó con llegar, la Luna.
+
+<img src="/god.png" class="logo"/>
+> <font style="color: rgb(255, 255, 255)"> Fotografía de DIOS<br><i>Por Ed Dwight</i>
