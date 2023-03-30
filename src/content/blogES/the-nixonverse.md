@@ -39,4 +39,6 @@ Luego de lavarle el cerebro al Último Hijo y crear a un imitador del Señor, Es
 Pero si existe Jesus (o al menos una copia de el), donde esta El Creador? Está con su "hija" en el lugar que Ed siempre soñó con llegar, la Luna.
 
 <img src="/god.png" class="logo"/>
+
 > <font style="color: rgb(255, 255, 255)"> Fotografía de DIOS<br><i>Por Ed Dwight</i>
+
