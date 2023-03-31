@@ -1,0 +1,42 @@
+---
+let darkmode = true;
+---
+
+<script>
+    import {fetchDarkMode} from "../scripts/darkmodeUtils";
+    let darkmode = fetchDarkMode();
+    window.localStorage.setItem("theme", darkmode ? "dark" : "light");
+
+    const handleToggleClick = () => {
+        darkmode = !darkmode;
+        localStorage.setItem("theme", darkmode ? "light" : "dark");
+    };
+
+    document.getElementById("themeToggle")?.addEventListener("click", handleToggleClick);
+</script>
+<button class="mode" onclick="toggle">
+    {
+        darkmode == true ? (
+            <img src="/mode_dark.png" class="l" />
+        ) : (
+            <img src="/mode_light.png" class="l" />
+        )
+    }
+</button>
+<style>
+    .mode {
+        background: none;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        padding: 0;
+        position: fixed;
+        right: 1rem;
+        top: 1rem;
+        z-index: 100;
+    }
+    .l {
+        height: 3rem;
+        width: 3rem;
+    }
+</style>

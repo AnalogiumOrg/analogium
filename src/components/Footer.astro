@@ -1,8 +1,11 @@
 ---
 const today = new Date();
+import ModeButton from "./ModeButton.astro";
 ---
 
 <footer>
+	<!-- Set mode button as client rendered and always hydrated -->
+	<ModeButton client:load client:hydrate />
 	&copy; {today.getFullYear()} ANALOGIUM.
 </footer>
 <style>

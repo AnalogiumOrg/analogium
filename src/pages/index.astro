@@ -2,6 +2,7 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Lang.astro';
 import Footer from '../components/Footer.astro';
+import Logo from '../components/Logo.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 ---
 
@@ -12,9 +13,9 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 	</head>
 	<body>
 		<br><br><br><br><br>
-		<header>
+		<header class="centered">
 			<h1/>
-			<img src="/Logo.png" class="logo"/>
+			<Logo />
 		</header>
 		<style>
 			header {
@@ -34,5 +35,6 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 			<h1 class="centered">WHAT'S YOUR VOICE?</h1>
 			<Header title={SITE_TITLE} />
 		</main>
+		<Footer />
 	</body>
 </html>

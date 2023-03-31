@@ -42,3 +42,6 @@ Pero si existe Jesus (o al menos una copia de el), donde esta El Creador? Está 
 
 > <font style="color: rgb(255, 255, 255)"> Fotografía de DIOS<br><i>Por Ed Dwight</i>
 
+Con el paso del tiempo, "Jesús" recuperó su memoria y se aterró de lo que cometió en Vietnam, por lo que huyó y se escondió en el mar, para estar solo construyó con su cuerpo una casa muy similar a la de su infancia. Por más que los Estados Unidos lo intentó ocultar de las masas, <b>La Casa en el Océano era verdadera</b>.
+
+Unas cuantas personas intentaron explorar la Casa, unas de esas siendo George W. Bush y su esposa Laura Bush... <i>sus caras siguen en las paredes de la Casa</i>.
