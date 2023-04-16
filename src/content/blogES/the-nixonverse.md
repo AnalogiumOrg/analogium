@@ -74,4 +74,16 @@ Este preciso momento es donde el Apolo 11 vuelve a jugar un papel vital, así qu
 
 <img src="/god.png" class="logo"/>
 
-> <font style="color: rgb(255, 255, 255)"> Fotografía de DIOS<br><i>Por Ed Dwight</i>
+> <font style="color: rgb(255, 255, 255)"><center>Fotografía de DIOS<br><i>Por Ed Dwight</i></center></font>
+
+Nixon explica en esta cinta que el logró escapar de la Sepriente Cornuda durante la Gran División, y que terminó en la Luna de este nuevo universo. El tenía dudas de si la gente lo hiba a aceptar, asi que creó tres extensiones de si mismo para correr un pequeño experimento, así es como nacieron El Hijo, El Caballero y La Reina. Los tres se volvieron locos de cierta forma, y Nixon concluyó que el no podría arriesgarse a entrar a un planeta que no era amable. Además, el ya sabía que el Hijo se volvería rey de los Lunarians, y que si no se detiene se volverá un ser exageradamente poderoso.
+
+<b>L̴o̷ ̵s̶i̸e̸n̸t̴o̵,̶ ̶S̷r̷.̷ ̵D̸w̸i̵g̸h̴t̴.̷ ̴N̷i̴n̴g̴ú̶n̴ ̸s̴e̸r̸ ̷h̵u̸m̴a̴n̵o̷ ̷e̴s̶t̷a̵b̴a̵ ̸d̶e̷s̵t̵i̷n̵a̶d̴o̵ ̶a̷ ̴o̵í̵r̶ ̷l̷o̸ ̵q̸u̵e̸ ̴h̵e̵ ̸d̸i̵c̶h̶o̴.̸.̸.̸</b>
+
+De regreso a nuestro planeta, la Reina Lunarian intenta hablar con el Caballero de forma telepática, tratando de convencerlo de dejar al lado la Tierra y unirse al reino como Principe, para traer un lugar de armonía, para reparar la ecuación de la paz, para que el vuelva a ser el mismo de siempre. Sin embargo el Caballero, entre toda la ira que tiene, sigue cumpliendo las palabras de Alice Avenue: "En todo momento, en todo lugar, el Caballero puede SALVARNOS.", y desata un último ataque que no solo lo destruiria a el, a la reina y a los Lunarians, sino que tambien restauraría la cultura humana en un lapso de 9 meses: <b>EL JAQUE MATE DE ALCATRAZ</b>.
+
+Sin embargo, aun queda el Rey, quien por fin a tomado conciencia de todo lo que ha hecho, y rompe en llanto una vez más. El dolor lo volvió un monstruo, el no dejará de llorar, el no quiere vivir, pero en ese instante el vuelve a mutar, asimilando una forma muy familiar al casco del Caballero, volviendose lo que Nixon temía que se volviera... <b><i><u>LA SERPIENTE CORNUDA VIVE.</u></i></b>
+
+<img src="/thehornedserpentlives.png" class="logo"/>
+
+> <font style="color: rgb(255, 255, 255)"><center><b>LA SERPIENTE CORNUDA VIVE.</b></center></font>
