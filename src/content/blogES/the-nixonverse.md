@@ -54,6 +54,6 @@ El Último Hijo era un joven como tu o como yo, con padres cortantes y compañer
 
 Alice no solo rezaba que el Rey Cresiente recordara el heroe que era antes de que Estados Unidos lo capturara, tambíen esperaba que el Caballero volviera para salvarnos a todos otra vez. El escuchó sus palabras y ejecutó un plan para que la humanidad del Último Hijo despierte otra vez: tirar a Alice de la punta del Edificio Chrysler esperando que la rescate... <b>eso jamás paso</b>.
 
-<img src="/acenuefall.png" class="logo"/>
+<img src="/avenuefall.png" class="logo"/>
 
 > <font style="color: rgb(255, 255, 255)">Últimos momentos de vida de Alice Avenue.
