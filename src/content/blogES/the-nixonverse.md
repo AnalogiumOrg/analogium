@@ -14,7 +14,7 @@ Ademas de estos entes, se destacan los ojos de Alice Avenue, Ed Dwight, y el ego
 
 ## INTERPRETACION
 
-<b><i>Más rápido que un avión! Más poderoso que una locomotora! Inmune a las balas! En el cielo, miren! Es un pájaro! Es un avión! Es - -</i></b>
+<center><b><i>Más rápido que un avión! Más poderoso que una locomotora! Inmune a las balas! En el cielo, miren! Es un pájaro! Es un avión! Es - -</i></b></center>
 
 Nuestra historia comienza con El Último Hijo, un verdadero superhéroe que siempre está ahí para salvarnos a todos, y que aun así algunas personas tienen el temor constante de que se revele contra nosotros y nos conquiste. Cabe resaltar que su apariencia física asemeja demasiado a Richard Nixon cuando era joven.
 
@@ -28,7 +28,7 @@ La primera misión que hizo aterrizar humanos en la Luna no fue tan normal como 
 
 Es en este mismo momento que Ed Dwight tendría una charla muy interesante con <i>alguien especial</i>, pero volveremos a este tema más adelante. Ahora que ya conocemos a nuestros protagonistas, podemos pasar a nuestro antagonista: Estados Unidos.
 
-<i>"Luego de interferir en la Guerra de Corea, EL ÚLTIMO HIJO regresó a su fortaleza en Alaska. <b>Misiles nucleares lo siguieron a casa.</b>"</i>
+<center><i>"Luego de interferir en la Guerra de Corea, EL ÚLTIMO HIJO regresó a su fortaleza en Alaska. <b>Misiles nucleares lo siguieron a casa.</b>"</i></center>
 
 Luego de que la misión del Apolo 11 revelara las propiedades de la anatomía lunarian, Estados Unidos no tardó en enviar al Apolo 12 para traer el ingrediente perfecto para cumplir retorcido plan: un Ojo Lunarian. La fase uno fue completada, pero aun faltaba algo... o mejor dicho, <i>alguien</i>. Un ojo de una raza alienígena y el equivalente a Superman, para que querrá el proclamado país de la libertad estos elementos? Facil, <b>crear a su propio Jesús</b>.
 
@@ -38,7 +38,7 @@ Luego de lavarle el cerebro al Último Hijo, Estados Unidos traería una versió
 
 En un giro de acontecimientos, el Último Hijo abrió sus ojos (bueno... su único ojo), y se dio cuenta de todos los actos horripilantes que había cometido bajo el manto del Mesías. Devastado por esto, huyó al oceano del que antes era su hogar, la Alaska Oscura, y buscó un refugio aislado del hombre, algo que le recordara a su infancia, algo como... [una Casa en el Océano](../the-house-in-the-ocean).
 
-<i>"LA CASA EN EL OCEANO NO ES UNA LEYENDA URBANA. <b>ES UNA HISTORIA ENCUBIERTA.</b>"</i>
+<center><i>"LA CASA EN EL OCEANO NO ES UNA LEYENDA URBANA. <b>ES UNA HISTORIA ENCUBIERTA.</b>"</i></center>
 
 El destino es muy gracioso, porque tiempo despues el Último Hijo tendría un encuentro con una nave de una raza que conocemos muy bien, los Lunarians vienen a cumplir una profecía: <b>traer a su Rey a casa.</b>
 
