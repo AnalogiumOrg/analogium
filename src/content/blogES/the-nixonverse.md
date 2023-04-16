@@ -18,23 +18,29 @@ Ademas de estos entes, se destacan los ojos de Alice Avenue, Ed Dwight, y el ego
 
 Nuestra historia comienza con El Último Hijo, un verdadero superhéroe que siempre está ahí para salvarnos a todos, y que aun así algunas personas tienen el temor constante de que se revele contra nosotros y nos conquiste. Cabe resaltar que su apariencia física asemeja demasiado a Richard Nixon cuando era joven.
 
-En realidad no es nuestro único héroe, hay otro bautizado El Caballero del Día D, quien salvó al ejército estadounidense en el campo de batalla aquel día de 1944. Nos dio esperanza y fe a todos desde su intervención en Normandía, y nadie más que Alice Avenue le tenía un gran respeto y cariño. Ese es el comienzo de nuestro planeta, pero y si vamos más arriba? A algún lugar como... <i>la Luna</i>.
+En realidad no es nuestro único héroe, hay otro bautizado El Caballero del Día D, quien salvó al ejército estadounidense en el campo de batalla aquel día de 1944. Nos dio esperanza y fe a todos desde su intervención en Normandía, y nadie más que Alice Avenue le tenía un gran respeto y cariño. Durante el Día D, el Caballero perdió algo que resultara muy interesante para despues, el perdió su casco.
+
+<img src="/hornedhelmet.png" class="logo">
+
+> <font style="color: rgb(255, 255, 255)"><center>Casco del Caballero del Día D</center></font>
+
+Ese es el comienzo de nuestro planeta, pero y si vamos más arriba? A algún lugar como... <i>la Luna</i>.
 
 La primera misión que hizo aterrizar humanos en la Luna no fue tan normal como podría pensarse, porque Ed Dwight (el primer hombre en la Luna) y su equipo encontraron a la Reina de los Lunarians, y fueron testigos de las primeras palabras grabadas en nuestro satélite natural. La reina profetizaba una <u>Gran División</u> en la Tierra, puesto que no sabían como vivir, como amar, como volar... Desgraciadamente, una pequeña mancha de sangre cubrió el momento, porque después de ordenar a Ed que le disparara, John Glenn fue <i>evadido de la realidad</i>.
 
 <img src="/johndeath.png" class="logo"/>
 
-> <font style="color: rgb(255, 255, 255)"><center>Causa de muerte de John Glenn: <b>un encuentro Lunarian</b>.</center>
+> <font style="color: rgb(255, 255, 255)"><center>Causa de muerte de John Glenn: <b>un encuentro Lunarian</b>.</center></font>
 
 Es en este mismo momento que Ed Dwight tendría una charla muy interesante con <i>alguien especial</i>, pero volveremos a este tema más adelante. Ahora que ya conocemos a nuestros protagonistas, podemos pasar a nuestro antagonista: Estados Unidos.
 
-<center><i>"Luego de interferir en la Guerra de Corea, EL ÚLTIMO HIJO regresó a su fortaleza en Alaska. <b>Misiles nucleares lo siguieron a casa.</b>"</i></center>
+<center><i>"Luego de interferir en la Guerra de Corea, EL ÚLTIMO HIJO regresó a su fortaleza en Alaska. <b>MISILES NUCLEARES LO SIGUIERON A CASA.</b>"</i></center>
 
 Luego de que la misión del Apolo 11 revelara las propiedades de la anatomía lunarian, Estados Unidos no tardó en enviar al Apolo 12 para traer el ingrediente perfecto para cumplir retorcido plan: un Ojo Lunarian. La fase uno fue completada, pero aun faltaba algo... o mejor dicho, <i>alguien</i>. Un ojo de una raza alienígena y el equivalente a Superman, para que querrá el proclamado país de la libertad estos elementos? Facil, <b>crear a su propio Jesús</b>.
 
 Luego de lavarle el cerebro al Último Hijo, Estados Unidos traería una versión distorcionada de paz durante la Guerra de Vietnam, ahora llamado Bethlenam o "El Primer País Salvado"; este falso tratado se referenciaba como la Ecuación de la Paz.
 
-> <font style="color: rgb(255, 255, 255)"><center>NUESTRA LIBERTAD&nbsp;ᐳ&nbsp;TU LIBERTAD<br>NUESTRO CRISTO&nbsp;ᐳ&nbsp;TU CRISTO<br>=&nbsp;PAZ MUNDIAL</center>
+> <font style="color: rgb(255, 255, 255)"><center>NUESTRA LIBERTAD   ᐳ   TU LIBERTAD<br>NUESTRO CRISTO   ᐳ   TU CRISTO<br>=   PAZ MUNDIAL</center></font>
 
 En un giro de acontecimientos, el Último Hijo abrió sus ojos (bueno... su único ojo), y se dio cuenta de todos los actos horripilantes que había cometido bajo el manto del Mesías. Devastado por esto, huyó al oceano del que antes era su hogar, la Alaska Oscura, y buscó un refugio aislado del hombre, algo que le recordara a su infancia, algo como... [una Casa en el Océano](../the-house-in-the-ocean).
 
@@ -44,7 +50,7 @@ El destino es muy gracioso, porque tiempo despues el Último Hijo tendría un en
 
 <img src="/evolution.png" class="logo"/>
 
-> <font style="color: rgb(255, 255, 255)"><center>Evolución del Último Hijo.</center>
+> <font style="color: rgb(255, 255, 255)"><center>Evolución del Último Hijo.</center></font>
 
 El Rey Creciente ha nacido, y lentamente empezó a tomar control de America, no solo con la creación de "recipientes para la escencia del rey", sino que ademas atacaron la cultura del humano, iniciando por el lenguaje. Nadie entendía ni sus propios pensamientos por lo que tuvieron que aceptar la cultura Lunarian a la fuerza para sobrevivir. Sin embargo, en medio de toda esta tormenta, una voz familiar volvió para traer fé al humano... Alice Avenue emitió por radio la historia del Último Hijo
 
@@ -56,10 +62,16 @@ Alice no solo rezaba que el Rey Cresiente recordara el heroe que era antes de qu
 
 <img src="/avenuefall.png" class="logo"/>
 
-> <font style="color: rgb(255, 255, 255)"><center>Últimos momentos de vida de Alice Avenue.</center>
+> <font style="color: rgb(255, 255, 255)"><center>Últimos momentos de vida de Alice Avenue.</center></font>
 
 Luego de que el plan del Caballero fallara en todo aspecto, los Lunarians seguirían con su invasión, lavando y alterando el cerebro humano en ciudades importantes como Nueva York. Es en este punto que el Caballero redactaría un mensaje pidiendo perdón por lo que paso con Alice, y que ella seguía con vida...
 
-[<font style="color: rgb(255, 255, 255)"><center>"<i>EN MI MUNDO, LAS ESTATUAS SOSTENÍAN ALMAS</i>"</center>](../the-monument-mythos)
+[<font style="color: rgb(255, 255, 255)"><center>"<i>EN MI MUNDO, LAS ESTATUAS SOSTENÍAN ALMAS</i>"</center></font>](../the-monument-mythos)
 
-Algo todavía dejaba insatisfecho al Caballero, algo lo hacía sentir hueco, asi que para tratar de redimirse a si mismo le quito la cabeza a la estatua conmemorativa de Alice Avenue
+Algo todavía dejaba insatisfecho al Caballero, algo lo hacía sentir hueco, asi que para tratar de redimirse a si mismo le quito la cabeza a la estatua conmemorativa de Alice Avenue y ponerselo como si fuera su viejo casco; a pesar de que solo lo llevara un día algo en el había cambiado, lo único que se veía era su ojo, lleno de ira... <b><i>El dolor lo volvió un monstruo.</i></b>
+
+Este preciso momento es donde el Apolo 11 vuelve a jugar un papel vital, así que tendremos que volver un poco al pasado, y ponernos en el traje espacial de Ed Dwight otra vez. Su cuerpo fué encontrado en la Luna, y se determinó que su muerte fue a causa de su propia arma; al lado de el había una cinta a la cual bautizarían como "EL DIOS DE LA LUNA". En esta cinta se revela la conversación que Ed tuvo con ese <i>alguien especial</i> que ha estado oculto durante bastante tiempo, el Dios detras de los seres que ahora mismo estan causando tanto daño... <b>Richard Nixon</b>.
+
+<img src="/god.png" class="logo"/>
+
+> <font style="color: rgb(255, 255, 255)"> Fotografía de DIOS<br><i>Por Ed Dwight</i>
