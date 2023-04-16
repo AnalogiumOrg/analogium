@@ -24,7 +24,7 @@ La primera misión que hizo aterrizar humanos en la Luna no fue tan normal como 
 
 <img src="/johndeath.png" class="logo"/>
 
-> <font style="color: rgb(255, 255, 255)">Certificado y causa de muerte de John Glenn: <b>un encuentro Lunarian</b>.<br>
+> <font style="color: rgb(255, 255, 255)"><center>Causa de muerte de John Glenn: <b>un encuentro Lunarian</b>.</center>
 
 Es en este mismo momento que Ed Dwight tendría una charla muy interesante con <i>alguien especial</i>, pero volveremos a este tema más adelante. Ahora que ya conocemos a nuestros protagonistas, podemos pasar a nuestro antagonista: Estados Unidos.
 
@@ -34,7 +34,7 @@ Luego de que la misión del Apolo 11 revelara las propiedades de la anatomía lu
 
 Luego de lavarle el cerebro al Último Hijo, Estados Unidos traería una versión distorcionada de paz durante la Guerra de Vietnam, ahora llamado Bethlenam o "El Primer País Salvado"; este falso tratado se referenciaba como la Ecuación de la Paz.
 
-> <font style="color: rgb(255, 255, 255)"> NUESTRA LIBERTAD  ᐳ  TU LIBERTAD<br>NUESTRO CRISTO  ᐳ  TU CRISTO<br>=  PAZ MUNDIAL
+> <font style="color: rgb(255, 255, 255)"><center>NUESTRA LIBERTAD  ᐳ  TU LIBERTAD<br>NUESTRO CRISTO  ᐳ  TU CRISTO<br>=  PAZ MUNDIAL</center>
 
 En un giro de acontecimientos, el Último Hijo abrió sus ojos (bueno... su único ojo), y se dio cuenta de todos los actos horripilantes que había cometido bajo el manto del Mesías. Devastado por esto, huyó al oceano del que antes era su hogar, la Alaska Oscura, y buscó un refugio aislado del hombre, algo que le recordara a su infancia, algo como... [una Casa en el Océano](../the-house-in-the-ocean).
 
@@ -44,7 +44,7 @@ El destino es muy gracioso, porque tiempo despues el Último Hijo tendría un en
 
 <img src="/evolution.png" class="logo"/>
 
-> <font style="color: rgb(255, 255, 255)">Evolución del Último Hijo.
+> <font style="color: rgb(255, 255, 255)"><center>Evolución del Último Hijo.</center>
 
 El Rey Creciente ha nacido, y lentamente empezó a tomar control de America, no solo con la creación de "recipientes para la escencia del rey", sino que ademas atacaron la cultura del humano, iniciando por el lenguaje. Nadie entendía ni sus propios pensamientos por lo que tuvieron que aceptar la cultura Lunarian a la fuerza para sobrevivir. Sin embargo, en medio de toda esta tormenta, una voz familiar volvió para traer fé al humano... Alice Avenue emitió por radio la historia del Último Hijo
 
@@ -56,8 +56,9 @@ Alice no solo rezaba que el Rey Cresiente recordara el heroe que era antes de qu
 
 <img src="/avenuefall.png" class="logo"/>
 
-> <font style="color: rgb(255, 255, 255)">Últimos momentos de vida de Alice Avenue.
+> <font style="color: rgb(255, 255, 255)"><center>Últimos momentos de vida de Alice Avenue.</center>
 
 Luego de que el plan del Caballero fallara en todo aspecto, los Lunarians seguirían con su invasión, lavando y alterando el cerebro humano en ciudades importantes como Nueva York. Es en este punto que el Caballero redactaría un mensaje pidiendo perdón por lo que paso con Alice, y que ella seguía con vida...
 
 [<font style="color: rgb(255, 255, 255)"><center>"<i>EN MI MUNDO, LAS ESTATUAS SOSTENÍAN ALMAS</i>"</center>](../the-monument-mythos)
+
