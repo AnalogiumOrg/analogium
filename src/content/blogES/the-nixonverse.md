@@ -52,8 +52,12 @@ El Último Hijo era un joven como tu o como yo, con padres cortantes y compañer
 
 "<i>Ganaste, pequeño bastardo... ganaste....</i>", estas fueron las últimas palabras del hombre que <u>en este universo, perdió</u>. El Último Hijo estaba devastado y no pudo contener las lágrimas, y por el dolor y cansancio que provocó el accidente, se desmayó. Despertó en un sueño extraño, donde se encontraba en un acantilado con un vehiculo detras de el, el cual hiba a alta velocidad. El, para evitar el impacto, saltó al vacío, y empezó a creer más y más que podía volar, que podía ganarle a la muerte... lo logró. El joven empezó a volar alto, más rápido que un avión. Justo fue aquí que desperto y voló lo mas lejos posible de la escena del accidente. El siguió creyendo, y sigió ganando a toda costa para poder salvar a todos.
 
-Alice no solo rezaba que el Rey Cresiente recordara el heroe que era antes de que Estados Unidos lo capturara, tambíen esperaba que el Caballero volviera para salvarnos a todos otra vez. El escuchó sus palabras y ejecutó un plan para que la humanidad del Último Hijo despierte otra vez: tirar a Alice de la punta del Edificio Chrysler esperando que la rescate... <b>eso jamás paso</b>.
+Alice no solo rezaba que el Rey Cresiente recordara el heroe que era antes de que Estados Unidos lo capturara, tambíen esperaba que el Caballero volviera para salvarnos a todos otra vez. El escuchó sus palabras y ejecutó un plan desesperado para que la humanidad del Último Hijo despierte otra vez: tirar a Alice de la punta del Edificio Chrysler esperando que la rescate... <b>eso jamás paso</b>.
 
 <img src="/avenuefall.png" class="logo"/>
 
 > <font style="color: rgb(255, 255, 255)">Últimos momentos de vida de Alice Avenue.
+
+Luego de que el plan del Caballero fallara en todo aspecto, los Lunarians seguirían con su invasión, lavando y alterando el cerebro humano en ciudades importantes como Nueva York. Es en este punto que el Caballero redactaría un mensaje pidiendo perdón por lo que paso con Alice, y que ella seguía con vida...
+
+[<font style="color: rgb(255, 255, 255)"><i>EN MI MUNDO, LAS ESTATUAS SOSTENÍAN ALMAS</i>](../the-monument-mythos)
