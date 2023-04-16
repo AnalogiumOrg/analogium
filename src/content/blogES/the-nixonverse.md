@@ -34,7 +34,7 @@ Luego de que la misión del Apolo 11 revelara las propiedades de la anatomía lu
 
 Luego de lavarle el cerebro al Último Hijo, Estados Unidos traería una versión distorcionada de paz durante la Guerra de Vietnam, ahora llamado Bethlenam o "El Primer País Salvado"; este falso tratado se referenciaba como la Ecuación de la Paz.
 
-> <font style="color: rgb(255, 255, 255)"><center>NUESTRA LIBERTAD  ᐳ  TU LIBERTAD<br>NUESTRO CRISTO  ᐳ  TU CRISTO<br>=  PAZ MUNDIAL</center>
+> <font style="color: rgb(255, 255, 255)"><center>NUESTRA LIBERTAD&nbsp;ᐳ&nbsp;TU LIBERTAD<br>NUESTRO CRISTO&nbsp;ᐳ&nbsp;TU CRISTO<br>=&nbsp;PAZ MUNDIAL</center>
 
 En un giro de acontecimientos, el Último Hijo abrió sus ojos (bueno... su único ojo), y se dio cuenta de todos los actos horripilantes que había cometido bajo el manto del Mesías. Devastado por esto, huyó al oceano del que antes era su hogar, la Alaska Oscura, y buscó un refugio aislado del hombre, algo que le recordara a su infancia, algo como... [una Casa en el Océano](../the-house-in-the-ocean).
 
@@ -62,3 +62,4 @@ Luego de que el plan del Caballero fallara en todo aspecto, los Lunarians seguir
 
 [<font style="color: rgb(255, 255, 255)"><center>"<i>EN MI MUNDO, LAS ESTATUAS SOSTENÍAN ALMAS</i>"</center>](../the-monument-mythos)
 
+Algo todavía dejaba insatisfecho al Caballero, algo lo hacía sentir hueco, asi que para tratar de redimirse a si mismo le quito la cabeza a la estatua conmemorativa de Alice Avenue
