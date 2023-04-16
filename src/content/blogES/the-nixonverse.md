@@ -76,6 +76,8 @@ Este preciso momento es donde el Apolo 11 vuelve a jugar un papel vital, así qu
 
 > <font style="color: rgb(255, 255, 255)"><center>Fotografía de DIOS<br><i>Por Ed Dwight</i></center></font>
 
+```<center>Nota: El siguiente audio no contiene la voz de Ed Dwight.</center>```
+
 Nixon explica en esta cinta que el logró escapar de la Sepriente Cornuda durante la Gran División, y que terminó en la Luna de este nuevo universo. El tenía dudas de si la gente lo hiba a aceptar, asi que creó tres extensiones de si mismo para correr un pequeño experimento, así es como nacieron El Hijo, El Caballero y La Reina. Los tres se volvieron locos de cierta forma, y Nixon concluyó que el no podría arriesgarse a entrar a un planeta que no era amable. Además, el ya sabía que el Hijo se volvería rey de los Lunarians, y que si no se detiene se volverá un ser exageradamente poderoso.
 
 <b>L̴o̷ ̵s̶i̸e̸n̸t̴o̵,̶ ̶S̷r̷.̷ ̵D̸w̸i̵g̸h̴t̴.̷ ̴N̷i̴n̴g̴ú̶n̴ ̸s̴e̸r̸ ̷h̵u̸m̴a̴n̵o̷ ̷e̴s̶t̷a̵b̴a̵ ̸d̶e̷s̵t̵i̷n̵a̶d̴o̵ ̶a̷ ̴o̵í̵r̶ ̷l̷o̸ ̵q̸u̵e̸ ̴h̵e̵ ̸d̸i̵c̶h̶o̴.̸.̸.̸</b>
@@ -87,3 +89,5 @@ Sin embargo, aun queda el Rey, quien por fin a tomado conciencia de todo lo que 
 <img src="/thehornedserpentlives.png" class="logo"/>
 
 > <font style="color: rgb(255, 255, 255)"><center><b>LA SERPIENTE CORNUDA VIVE.</b></center></font>
+
+Nixon debe actuar rápido, no puede dejar que todo termine como terminó su propio mundo, así que decidió rendir la Rey, al Caballero, a la Reina, y a el mismo como ficción, así nadie creera en el Rey Creciente y así pierda sus poderes. Así fue como todo este mundo se convirtió en un comic llamado "El Nixonverso", con una historia entrañable hecha por un tal "<i>Señor Manticora</i>" y hermosas ilustraciones hechas por... Ed Dwight?
