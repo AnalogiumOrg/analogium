@@ -60,4 +60,4 @@ Alice no solo rezaba que el Rey Cresiente recordara el heroe que era antes de qu
 
 Luego de que el plan del Caballero fallara en todo aspecto, los Lunarians seguirían con su invasión, lavando y alterando el cerebro humano en ciudades importantes como Nueva York. Es en este punto que el Caballero redactaría un mensaje pidiendo perdón por lo que paso con Alice, y que ella seguía con vida...
 
-[<font style="color: rgb(255, 255, 255)"><i>EN MI MUNDO, LAS ESTATUAS SOSTENÍAN ALMAS</i>](../the-monument-mythos)
+[<font style="color: rgb(255, 255, 255)"><center>"<i>EN MI MUNDO, LAS ESTATUAS SOSTENÍAN ALMAS</i>"</center>](../the-monument-mythos)
