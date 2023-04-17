@@ -107,4 +107,4 @@ Nixon debe actuar rápido, no puede dejar que todo termine como terminó su prop
 
 En comparación con Nixon, Ed Dwight era el doble de Dios que el, Nixon era solo uno de muchos sobrevivientes que borro el pasado, para huir del presente. Ed era todo lo que Nixon no era, alguien audaz, amable y bueno. El jamás fue a la Luna, ni se diga haber hablado con un Dios, el hoy en día en nuestro mundo crea monumentos... <i>Ed Dwight preserva el pasado.</i>
 
-[<img src="/preservethepast.png" class="logo"/>](https://twitter.com/MagicBunnyStar/status/1555336147139715076)<target: _blank>
+<a ref="https://twitter.com/MagicBunnyStar/status/1555336147139715076"><img src="/preservethepast.png" class="logo"/></a>
