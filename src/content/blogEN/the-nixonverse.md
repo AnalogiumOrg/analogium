@@ -30,7 +30,7 @@ With these entities, there are some eyes that glow more than others, those being
 
 <center><b><i>Faster than an airplane! More powerful than a locomotive! Impervious to bullets! Up in the sky, look! It's a bird! It's a plane! It's - -</i></b></center>
 
-Our story begins with The Last Son, a real superhero who is always there to save us all, and yet some people are in constant fear that he will rebel against us and conquer us. IT's worth noting that his physical appearance resembles Richard Nixon too closely when he was young.
+Our story begins with The Last Son, a real superhero who is always there to save us all, and yet some people are in constant fear that he will rebel against us and conquer us. It's worth noting that his physical appearance resembles Richard Nixon too closely when he was young.
 
 Actually he is not our only hero, there is another one baptised The D-Day Knight, the one who saved the US Army on the battlefield that day in 1944. He gave us all hope and faith from his intervention in Normandy, and no one more than Alice Avenue had great respect and affection for him. During D-Day, the Knight lost something that will prove very interesting later on, he lost his helmet.
 
