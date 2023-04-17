@@ -10,5 +10,9 @@ THE HOUSE IN THE OCEAN is a story created by MISTER MANTICORE (Alex Casanas) via
 
 The video is a compilation of footage, documentaries and animations about an urban legend known as "The House in the Ocean", a mysterious dwelling that traps and kills anyone who tries to destroy it or look at it directly; that's not the only weird thing about this house, as there seems to be <i>something</i> underwater.
 
+## CHRONOLOGY
+
+1. [THE HOUSE IN THE OCEAN](https://www.youtube.com/watch?v=D86OD5fa_aY)
+
 ## INTERPRETATION
 

@@ -10,5 +10,9 @@ THE HOUSE IN THE OCEAN es una historia creada por MISTER MANTICORE (Alex Casanas
 
 El video es una recopilación de grabaciones, documentales y animaciones sobre una leyenda urbana conocida como "La Casa en el Océano", una misteriosa vivienda que atrapa a cualquier persona que intente atacarla; no es lo único raro de esta casa, pues parece que hay <i>algo</i> debajo del agua.
 
+## CRONOLOGÍA
+
+1. [LA CASA EN EL OCÉANO](https://www.youtube.com/watch?v=D86OD5fa_aY)
+
 ## INTERPRETACION
 
