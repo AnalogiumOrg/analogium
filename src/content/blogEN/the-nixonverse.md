@@ -72,7 +72,7 @@ The Last Son was a young man like you and me, with parents who were cutthroats a
 
 "<i>You won, little bastard... you won....</i>", this were the last words of the man who <u>in this universe, lost</u>. The Last Son was devastated and could not hold back his tears, and from the pain and exhaustion caused by the accident, he fainted. He woke up in a strange dream, where he found himself on a cliff with a vehicle behind him, which was driving at high speed. He, to avoid the impact, jumped into the void, and began to believe more and more that he could fly, that he could beat death... he did it. The young man began to fly high, faster than an airplane. It was right here that he woke up and flew as far away as possible from the scene of the accident. He kept on believing, and kept on winning at any cost in order to save everyone.
 
-Alice not only prayed that Crescent King would remember the hero he was before America captured him, she also hoped that the Knight would return to save us all again. He listened to her words and executed a desperate plan to make the humanity of the Last Son wake up again: throw Alice off the top of the Chrysler Building hoping that he would rescue her... <b>that never happened</b>.
+Alice not only prayed that the Crescent King would remember the hero he was before America captured him, she also hoped that the Knight would return to save us all again. He listened to her words and executed a desperate plan to make the humanity of the Last Son wake up again: throw Alice off the top of the Chrysler Building hoping that he would rescue her... <b>that never happened</b>.
 
 <img src="/avenuefall.png" class="logo"/>
 
