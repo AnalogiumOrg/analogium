@@ -64,7 +64,7 @@ Fate is very funny, because some time later the Last Son would have an encounter
 
 <img src="/evolution.png" class="logo"/>
 
-> <font style="color: rgb(255, 255, 255)"><center>Evolución del Último Hijo.</center></font>
+> <font style="color: rgb(255, 255, 255)"><center>Evolution of the Last Son.</center></font>
 
 The Crescent King was born, and slowly began to take control of America, not only by creating "vessels for the king's essence", but also by attacking the human culture, starting with language. No one understood their own thoughts, so they had to accept the Lunarian culture by force in order to survive. However, in the midst of all this storm, a familiar voice returned to bring faith to the human... Alice Avenue broadcasted over the radio the story of the Last Son.
 
