@@ -105,6 +105,6 @@ However, there is still the King, who has finally become aware of all he has don
 
 Nixon must act fast, he can't let it all end like his own world ended, so he decided to render the King, the Knight, the Queen, and himself as fiction, so no one will believe in the Crescent King and so he loses his powers. That's how this whole world became a comic book called "The Nixonverse", with an endearing story made by a certain "<i>Mister Manticore</i>" and beautiful illustrations made by.... Ed Dwight?
 
-Compared to Nixon, Ed Dwight was twice the God he was, Nixon was just one of many survivors who erased the past, to run from the present. Ed was everything Nixon was not, someone bold, kind and good. He never went to the moon, let alone talked to a God, he is today in our world creating monuments... <i>Ed Dwight preserves the past.</i>
+Compared to Nixon, Ed Dwight was twice the God he was, Nixon was just one of many survivors who erased the past, to run from the present. Ed was everything Nixon wasn't, someone bold, kind and good. He never went to the moon, let alone talked to a God, he is today in our world creating monuments... <i>Ed Dwight preserves the past.</i>
 
 <img src="/preservethepast.png" class="logo"/>
