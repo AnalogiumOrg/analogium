@@ -82,7 +82,7 @@ After the Knight's plan failed in every way, the Lunarians continued their invas
 
 [<font style="color: rgb(255, 255, 255)"><center>"<i>IN MY WORLD, STATUES HELD SOULS</i>"</center></font>](../the-monument-mythos)
 
-Something still left the Knight unsatisfied, something made him feel hollow, so to try to redeem himself he removed the head of the statue commemorating Alice Avenue and put it on as if it were his old helmet; even though he had only worn it for a day something in it had changed, the only thing that could be seen was his eye, full of anger... <b><i>Grief can make you a monster.</i></b>
+Something still left the Knight unsatisfied, something made him feel hollow, so to try to redeem himself he removed the head of the Alice Avenue memorial statue and wear it as if it were his old helmet; even though he had only worn it for a day something in him changed, the only thing that could be seen was his eye, full of anger... <b><i>Grief can make you a monster.</i></b>
 
 This precise moment is where Apollo 11 comes back to play a vital role, so we'll have to go back in time a bit, and put ourselves in Ed Dwight's spacesuit again. His body was found on the moon, and it was determined that his death was caused by his own weapon; next to him was a tape which would be christened "THE MOON GOD". On this tape is revealed the conversation Ed had with that <i>someone special</i> who has been hidden for quite some time, the God behind the beings that are causing so much damage right now... <b>Richard Nixon</b>.
 
