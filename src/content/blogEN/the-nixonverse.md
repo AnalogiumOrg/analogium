@@ -107,4 +107,4 @@ Nixon must act fast, he can't let it all end like his own world ended, so he dec
 
 Compared to Nixon, Ed Dwight was twice the God he was, Nixon was just one of many survivors who erased the past, to run from the present. Ed was everything Nixon wasn't, someone bold, kind and good. He never went to the moon, let alone talked to a God, he is today in our world creating monuments... <i>Ed Dwight preserves the past.</i>
 
-<img src="/preservethepast.png" class="logo"/>
+[<img src="/preservethepast.png" class="logo"/>](https://twitter.com/MagicBunnyStar/status/1555336147139715076)
