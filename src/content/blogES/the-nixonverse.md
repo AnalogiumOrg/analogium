@@ -12,7 +12,7 @@ La serie se ubica luego de los acontecimientos de la segunda temporada de MONUME
 
 Ademas de estos entes, se destacan los ojos de Alice Avenue, Ed Dwight, y el egoismo y obsesión con el poder de los Estados Unidos.
 
-## CRONOLOGÍA
+## [CRONOLOGÍA](https://www.youtube.com/playlist?list=PLYEu-9YXzZuKwVdyumtQxcmUgoQDIqfD_)
 
 1. [EL ÚLTIMO HIJO DE ALCATRAZ](https://www.youtube.com/watch?v=VdcCQmMEKtk)
 2. [EL CABALLERO DEL DÍA D](https://www.youtube.com/watch?v=p18oxjNauM8)

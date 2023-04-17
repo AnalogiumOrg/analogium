@@ -12,7 +12,7 @@ The series take place after the events of the second season of MONUMENT MYTHOS, 
 
 With these entities, there are some eyes that glow more than others, those being from Alice Avenue, Ed Dwight, and the egocentric self of the United States, always obsessed with power.
 
-## CHRONOLOGY
+## [CHRONOLOGY](https://www.youtube.com/playlist?list=PLYEu-9YXzZuKwVdyumtQxcmUgoQDIqfD_)
 
 1. [THE LAST SON OF ALCATRAZ](https://www.youtube.com/watch?v=VdcCQmMEKtk)
 2. [THE D-DAY KNIGHT](https://www.youtube.com/watch?v=p18oxjNauM8)
