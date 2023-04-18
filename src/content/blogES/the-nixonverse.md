@@ -12,6 +12,20 @@ La serie se ubica luego de los acontecimientos de la segunda temporada de MONUME
 
 Ademas de estos entes, se destacan los ojos de Alice Avenue, Ed Dwight, y el egoismo y obsesión con el poder de los Estados Unidos.
 
+## CRONOLOGÍA
+
+1. [EL ÚLTIMO HIJO DE ALCATRAZ](https://www.youtube.com/watch?v=VdcCQmMEKtk)
+2. [EL CABALLERO DEL DÍA D](https://www.youtube.com/watch?v=p18oxjNauM8)
+3. [LA REINA DE LOS LUNARIANS](https://www.youtube.com/watch?v=oWyklL0biuo)
+4. [JESUS EN VIETNAM](https://www.youtube.com/watch?v=DLWmWR8HrdI)
+5. [EL OJO PERDIDO DE JESUCRISTO](https://www.youtube.com/watch?v=vyxYFnxd7Q8)
+6. [LA CASA EN EL OCÉANO](https://www.youtube.com/watch?v=D86OD5fa_aY)
+7. [MAR DEL ÚLTIMO HIJO](https://www.youtube.com/watch?v=IeRZ8USiRKI)
+8. [EL CABALLERO DEL DÍA D REGRESA](https://www.youtube.com/watch?v=gsXYUfw_09I)
+9. [LA CAIDA DEL CABALLERO DEL DÍA D](https://www.youtube.com/watch?v=zsZwjmOe2pc)
+10. [NIXON ES DIOS](https://www.youtube.com/watch?v=nYKzDV8T58A)
+11. [LA PARADOJA DE ED DWIGHT](https://www.youtube.com/watch?v=Nmi3ENEOMXQ)
+
 ## INTERPRETACION
 
 <center><b><i>Más rápido que un avión! Más poderoso que una locomotora! Inmune a las balas! En el cielo, miren! Es un pájaro! Es un avión! Es - -</i></b></center>
@@ -75,8 +89,7 @@ Este preciso momento es donde el Apolo 11 vuelve a jugar un papel vital, así qu
 <img src="/god.png" class="logo"/>
 
 > <font style="color: rgb(255, 255, 255)"><center>Fotografía de DIOS<br><i>Por Ed Dwight</i></center></font>
-
-```<center>Nota: El siguiente audio no contiene la voz de Ed Dwight.</center>```
+<h5>Nota: El siguiente audio no contiene la voz de Ed Dwight.</h5>
 
 Nixon explica en esta cinta que el logró escapar de la Sepriente Cornuda durante la Gran División, y que terminó en la Luna de este nuevo universo. El tenía dudas de si la gente lo hiba a aceptar, asi que creó tres extensiones de si mismo para correr un pequeño experimento, así es como nacieron El Hijo, El Caballero y La Reina. Los tres se volvieron locos de cierta forma, y Nixon concluyó que el no podría arriesgarse a entrar a un planeta que no era amable. Además, el ya sabía que el Hijo se volvería rey de los Lunarians, y que si no se detiene se volverá un ser exageradamente poderoso.
 
@@ -91,3 +104,7 @@ Sin embargo, aun queda el Rey, quien por fin a tomado conciencia de todo lo que 
 > <font style="color: rgb(255, 255, 255)"><center><b>LA SERPIENTE CORNUDA VIVE.</b></center></font>
 
 Nixon debe actuar rápido, no puede dejar que todo termine como terminó su propio mundo, así que decidió rendir la Rey, al Caballero, a la Reina, y a el mismo como ficción, así nadie creera en el Rey Creciente y así pierda sus poderes. Así fue como todo este mundo se convirtió en un comic llamado "El Nixonverso", con una historia entrañable hecha por un tal "<i>Señor Manticora</i>" y hermosas ilustraciones hechas por... Ed Dwight?
+
+En comparación con Nixon, Ed Dwight era el doble de Dios que el, Nixon era solo uno de muchos sobrevivientes que borro el pasado, para huir del presente. Ed era todo lo que Nixon no era, alguien audaz, amable y bueno. El jamás fue a la Luna, ni se diga haber hablado con un Dios, el hoy en día en nuestro mundo crea monumentos... <i>Ed Dwight preserva el pasado.</i>
+
+<img src="/preservethepast.png" class="logo"/>
