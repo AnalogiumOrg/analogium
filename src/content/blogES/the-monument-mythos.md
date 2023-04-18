@@ -49,9 +49,9 @@ Algunas cosas similares suceden por todo el país (y posiblemente en algún luga
 3. [CENIZASDEANGEL](https://www.youtube.com/watch?v=85f31nj4UxE)
 4. [MARTEDEMUSK](https://www.youtube.com/watch?v=50LkRWqNLPs)
 5. [DESPUESDELANGEL](https://www.youtube.com/watch?v=fVNdgouo_f0)
-6. [LACHICADELGOLDENDATE](https://www.youtube.com/watch?v=x_pogLUNbO8)
+6. [LACHICADELGOLDENGATE](https://www.youtube.com/watch?v=x_pogLUNbO8)
 7. [CTHONAUTC](https://www.youtube.com/watch?v=duRD6ViNV_c)
-8. [DEMONIODEAN](https://www.youtube.com/watch?v=hZtnqESa3WM)
+8. [DEANELDIABLO](https://www.youtube.com/watch?v=hZtnqESa3WM)
 9. [CAOSDECLIFT](https://www.youtube.com/watch?v=pLwxofrctdA)
 10. [ARNOLDSONSOLO](https://www.youtube.com/watch?v=Bgiu6dugOqg)
 11. <i>N/A</i>
