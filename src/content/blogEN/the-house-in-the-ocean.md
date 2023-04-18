@@ -1,7 +1,7 @@
 ---
 title: "THE HOUSE IN THE OCEAN"
 description: "THERE IS NO HOUSE IN THE OCEAN"
-heroImage: "/thito.jpg"
+heroImage: "/thito.png"
 ---
 
 THE HOUSE IN THE OCEAN is a story created by MISTER MANTICORE (Alex Casanas) via YouTube. This short film is one of the first that Alex made before creating [THE MONUMENT MYTHOS](../the-monument-mythos). However, this video was removed without warning, and later reinstated as part of [THE NIXONVERSE](../the-nixonverse); "<i>NO ONE IS GONE FOREVER</i>".
