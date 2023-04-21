@@ -62,7 +62,7 @@ En un giro de acontecimientos, el Último Hijo abrió sus ojos (bueno... su úni
 
 El destino es muy gracioso, porque tiempo despues el Último Hijo tendría un encuentro con una nave de una raza que conocemos muy bien, los Lunarians vienen a cumplir una profecía: <b>traer a su Rey a casa.</b>
 
-<img src="/evolution.png" class="logo"/>
+<img src="/evolution.png" class="logo toggleable"/>
 
 > <font style="color: rgb(255, 255, 255)"><center>Evolución del Último Hijo.</center></font>
 
