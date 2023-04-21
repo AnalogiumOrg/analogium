@@ -19,7 +19,7 @@
 
 @font-face {
 	font-family: 'Duke Thin';
-	src: url(./fonts/duke_thin.ttf);
+	src: url(/fonts/duke_thin.ttf);
 }
 
 body {
