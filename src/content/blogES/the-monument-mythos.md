@@ -58,18 +58,3 @@ Algunas cosas similares suceden por todo el país (y posiblemente en algún luga
 
 ## INTERPRETACION
 
-### TEMPORADA 1
-
-<i>"America (My Country, 'Tis of Thee')" fué el himno nacional de los Estados Unidos.</i>
-
-
-
-### TEMPORADA 2
-
-<i><u>E pluribus unum</u> (latín de "De muchos, uno"), fue el lema oficial de los Estados Unidos.</i>
-
-### TEMPORADA 3
-
-<i>Nadie se va para siempre.</i>
-
-
