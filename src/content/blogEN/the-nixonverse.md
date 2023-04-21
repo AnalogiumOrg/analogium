@@ -36,7 +36,7 @@ Actually he is not our only hero, there is another one baptised The D-Day Knight
 
 <img src="/hornedhelmet_dark.png" class="logo toggleable"/>
 
-> <center>D-Day Knight's Helmet</center>
+> <font><center>D-Day Knight's Helmet</center></font>
 
 That's the beginning of our planet, but what if we go up? Somewhere like... <i>the Moon</i>.
 
@@ -44,7 +44,7 @@ The first mission to land humans on the Moon was not as normal as you might thin
 
 <img src="/johndeath_dark.png" class="logo toggleable"/>
 
-> <center>John Glenn's cause of death: <b>a Lunarian encounter</b>.</center>
+> <font><center>John Glenn's cause of death: <b>a Lunarian encounter</b>.</center></font>
 
 It's at this very moment that Ed Dwight would have a very interesting talk with <i>someone special</i>, but we'll come back to that later. Now that we know our protagonists, we can move on to our antagonist: United States.
 
@@ -54,7 +54,7 @@ After the Apollo 11 mission revealed the properties of the Lunarian anatomy, the
 
 After brainwashing the Last Son, the United States would bring a distorted version of peace during the Vietnam War, now called Bethlenam or "The First Saved State"; this fake treaty was referred to as The Peace Equation.
 
-> <center>OUR FREEDOM   ᐳ   YOUR FREEDOM<br>OUR CHRIST   ᐳ   YOUR CHRIST<br>=   WORLD PEACE</center>
+> <font><center>OUR FREEDOM   ᐳ   YOUR FREEDOM<br>OUR CHRIST   ᐳ   YOUR CHRIST<br>=   WORLD PEACE</center></font>
 
 In a turn of events, the Last Son opened his eyes (well... his one eye), and realised all the horrifying acts he had committed under the mantle of the Messiah. Devastated by this, he fled to the ocean of his former home, Dark Alaska, and sought a refuge isolated from man, something that would remind him of his childhood, something like... [a House in the Ocean](../the-house-in-the-ocean).
 
@@ -64,7 +64,7 @@ Fate is very funny, because some time later the Last Son would have an encounter
 
 <img src="/evolution_dark.png" class="logo toggleable"/>
 
-> <center>Evolution of the Last Son.</center>
+> <font><center>Evolution of the Last Son.</center></font>
 
 The Crescent King was born, and slowly began to take control of America, not only by creating "vessels for the king's essence", but also by attacking the human culture, starting with language. No one understood their own thoughts, so they had to accept the Lunarian culture by force in order to survive. However, in the midst of all this storm, a familiar voice returned to bring faith to the human race... Alice Avenue broadcasted over the radio the story of the Last Son.
 
@@ -76,7 +76,7 @@ Alice not only prayed that the Crescent King would remember the hero he was befo
 
 <img src="/avenuefall_dark.png" class="logo toggleable"/>
 
-> <center>Alice Avenue's last moments of life.</center>
+> <font><center>Alice Avenue's last moments of life.</center></font>
 
 After the Knight's plan failed in every way, the Lunarians continued their invasion, brainwashing and altering human brains in major cities such as New York. It's at this point that the Knight would compose a message apologising for what happened to Alice, and that she was still alive...
 
@@ -88,7 +88,7 @@ This precise moment is where Apollo 11 comes back to play a vital role, so we'll
 
 <img src="/god_dark.png" class="logo toggleable"/>
 
-> <center>Photograph of God<br><i>By Ed Dwight</i>
+> <font><center>Photograph of God<br><i>By Ed Dwight</i></center></font>
 <h5>Note: The following audio does not feature the voice of Ed Dwight.</h5></center>
 
 Nixon explains in this tape that he managed to escape from the Horned Serpent during the Great Division, and that he ended up on the moon of this new universe. He had doubts about whether people would accept him, so he created three extensions of himself to run a little experiment, which is how The Son, The Knight and The Queen were born. All three went somewhat insane, and Nixon concluded that he couldn't risk entering an unfriendly planet. Besides, he already knew that the Son would become King of the Lunarians, and that if he didn't stop himself he would become exceedingly powerful.
@@ -101,7 +101,7 @@ However, there is still the King, who has finally become aware of all he has don
 
 <img src="/thehornedserpentlives_dark.png" class="logo toggleable"/>
 
-> <center><b>THE HORNED SERPENT LIVES.</b></center>
+> <font><center><b>THE HORNED SERPENT LIVES.</b></center></font>
 
 Nixon must act fast, he can't let it all end like his own world ended, so he decided to render the King, the Knight, the Queen, and himself as fiction, so no one will believe in the Crescent King and so he loses his powers. That's how this whole world became a comic book called "The Nixonverse", with an endearing story made by a certain "<i>Mister Manticore</i>" and beautiful illustrations made by.... Ed Dwight?
 

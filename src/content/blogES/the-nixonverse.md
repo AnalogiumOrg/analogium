@@ -36,7 +36,7 @@ En realidad no es nuestro único héroe, hay otro bautizado El Caballero del Dí
 
 <img src="/hornedhelmet_dark.png" class="logo toggleable"/>
 
-> <center>Casco del Caballero del Día D</center>
+> <font><center>Casco del Caballero del Día D</center></font>
 
 Ese es el comienzo de nuestro planeta, pero y si vamos más arriba? A algún lugar como... <i>la Luna</i>.
 
@@ -44,7 +44,7 @@ La primera misión que hizo aterrizar humanos en la Luna no fue tan normal como 
 
 <img src="/johndeath_dark.png" class="logo toggleable"/>
 
-> <center>Causa de muerte de John Glenn: <b>un encuentro Lunarian</b>.</center>
+> <font><center>Causa de muerte de John Glenn: <b>un encuentro Lunarian</b>.</center></font>
 
 Es en este mismo momento que Ed Dwight tendría una charla muy interesante con <i>alguien especial</i>, pero volveremos a este tema más adelante. Ahora que ya conocemos a nuestros protagonistas, podemos pasar a nuestro antagonista: Estados Unidos.
 
@@ -54,7 +54,7 @@ Luego de que la misión del Apolo 11 revelara las propiedades de la anatomía lu
 
 Luego de lavarle el cerebro al Último Hijo, Estados Unidos traería una versión distorcionada de paz durante la Guerra de Vietnam, ahora llamado Bethlenam o "El Primer País Salvado"; este falso tratado se referenciaba como La Ecuación de la Paz.
 
-> <center>NUESTRA LIBERTAD   ᐳ   TU LIBERTAD<br>NUESTRO CRISTO   ᐳ   TU CRISTO<br>=   PAZ MUNDIAL</center>
+> <font><center>NUESTRA LIBERTAD   ᐳ   TU LIBERTAD<br>NUESTRO CRISTO   ᐳ   TU CRISTO<br>=   PAZ MUNDIAL</center></font>
 
 En un giro de acontecimientos, el Último Hijo abrió sus ojos (bueno... su único ojo), y se dio cuenta de todos los actos horripilantes que había cometido bajo el manto del Mesías. Devastado por esto, huyó al oceano del que antes era su hogar, la Alaska Oscura, y buscó un refugio aislado del hombre, algo que le recordara a su infancia, algo como... [una Casa en el Océano](../the-house-in-the-ocean).
 
@@ -76,7 +76,7 @@ Alice no solo rezaba que el Rey Creciente recordara el heroe que era antes de qu
 
 <img src="/avenuefall_dark.png" class="logo toggleable"/>
 
-> <center>Últimos momentos de vida de Alice Avenue.</center>
+> <font><center>Últimos momentos de vida de Alice Avenue.</center></font>
 
 Luego de que el plan del Caballero fallara en todo aspecto, los Lunarians seguirían con su invasión, lavando y alterando el cerebro humano en ciudades importantes como Nueva York. Es en este punto que el Caballero redactaría un mensaje pidiendo perdón por lo que paso con Alice, y que ella seguía con vida...
 
@@ -88,8 +88,8 @@ Este preciso momento es donde el Apolo 11 vuelve a jugar un papel vital, así qu
 
 <img src="/god_dark.png" class="logo toggleable"/>
 
-> <center>Fotografía de DIOS<br><i>Por Ed Dwight</i>
-<h5>Nota: El siguiente audio no contiene la voz de Ed Dwight.</h5></center>
+> <font><center>Fotografía de DIOS<br><i>Por Ed Dwight</i></center></font>
+<center><h5>Nota: El siguiente audio no contiene la voz de Ed Dwight.</h5></center>
 
 Nixon explica en esta cinta que el logró escapar de la Serpiente Cornuda durante la Gran División, y que terminó en la Luna de este nuevo universo. El tenía dudas de si la gente lo hiba a aceptar, asi que creó tres extensiones de si mismo para correr un pequeño experimento, así es como nacieron El Hijo, El Caballero y La Reina. Los tres se volvieron locos de cierta forma, y Nixon concluyó que el no podría arriesgarse a entrar a un planeta que no era amable. Además, el ya sabía que el Hijo se volvería rey de los Lunarians, y que si no se detiene se volverá un ser exageradamente poderoso.
 
@@ -101,7 +101,7 @@ Sin embargo, aun queda el Rey, quien por fin a tomado conciencia de todo lo que 
 
 <img src="/thehornedserpentlives_dark.png" class="logo toggleable"/>
 
-> <center><b>LA SERPIENTE CORNUDA VIVE.</b></center>
+> <font><center><b>LA SERPIENTE CORNUDA VIVE.</b></center></font>
 
 Nixon debe actuar rápido, no puede dejar que todo termine como terminó su propio mundo, así que decidió rendir la Rey, al Caballero, a la Reina, y a el mismo como ficción, así nadie creera en el Rey Creciente y así pierda sus poderes. Así fue como todo este mundo se convirtió en un comic llamado "El Nixonverso", con una historia entrañable hecha por un tal "<i>Señor Manticora</i>" y hermosas ilustraciones hechas por... Ed Dwight?
 
