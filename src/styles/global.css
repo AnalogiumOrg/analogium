@@ -3,18 +3,33 @@
   https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
   License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
  */
+:root {
+	/* Automatically set */
+	--bg_color: #000000;
+	--font_color: #FFFFFF;
+	--link: #C0C0C0;
+	/* Manually set */
+	--bg_color_dark: #000000;
+	--font_color_dark: #FFFFFF;
+	--link_dark: #C0C0C0;
+	--bg_color_light: #FFFFFF;
+	--font_color_light: #000000;
+	--link_light: #404040;
+}
+
 body {
 	font-family: 'Duke Thin', sans-serif;
 	margin: auto;
 	padding: 20px;
 	max-width: 65ch;
 	text-align: justify;
-	background-color: #000000;
+	background-color: var(--bg_color);
 	word-wrap: break-word;
 	overflow-wrap: break-word;
 	line-height: 1.5;
-	color: #ffffff;
+	color: var(--font_color);
 }
+
 h1,
 h2,
 h3,
@@ -23,41 +38,52 @@ h5,
 h6,
 strong,
 b {
-	color: #ffffff;
+	color: var(--font_color);
 }
+
 a {
-	color: #C0C0C0;
+	color: var(--link);
 }
+
 nav a {
 	margin-right: 10px;
 }
+
 textarea {
 	width: 100%;
 	font-size: 16px;
 }
+
 input {
 	font-size: 16px;
 }
+
 content {
 	line-height: 1.6;
 }
+
 table {
 	width: 100%;
 }
+
 img {
 	max-width: 100%;
 	height: auto;
 }
+
 code {
 	padding: 2px 5px;
 	background-color: #4e4e4e;
 }
+
 pre {
 	padding: 1rem;
 }
-pre > code {
+
+pre>code {
 	all: unset;
 }
+
 blockquote {
 	border: 1px solid #999;
 	color: #222;
