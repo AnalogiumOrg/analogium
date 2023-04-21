@@ -1,7 +1,7 @@
 ---
 title: "THE NIXONVERSE"
 description: "GRIEF CAN MAKE YOU A MONSTER"
-heroImage: <img src=`"/nv_dark.png" class="logo toggleable"/>"
+heroImage: "nv_dark.png"
 ---
 
 THE NIXONVERSE es un relato desarrollado por MISTER MANTICORE (Alex Casanas) via YouTube. La serie es un Spin-Off de su historia principal, conocida como [THE MONUMENT MYTHOS](../the-monument-mythos).
