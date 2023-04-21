@@ -1,7 +1,7 @@
 ---
 title: "THE NIXONVERSE"
 description: "GRIEF CAN MAKE YOU A MONSTER"
-heroImage: "/nv.png"
+heroImage: <img src="/nv.png_dark.png" class="logo toggleable"/>"
 ---
 
 THE NIXONVERSE es un relato desarrollado por MISTER MANTICORE (Alex Casanas) via YouTube. La serie es un Spin-Off de su historia principal, conocida como [THE MONUMENT MYTHOS](../the-monument-mythos).
@@ -34,7 +34,7 @@ Nuestra historia comienza con El Último Hijo, un verdadero superhéroe que siem
 
 En realidad no es nuestro único héroe, hay otro bautizado El Caballero del Día D, quien salvó al ejército estadounidense en el campo de batalla aquel día de 1944. Nos dio esperanza y fe a todos desde su intervención en Normandía, y nadie más que Alice Avenue le tenía un gran respeto y cariño. Durante el Día D, el Caballero perdió algo que resultara muy interesante para despues, el perdió su casco.
 
-<img src="/hornedhelmet.png" class="logo">
+<img src="/hornedhelmet_dark.png" class="logo toggleable"/>
 
 > <font style="color: rgb(255, 255, 255)"><center>Casco del Caballero del Día D</center></font>
 
@@ -42,7 +42,7 @@ Ese es el comienzo de nuestro planeta, pero y si vamos más arriba? A algún lug
 
 La primera misión que hizo aterrizar humanos en la Luna no fue tan normal como podría pensarse, porque Ed Dwight (el primer hombre en la Luna) y su equipo encontraron a la Reina de los Lunarians, y fueron testigos de las primeras palabras grabadas en nuestro satélite natural. La reina profetizaba una <u>Gran División</u> en la Tierra, puesto que los humanos no sabian como vivir, como amar, como volar... Desgraciadamente, una pequeña mancha de sangre cubrió el momento, porque después de ordenar a Ed que le disparara, John Glenn fue <i>evadido de la realidad</i>.
 
-<img src="/johndeath.png" class="logo"/>
+<img src="/johndeath_dark.png" class="logo toggleable"/>
 
 > <font style="color: rgb(255, 255, 255)"><center>Causa de muerte de John Glenn: <b>un encuentro Lunarian</b>.</center></font>
 
@@ -62,7 +62,7 @@ En un giro de acontecimientos, el Último Hijo abrió sus ojos (bueno... su úni
 
 El destino es muy gracioso, porque tiempo despues el Último Hijo tendría un encuentro con una nave de una raza que conocemos muy bien, los Lunarians vienen a cumplir una profecía: <b>traer a su Rey a casa.</b>
 
-<img src="/evolution.png" class="logo toggleable"/>
+<img src="/evolution_dark.png" class="logo toggleable"/>
 
 > <font style="color: rgb(255, 255, 255)"><center>Evolución del Último Hijo.</center></font>
 
@@ -74,7 +74,7 @@ El Último Hijo era un joven como tu o como yo, con padres cortantes y compañer
 
 Alice no solo rezaba que el Rey Creciente recordara el heroe que era antes de que Estados Unidos lo capturara, tambíen esperaba que el Caballero volviera para salvarnos a todos otra vez. El escuchó sus palabras y ejecutó un plan desesperado para que la humanidad del Último Hijo despierte otra vez: tirar a Alice de la punta del Edificio Chrysler esperando que la rescate... <b>eso jamás paso</b>.
 
-<img src="/avenuefall.png" class="logo"/>
+<img src="/avenuefall_dark.png" class="logo toggleable"/>
 
 > <font style="color: rgb(255, 255, 255)"><center>Últimos momentos de vida de Alice Avenue.</center></font>
 
@@ -86,7 +86,7 @@ Algo todavía dejaba insatisfecho al Caballero, algo lo hacía sentir hueco, asi
 
 Este preciso momento es donde el Apolo 11 vuelve a jugar un papel vital, así que tendremos que volver un poco al pasado, y ponernos en el traje espacial de Ed Dwight otra vez. Su cuerpo fué encontrado en la Luna, y se determinó que su muerte fue a causa de su propia arma; al lado de el había una cinta a la cual bautizarían como "EL DIOS DE LA LUNA". En esta cinta se revela la conversación que Ed tuvo con ese <i>alguien especial</i> que ha estado oculto durante bastante tiempo, el Dios detras de los seres que ahora mismo estan causando tanto daño... <b>Richard Nixon</b>.
 
-<img src="/god.png" class="logo"/>
+<img src="/god_dark.png" class="logo toggleable"/>
 
 > <font style="color: rgb(255, 255, 255)"><center>Fotografía de DIOS<br><i>Por Ed Dwight</i></center></font>
 <h5>Nota: El siguiente audio no contiene la voz de Ed Dwight.</h5>
@@ -99,7 +99,7 @@ De regreso a nuestro planeta, la Reina Lunarian intenta hablar con el Caballero 
 
 Sin embargo, aun queda el Rey, quien por fin a tomado conciencia de todo lo que ha hecho, y rompe en llanto una vez más. El dolor lo volvió un monstruo, el no dejará de llorar, el no quiere vivir, pero en ese instante el vuelve a mutar, asimilando una forma muy familiar al casco del Caballero, volviendose lo que Nixon temía que se volviera... <b><i><u>LA SERPIENTE CORNUDA VIVE.</u></i></b>
 
-<img src="/thehornedserpentlives.png" class="logo"/>
+<img src="/thehornedserpentlives_dark.png" class="logo toggleable"/>
 
 > <font style="color: rgb(255, 255, 255)"><center><b>LA SERPIENTE CORNUDA VIVE.</b></center></font>
 
@@ -107,4 +107,4 @@ Nixon debe actuar rápido, no puede dejar que todo termine como terminó su prop
 
 En comparación con Nixon, Ed Dwight era el doble de Dios que el, Nixon era solo uno de muchos sobrevivientes que borro el pasado, para huir del presente. Ed era todo lo que Nixon no era, alguien audaz, amable y bueno. El jamás fue a la Luna, ni se diga haber hablado con un Dios, el hoy en día en nuestro mundo crea monumentos... <i>Ed Dwight preserva el pasado.</i>
 
-<a href="https://twitter.com/MagicBunnyStar/status/1555336147139715076" target="_blank"><img src="/preservethepast.png" class="logo"/></a>
+<a href="https://twitter.com/MagicBunnyStar/status/1555336147139715076" target="_blank"><img src="/preservethepast_dark.png" class="logo toggleable"/></a>
