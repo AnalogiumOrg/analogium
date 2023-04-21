@@ -80,7 +80,7 @@ Alice no solo rezaba que el Rey Creciente recordara el heroe que era antes de qu
 
 Luego de que el plan del Caballero fallara en todo aspecto, los Lunarians seguirían con su invasión, lavando y alterando el cerebro humano en ciudades importantes como Nueva York. Es en este punto que el Caballero redactaría un mensaje pidiendo perdón por lo que paso con Alice, y que ella seguía con vida...
 
-<center>"<i><a href="../the-monument-mythos">EN MI MUNDO, LAS ESTATUAS SOSTENÍAN ALMAS</a></i>"</center>
+<center><b><i><a href="../the-monument-mythos">"EN MI MUNDO, LAS ESTATUAS SOSTENÍAN ALMAS"</a></i></b></center>
 
 Algo todavía dejaba insatisfecho al Caballero, algo lo hacía sentir hueco, asi que para tratar de redimirse a si mismo le quito la cabeza a la estatua conmemorativa de Alice Avenue y ponerselo como si fuera su viejo casco; a pesar de que solo lo llevara un día algo en el había cambiado, lo único que se veía era su ojo, lleno de ira... <b><i>El dolor puede convertirte en un monstruo.</i></b>
 
