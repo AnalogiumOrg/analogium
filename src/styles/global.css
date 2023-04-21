@@ -86,7 +86,9 @@ pre>code {
 
 blockquote {
 	border: 1px solid #999;
-	color: #ffffff;
+	--color: #fff;
+	--color_dark: #fff;
+	--color_light: #000;
 	padding: 2px 0px 2px 20px;
 	margin: 0px;
 	font-style: italic;

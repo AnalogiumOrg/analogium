@@ -63,20 +63,25 @@
 		/* Change variables in CSS
 			--bg_color
 			--font_color
-			--link 
+			--link
+			--color
 			For the values in
 			--bg_color_dark
 			--font_color_dark
 			--link_dark
+			--color_dark
 			or 
 			--bg_color_light
 			--font_color_light
 			--link_light
+			--color_light
 		*/
 		const root = document.getRootNode().querySelector(":root");
+		const blockquote = document.getRootNode().querySelector(":root");
 		root.style.setProperty("--bg_color", `var(--bg_color_${theme})`);
 		root.style.setProperty("--font_color", `var(--font_color_${theme})`);
 		root.style.setProperty("--link", `var(--link_${theme})`);
+		blockquote.style.setProperty("--color", `var(--color_${theme})`);
 	}
 	const handleToggleClick = () => {
 		const theme = getTheme();
