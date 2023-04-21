@@ -17,6 +17,11 @@
 	--link_light: #404040;
 }
 
+@font-face {
+	font-family: 'Duke Thin';
+	src: url(./fonts/duke_thin.ttf);
+}
+
 body {
 	font-family: 'Duke Thin', sans-serif;
 	margin: auto;
