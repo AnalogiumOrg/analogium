@@ -64,7 +64,7 @@ El destino es muy gracioso, porque tiempo despues el Último Hijo tendría un en
 
 <img src="/evolution_dark.png" class="logo toggleable"/>
 
-> <font style="color: rgb(255, 255, 255)"><center>Evolución del Último Hijo.</center></font>
+> <font><center>Evolución del Último Hijo.</center></font>
 
 El Rey Creciente ha nacido, y lentamente empezó a tomar control de America, no solo con la creación de "recipientes para la escencia del rey", sino que ademas atacaron la cultura del humano, iniciando por el lenguaje. Nadie entendía ni sus propios pensamientos por lo que tuvieron que aceptar la cultura Lunarian a la fuerza para sobrevivir. Sin embargo, en medio de toda esta tormenta, una voz familiar volvió para traer fé al humano... Alice Avenue emitió por radio la historia del Último Hijo
 
