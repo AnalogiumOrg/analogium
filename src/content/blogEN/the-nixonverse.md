@@ -88,8 +88,8 @@ This precise moment is where Apollo 11 comes back to play a vital role, so we'll
 
 <img src="/god_dark.png" class="logo toggleable"/>
 
-> <center>Photograph of God<br><i>By Ed Dwight</i></center>
-<h5>Note: The following audio does not feature the voice of Ed Dwight.</h5>
+> <center>Photograph of God<br><i>By Ed Dwight</i>
+<h5>Note: The following audio does not feature the voice of Ed Dwight.</h5></center>
 
 Nixon explains in this tape that he managed to escape from the Horned Serpent during the Great Division, and that he ended up on the moon of this new universe. He had doubts about whether people would accept him, so he created three extensions of himself to run a little experiment, which is how The Son, The Knight and The Queen were born. All three went somewhat insane, and Nixon concluded that he couldn't risk entering an unfriendly planet. Besides, he already knew that the Son would become King of the Lunarians, and that if he didn't stop himself he would become exceedingly powerful.
 

@@ -88,8 +88,8 @@ Este preciso momento es donde el Apolo 11 vuelve a jugar un papel vital, así qu
 
 <img src="/god_dark.png" class="logo toggleable"/>
 
-> <center>Fotografía de DIOS<br><i>Por Ed Dwight</i></center>
-<h5>Nota: El siguiente audio no contiene la voz de Ed Dwight.</h5>
+> <center>Fotografía de DIOS<br><i>Por Ed Dwight</i>
+<h5>Nota: El siguiente audio no contiene la voz de Ed Dwight.</h5></center>
 
 Nixon explica en esta cinta que el logró escapar de la Serpiente Cornuda durante la Gran División, y que terminó en la Luna de este nuevo universo. El tenía dudas de si la gente lo hiba a aceptar, asi que creó tres extensiones de si mismo para correr un pequeño experimento, así es como nacieron El Hijo, El Caballero y La Reina. Los tres se volvieron locos de cierta forma, y Nixon concluyó que el no podría arriesgarse a entrar a un planeta que no era amable. Además, el ya sabía que el Hijo se volvería rey de los Lunarians, y que si no se detiene se volverá un ser exageradamente poderoso.
 
