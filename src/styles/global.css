@@ -5,9 +5,9 @@
  */
 :root {
 	/* Automatically set */
-	--bg_color: #FFFFFF;
-	--font_color: #000000;
-	--link: #404040;
+	--bg_color: #000000;
+	--font_color: #FFFFFF;
+	--link: #C0C0C0;
 	/* Manually set */
 	--bg_color_dark: #000000;
 	--font_color_dark: #FFFFFF;

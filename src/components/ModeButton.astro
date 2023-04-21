@@ -1,42 +1,95 @@
 ---
-let darkmode = true;
 ---
-
-<script>
-    import {fetchDarkMode} from "../scripts/darkmodeUtils";
-    let darkmode = fetchDarkMode();
-    window.localStorage.setItem("theme", darkmode ? "dark" : "light");
-
-    const handleToggleClick = () => {
-        darkmode = !darkmode;
-        localStorage.setItem("theme", darkmode ? "light" : "dark");
-    };
-
-    document.getElementById("themeToggle")?.addEventListener("click", handleToggleClick);
-</script>
-<button class="mode" onclick="toggle">
-    {
-        darkmode == true ? (
-            <img src="/mode_dark.png" class="l" />
-        ) : (
-            <img src="/mode_light.png" class="l" />
-        )
-    }
+<button class="mode themeToggleButton">
+	<img src="/mode_dark.png" class="l toggleable" />
 </button>
 <style>
-    .mode {
-        background: none;
-        border: none;
-        cursor: pointer;
-        outline: none;
-        padding: 0;
-        position: fixed;
-        right: 1rem;
-        top: 1rem;
-        z-index: 100;
-    }
-    .l {
-        height: 3rem;
-        width: 3rem;
-    }
+	.mode {
+		background: none;
+		border: none;
+		cursor: pointer;
+		outline: none;
+		padding: 0;
+		position: fixed;
+		right: 1rem;
+		top: 1rem;
+		z-index: 100;
+	}
+	.l {
+		height: 3rem;
+		width: 3rem;
+	}
 </style>
+
+<script defer>
+	const DEFAULT_THEME = "dark";
+	function getTheme() {
+		if (typeof localStorage !== "undefined") {
+			if (localStorage.getItem("theme")) {
+				return localStorage.getItem("theme");
+			}
+			else {
+				return DEFAULT_THEME;
+			}
+		}
+		if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+			return "dark";
+		}
+		return "light";
+	}
+	function saveTheme(theme) {
+		if (typeof localStorage !== "undefined") {
+			localStorage.setItem("theme", theme);
+		}
+	}
+	function updateTheme() {
+		const theme = getTheme();
+		const found = window.document.getElementsByClassName("toggleable");
+		for (let i = 0; i < found.length; i++) {
+			let attributes = found[i].attributes;
+			for (let j = 0; j < attributes.length; j++) {
+				// Find any src attributes and swap the image from _dark to _light or vice versa
+				if (attributes[j].name == "src") {
+					let src = attributes[j].value;
+					if (theme == "dark") {
+						src = src.replace("_light", "_dark");
+					} else {
+						src = src.replace("_dark", "_light");
+					}
+					attributes[j].value = src;
+				}
+			}
+		}
+		/* Change variables in CSS
+			--bg_color
+			--font_color
+			--link 
+			For the values in
+			--bg_color_dark
+			--font_color_dark
+			--link_dark
+			or 
+			--bg_color_light
+			--font_color_light
+			--link_light
+		*/
+		const root = document.getRootNode().querySelector(":root");
+		root.style.setProperty("--bg_color", `var(--bg_color_${theme})`);
+		root.style.setProperty("--font_color", `var(--font_color_${theme})`);
+		root.style.setProperty("--link", `var(--link_${theme})`);
+	}
+	const handleToggleClick = () => {
+		const theme = getTheme();
+		if (theme == "dark") {
+			saveTheme("light");
+		} else {
+			saveTheme("dark");
+		}
+		updateTheme();
+	};
+	const button = document.getElementsByClassName("themeToggleButton")
+		? document.getElementsByClassName("themeToggleButton")[0]
+		: null;
+	button.addEventListener("click", handleToggleClick);
+	updateTheme();
+</script>
