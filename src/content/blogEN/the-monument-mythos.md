@@ -1,7 +1,7 @@
 ---
 title: "THE MONUMENT MYTHOS"
 description: "NO ONE IS GONE FOREVER"
-heroImage: "/mm.png"
+heroImage: "/mm_dark.png"
 ---
 
 The Monument Mythos is a tale developed by MISTER MANTICORE (Alex Casanas) via YouTube. The series have 2 full seasons, a third one in development and a Spin-Off known as [THE NIXONVERSE](../the-nixonverse).
