@@ -8,13 +8,16 @@
 	--bg_color: #000000;
 	--font_color: #FFFFFF;
 	--link: #C0C0C0;
+	--border: #999;
 	/* Manually set */
 	--bg_color_dark: #000000;
 	--font_color_dark: #FFFFFF;
 	--link_dark: #C0C0C0;
+	--border: #999;
 	--bg_color_light: #FFFFFF;
 	--font_color_light: #000000;
 	--link_light: #404040;
+	--border: #666;
 }
 
 @font-face {
@@ -90,10 +93,8 @@ pre>code {
 }
 
 blockquote {
-	border: 1px solid #999;
-	--color: #fff;
-	--color_dark: #fff;
-	--color_light: #000;
+	border: 1px solid var(--border);
+	color: var(--font_color);
 	padding: 2px 0px 2px 20px;
 	margin: 0px;
 	font-style: italic;
