@@ -5,13 +5,13 @@
  */
 :root {
 	/* Automatically set */
-	--back: center / contain no-repeat fixed url(../../images/web/eyes_dark.svg) 35% ;
+	--back: url(../../images/web/eyes_dark.svg) no-repeat center center fixed;
 	--color: #000;
 	--font_color: #FFF;
 	--link: #C0C0C0;
 	--border: #999;
 	/* Manually set */
-	--back_dark: center / contain no-repeat fixed url(../../images/web/eyes_dark.svg) 35% ;
+	--back_dark: url(../../images/web/eyes_dark.svg) no-repeat center center fixed;
 	--color_dark: #000;
 	--font_color_dark: #FFF;
 	--link_dark: #C0C0C0;
