@@ -26,7 +26,7 @@ const logourl = `../../images/web/LogoText_${lang}_light.png`;
 		<HeaderLink href={localizePath("/origin")}>
 			{t("head.origin")}
 		</HeaderLink>
-		<div class="dropdown">
+		<div class="dropdown" class={i18next.language}>
 			<button>{t("head.lang")}</button>
 			<div class="dropdown-options">
 				<a href="/" class="en">ENGLISH</a>
