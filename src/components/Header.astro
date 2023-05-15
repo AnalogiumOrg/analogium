@@ -1,0 +1,59 @@
+---
+import HeaderLink from "./HeaderLink.astro";
+import i18next, { t } from "i18next";
+import { localizePath, localizeUrl } from "astro-i18next";
+
+const lang = i18next.language;
+const logourl = `../../images/web/LogoText_${lang}_light.png`;
+
+---
+
+<header lang={i18next.language}>
+	<h1></h1>
+	<img src="../../images/web/Logo_light.svg" class="logo toggleable" />
+	<h2></h2>
+	<img src={logourl} class="text toggleable" />
+	<h1></h1>
+	<nav>
+		<HeaderLink href={localizePath("/")}>{t("head.home")}</HeaderLink>
+		<HeaderLink href={localizePath("/data")}>{t("head.data")}</HeaderLink>
+		<HeaderLink href="https://twitter.com/ANALOGIUM414" target="_blank">
+			{t("head.twitter")}
+		</HeaderLink>
+		<HeaderLink href="https://www.youtube.com/@analogium" target="_blank">
+			{t("head.youtube")}
+		</HeaderLink>
+		<HeaderLink href={localizePath("/origin")}>
+			{t("head.origin")}
+		</HeaderLink>
+		<div class="dropdown">
+			<button>{t("head.lang")}</button>
+			<div class="dropdown-options">
+				<a href="/" class="en">ENGLISH</a>
+				<a href="/es" class="es">ESPAÑOL</a>
+				<a href="/pt" class="pt">PORTUGUÊS</a>
+				<a href="/fr" class="fr">FRANÇAIS</a>
+				<a href="/ko" class="ko">한국어</a>
+			</div>
+		</div>
+	</nav>
+</header>
+<style>
+	header {
+		margin: 0em 0 2em;
+		text-align: center;
+		align-items: center;
+		justify-content: center;
+	}
+	h2 {
+		margin: 0.5em 0;
+	}
+	.logo {
+		width: 18rem;
+		height: 14rem;
+	}
+	.text {
+		width: 17rem;
+		height: 4rem;
+	}
+</style>

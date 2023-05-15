@@ -5,37 +5,127 @@
  */
 :root {
 	/* Automatically set */
-	--bg_color: #000000;
-	--font_color: #FFFFFF;
+	--back: url(../../images/web/eyes_dark.svg) no-repeat center center fixed;
+	--color: #000;
+	--font_color: #FFF;
 	--link: #C0C0C0;
 	--border: #999;
 	/* Manually set */
-	--bg_color_dark: #000000;
-	--font_color_dark: #FFFFFF;
+	--back_dark: url(../../images/web/eyes_dark.svg) no-repeat center center fixed;
+	--color_dark: #000;
+	--font_color_dark: #FFF;
 	--link_dark: #C0C0C0;
-	--border: #999;
-	--bg_color_light: #FFFFFF;
+	--border_dark: #999;
+	--back_light: url(../../images/web/eyes_light.svg) no-repeat center center fixed;
+	--color_light: #FFF;
 	--font_color_light: #000000;
 	--link_light: #3f3f3f;
-	--border: #666;
+	--border_light: #666;
 }
 
 @font-face {
-	font-family: 'Duke Thin';
+	font-family: 'Duke';
 	src: url(/fonts/duke_thin.ttf);
 }
-
+@font-face {
+	font-family: 'Yuji';
+	src: url(/fonts/yuji_boku.ttf);
+}
+@font-face {
+	font-family: 'Ebgaramond';
+	src: url(/fonts/garamond.ttf);
+}
+@font-face {
+	font-family: 'Playfair';
+	src: url(/fonts/playfair.ttf);
+}
+@font-face {
+	font-family: 'Nanum';
+	src: url(/fonts/nanum_myeongjo.ttf);
+}
+@font-face {
+	font-family: 'CRAZY KILLER';
+	src: url(/fonts/crazy_killer.ttf);
+}
+@font-face {
+	font-family: 'Elementa';
+	src: url(/fonts/elementa.ttf);
+}
 body {
-	font-family: 'Duke Thin', sans-serif;
 	margin: auto;
 	padding: 20px;
-	max-width: 65ch;
 	text-align: justify;
-	background-color: var(--bg_color);
+	background: var(--back), var(--color);
+	background-size: contain;
+	-moz-background-size: contain;
+	-webkit-background-size: contain;
+	-o-background-size: contain;
 	word-wrap: break-word;
 	overflow-wrap: break-word;
 	line-height: 1.5;
 	color: var(--font_color);
+}
+
+.en, .es, .pt, .fr, .it, .de{
+	font-family: 'Duke', sans-serif;
+	max-width: 65ch;
+}
+.ja {
+	font-family: 'Yuji', sans-serif;
+	max-width: 39ch;
+}
+.el {
+	font-family: 'Ebgaramond', sans-serif;
+	max-width: 62ch;
+}
+.ru {
+	font-family: 'Playfair', sans-serif;
+	max-width: 46ch;
+}
+.ko {
+	font-family: 'Nanum', sans-serif;
+	max-width: 50ch;
+}
+
+.fault_en {
+	font-family: 'Elementa', sans-serif;
+	font-size: 4.6rem;
+}
+.fault_es {
+	font-family: 'Elementa', sans-serif;
+	font-size: 5.7rem;
+}
+.fault_pt {
+	font-family: 'Elementa', sans-serif;
+	font-size: 4rem;
+}
+.fault_fr {
+	font-family: 'Elementa', sans-serif;
+	font-size: 4.3rem;
+}
+.fault_ja {
+	font-family: 'Yuji', sans-serif;
+	font-size: 7.1rem;
+}
+.fault_it {
+	font-family: 'Elementa', sans-serif;
+	font-size: 4rem;
+}
+.fault_el {
+	font-family: 'Ebgaramond', sans-serif;
+	font-size: 3.5rem;
+}
+.fault_ru {
+	font-family: 'Playfair', sans-serif;
+	font-size: 4rem;
+}
+.fault_de {
+	font-family: 'Elementa', sans-serif;
+	font-size: 3.6rem;
+}
+.fault_ko {
+	font-family: 'Nanum', sans-serif;
+	font-size: 6.1rem;
 }
 
 h1,
@@ -98,4 +188,45 @@ blockquote {
 	padding: 2px 0px 2px 20px;
 	margin: 0px;
 	font-style: italic;
+}
+
+.dropdown {
+	display: inline-block;
+	position: relative;
+}
+
+button {
+	font-family: 'Duke Thin';
+	src: url(/fonts/duke_thin.ttf);
+	background-color: var(--color);
+	font-size: 15px;
+	color: var(--link);
+	border: none;
+	cursor: pointer;
+}
+
+.dropdown-options {
+	display: none;
+	position: absolute;
+	overflow: auto;
+	background-color: var(--color);
+	border-radius: 5px;
+}
+
+.dropdown:hover .dropdown-options {
+	display: block;
+}
+
+.dropdown-options a {
+	display: block;
+	color: var(--link);
+	padding: 5px;
+	text-decoration: none;
+	padding: 5px 30px;
+}
+
+.dropdown-options a:hover {
+	color: var(--font_color);
+	background-color: var(--back);
+	border-radius: 1px;
 }

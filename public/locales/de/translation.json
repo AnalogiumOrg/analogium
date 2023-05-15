@@ -1,0 +1,26 @@
+{
+  "web": {
+    "name": "ANALOGIUM",
+    "desc": "UNSER VERSTAND, DEINE ÄNGSTE"
+  },
+  "head": {
+    "home": "HOME",
+    "data": "DATEN",
+    "twitter": "TWITTER",
+    "youtube": "YOUTUBE",
+    "origin": "URSPRUNG",
+    "lang": "SPRACHE"
+  },
+  "home": {
+    "title": "WILLKOMMEN BEI ANALOGIUM",
+    "subtitle": "<0>ANALOGIUM ist eine Gesellschaft, die es sich zur Aufgabe gemacht hat, verdrehte Universen, verrückte Köpfe und Kreaturen zu dokumentieren, die für den Durchschnittsmenschen unverständlich sind, sowie die Seelen, die ihre Zeit und ihren Verstand geopfert haben, um sie zu entwickeln.</0><1>Stellen Sie sich eine Welt vor, in der die Vereinigten Staaten seltsame Kreaturen unter ihren Denkmälern beherbergen; stellen Sie sich ein Land vor, das von <2>'Doppelgängers'</2> seiner Bewohner; stellen Sie sich einen Menschen vor, der in einer Maschine gefangen ist, die auf dem Grund des Ozeans vergessen wurde. All diese und weitere Geschichten sind an einem einzigen Ort dokumentiert.</1>"
+  },
+  "origin": {
+    "title": "DER URSPRUNG DES ANALOGIUM",
+    "part1": "<0><1>TEIL I: Die Ein-Mann-Show</1></0><2>Unsere Gesellschaft entstand aus einem Wesen, das unter ständigem Schmerz litt, einem Menschen wie du und ich, mit einem Leben, das so elend war, dass es vergessbar ist; er flüchtete lange Zeit in seinen eigenen Geist, dachte und träumte von neuen Welten und alternativen Geschichten zu denen unserer Welt. Schließlich fasste er den Entschluss, diese Welten, die ihm im Laufe der Jahre so viel Angst und Trost spendeten, zu archivieren und mit anderen zu teilen. So wurde <3>ANALOGIUM</3> geboren... doch das ist nicht das Ende unserer Geschichte.</2><4>Obwohl das Projekt unseren Gründervater mit Leben erfüllte, war die Arbeit zu viel und forderte bald, zusammen mit privaten Ereignissen, ihren Tribut von seinem geistigen Zustand. Er wusste, dass er Hilfe brauchte, aber all die Zeit, die er in seiner eigenen Kuppel verbrachte, machte es ihm unmöglich, hinauszugehen und mit anderen Menschen zu sprechen. Er wurde zu einem Einsiedler, und jemanden zu finden, der so gefallen und gebrochen war wie er, war praktisch unmöglich... bis <5>sie</5> in sein Leben trat.</4>",
+    "part2": "<0><1>TEIL II: Vom Glücksgefühl zum Gefühl des halben Todes</1></0><2>'<3>Lady</3>' war alles für unseren Schöpfer, sie war seit langer Zeit die einzige Person, die die seelischen Wunden des Schöpfers verstand und heilte. Er selbst beschrieb sie als '<4>ein gefallener Engel</4>'... Aber leider ist nichts Gutes von Dauer, und eines Tages verschwand Lady aus dem Leben unseres Vaters. Er lächelte nicht mehr, er sah nicht mehr, er bewegte sich nicht mehr, er war einfach nur da, leblos.</2><5>Niemand weiß mit Sicherheit, woran das Märchen unseres Gründers zerbrochen ist, nicht einmal diejenigen, die ihm am nächsten stehen; das Einzige, was er sich erlaubt zu sagen, ist: <6><7><8>Es war meine Schuld</8></7></6></5>",
+    "part3": "<0><1>TEIL III: Unter der Asche</1></0><2>Es dauerte lange, bis unser Gründer geheilt war, voller leerer Ersatzhandlungen, verrückter Taten und Gefühle, die durch seinen eigenen Schmerz noch verstärkt wurden; bis in einem Monument der Klarheit die Geschichten, die ihn so lange in seinem Kopf eingeschlossen hatten, in seinem Geist wieder erklangen, und er etwas fand, das ihn wieder glücklich machte, auch wenn es nur vorübergehend schien. Er arbeitete, so schwer er konnte, aber schließlich fühlte er sich ganz. Jetzt war unser Gründervater nicht mehr allein, er fand ein Team, das die gleiche Meinung hatte wie er. <3><4>Er fand eine Familie</4></3></2>",
+    "fault": "Es war meine Schuld"
+  },
+  "nixon": {}
+}

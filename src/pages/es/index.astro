@@ -1,28 +1,38 @@
 ---
-import BaseHead from '../../components/BaseHead.astro';
-import Header from '../../components/HeaderES.astro';
-import Footer from '../../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
+import BaseHead from "../../components/BaseHead.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+import i18next, { t, changeLanguage } from "i18next";
+import { Trans } from "astro-i18next/components";
+
+changeLanguage("es");
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang={i18next.language}>
 	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<BaseHead title={t("web.name")} description={t("web.name")} />
 	</head>
-	<body>
-		<Header title={SITE_TITLE} />
+	<body class={i18next.language}>
+		<Header title={t("web.name")} />
 		<main>
-			<center><h1>BIENVENIDO A ANALOGIUM</h1></center>
-			<p>
-				ANALOGIUM es una sociedad comprometida a documentar universos retorcidos, mentes demenciales y criaturas incomprensibles por un humano
-				cualquiera, asi como las almas que han dado su tiempo y salud mental para desarrollarlos.
-			</p>
-			<p>
-				Imagina un mundo donde los Estados Unidos resguarden criaturas extrañas entre sus monumentos; imagina un condado aterrorizado por
-				<i>"Doppelgängers"</i> de sus habitantes; imagina un humano atrapado en una máquina olvidada en el fondo del oceano. Todas estas y más
-				historias documentadas de forma limpia en un solo lugar.
-			</p>
+			<center><h1>{t("home.title")}</h1></center>
+			<Trans i18nKey="home.subtitle">
+				<p>
+					ANALOGIUM is a society committed to document twisted
+					universes, insane minds and creatures incomprehensible to
+					the average human, as well as the souls who gave their time
+					and sanity to develop them.
+				</p>
+				<p>
+					Imagine a world where the United States harbours strange
+					creatures among its monuments; imagine a county terrorised
+					by '<i>Doppelgängers</i>' of its inhabitants; imagine a
+					human trapped in a machine forgotten at the bottom of the
+					ocean. All these and more stories neatly documented in one
+					place.
+				</p>
+			</Trans>
 		</main>
 		<Footer />
 	</body>

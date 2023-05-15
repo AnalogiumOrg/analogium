@@ -1,40 +1,39 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Lang.astro';
-import ModeButton from "../components/ModeButton.astro";
-import Logo from '../components/Logo.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import i18next, { t, changeLanguage } from "i18next";
+import { Trans } from "astro-i18next/components";
+
+changeLanguage("en");
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang={i18next.language}>
 	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<BaseHead title={t("web.name")} description={t("web.name")} />
 	</head>
-	<body>
-		<br><br><br><br><br>
-		<header class="centered">
-			<h1/>
-			<Logo />
-		</header>
-		<style>
-			header {
-				margin: 0em 0 2em;
-			}
-			.h1{
-				margin: 2em 0;
-			}
-			.logo{
-				width: 35rem;
-			}
-			.centered{
-				text-align: center;
-			}
-		</style>
+	<body class={i18next.language}>
+		<Header title={t("web.name")} />
 		<main>
-			<h1 class="centered">WHAT'S YOUR VOICE?</h1>
-			<Header title={SITE_TITLE} />
+			<center><h1>{t("home.title")}</h1></center>
+			<Trans i18nKey="home.subtitle">
+				<p>
+					ANALOGIUM is a society committed to document twisted
+					universes, insane minds and creatures incomprehensible to
+					the average human, as well as the souls who gave their time
+					and sanity to develop them.
+				</p>
+				<p>
+					Imagine a world where the United States harbours strange
+					creatures among its monuments; imagine a county terrorised
+					by '<i>Doppelgängers</i>' of its inhabitants; imagine a
+					human trapped in a machine forgotten at the bottom of the
+					ocean. All these and more stories neatly documented in one
+					place.
+				</p>
+			</Trans>
 		</main>
-		<ModeButton />
+		<Footer />
 	</body>
 </html>
