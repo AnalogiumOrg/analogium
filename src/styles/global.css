@@ -5,18 +5,18 @@
  */
 :root {
 	/* Automatically set */
-	--back: url(../../images/web/eyes_dark.svg) no-repeat center center fixed;
+	--back: url(../../images/web/eyes_dark.svg) no-repeat center fixed;
 	--color: #000;
 	--font_color: #FFF;
 	--link: #C0C0C0;
 	--border: #999;
 	/* Manually set */
-	--back_dark: url(../../images/web/eyes_dark.svg) no-repeat center center fixed;
+	--back_dark: url(../../images/web/eyes_dark.svg) no-repeat center fixed;
 	--color_dark: #000;
 	--font_color_dark: #FFF;
 	--link_dark: #C0C0C0;
 	--border_dark: #999;
-	--back_light: url(../../images/web/eyes_light.svg) no-repeat center center fixed;
+	--back_light: url(../../images/web/eyes_light.svg) no-repeat center fixed;
 	--color_light: #FFF;
 	--font_color_light: #000000;
 	--link_light: #3f3f3f;
