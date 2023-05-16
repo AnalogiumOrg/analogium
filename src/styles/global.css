@@ -128,6 +128,12 @@ body {
 	font-size: 6.1rem;
 }
 
+.hid {
+	text-decoration: none;
+	cursor: default;
+	color: var(--font_color);
+}
+
 h1,
 h2,
 h3,
