@@ -4,13 +4,13 @@ import i18next, { t } from "i18next";
 import { localizePath, localizeUrl } from "astro-i18next";
 
 const lang = i18next.language;
-const logourl = `../../images/web/LogoText_${lang}_light.png`;
+const logourl = `/images/web/LogoText_${lang}_light.png`;
 
 ---
 
 <header lang={i18next.language}>
 	<h1></h1>
-	<img src="../../images/web/Logo_light.svg" class="logo toggleable" />
+	<img src="/images/web/Logo_light.svg" class="logo toggleable" />
 	<h2></h2>
 	<img src={logourl} class="text toggleable" />
 	<h1></h1>
