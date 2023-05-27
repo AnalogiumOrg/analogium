@@ -22,6 +22,33 @@
     "part3": "<0><1>PART III: Among Ashes</1></0><2>It took a long time for our founder to heal, full of empty replacements, insane acts and feelings amplified by his own pain; until in a monument of clarity, the stories that had locked him in his mind for so long resounded in his mind, and he found something that made him happy again, however temporary it seemed. He worked as hardly as he could but at last, he felt whole. Now our founding father was not alone, he managed to find a team that had the same mind as him. <3><4>He Found a Family</4></3></2>",
     "fault": "It Was My Fault"
   },
+  "fnaf": {
+    "title": "FNAF VHS"
+  },
+  "gemini": {
+    "title": "GEMINI HOME ENTERTAINMENT"
+  },
+  "loss": {
+    "title": "GENERATION LOSS"
+  },
+  "local": {
+    "title": "LOCAL58"
+  },
+  "noc": {
+    "title": "NOC+10"
+  },
+  "petscop": {
+    "title": "PETSCOP"
+  },
+  "house": {
+    "title": "THE HOUSE IN THE OCEAN"
+  },
+  "mandela": {
+    "title": "THE MANDELA CATALOGUE"
+  },
+  "mythos": {
+    "title": "THE MONUMENT MYTHOS"
+  },
   "nixon": {
     "title": "THE NIXONVERSE",
     "desc": "GRIEF CAN MAKE YOU A MONSTER",
@@ -36,40 +63,13 @@
     "part6": "<0><1><2><3>Photograph of God<4>By Ed Dwight</3></2></1></0><5><6>Note: The following audio does not feature the voice of Ed Dwight.</6></5><7>Nixon explains in this tape that he managed to escape from the Horned Serpent during the Great Division, and that he ended up on the moon of this new universe. He had doubts about whether people would accept him, so he created three extensions of himself to run a little experiment, which is how The Son, The Knight and The Queen were born. All three went somewhat insane, and Nixon concluded that he couldn't risk entering an unfriendly planet. Besides, he already knew that the Son would become King of the Lunarians, and that if he didn't stop it, he would become exceedingly powerful.</7><8><9>“I am sorry, Mr Dwight. No human was ever meant to hear what I have said.”</9></8><10>Back on our planet, the Queen of the Lunarians tries to talk to the Knight telepathically, trying to convince him to leave Earth and join the kingdom as Prince, to bring a place of harmony, to repair the peace equation, so that he can return to his old self. However, the Knight, amidst all the anger he has, still fulfils the words of Alice Avenue: “At all times, in all places, the Knight can SAVE US”, and unleashes a final attack that would not only destroy him, the Queen and the Lunarians, but also restore human culture within 9 months: <11>ALCATRAZ CHECKMATE</11>.</10><12>However, there is still the King, who has finally become aware of all he has done, and breaks down in tears once again. Grief made him a monster, he will not stop crying, he does not want to live, but in that instant, he mutates again, assimilating a very familiar form to the Knight's helmet, becoming what Nixon feared he would become... <13><14>THE HORNED SERPENT LIVES</14></13>.</12>",
     "part7": "<0><1><2><3><4>THE HORNED SERPENT LIVES</4></3></2></1></0><5>Nixon must act fast, he can't let it all end like his own world ended, so he decided to render the King, the Knight, the Queen, and himself as fiction, so no one will believe in the Crescent King and so he loses his powers. That's how this whole world became a comic book called “The Nixonverse”, with an endearing story made by a certain “Mister Manticore” and beautiful illustrations made by... <6>Ed Dwight?</6></5><7>Compared to Nixon, Ed Dwight was twice the God he was, Nixon was just one of many survivors who erased the past, to run from the present. Ed was everything Nixon wasn't, someone bold, kind and good. He never went to the moon, let alone talked to a God, he is today in our world creating monuments... <8>Ed Dwight preserves the past.</8></7>"
   },
-  "house": {
-    "title": "THE HOUSE IN THE OCEAN"
-  },
-  "mythos": {
-    "title": "THE MONUMENT MYTHOS"
-  },
-  "mandela": {
-    "title": "THE MANDELA CATALOGUE"
-  },
-  "fnaf": {
-    "title": "FNAF VHS"
-  },
-  "loss": {
-    "title": "GENERATION LOSS"
-  },
-  "welcome": {
-    "title": "WELCOME HOME"
-  },
   "walten": {
     "title": "THE WALTEN FILES"
   },
-  "local": {
-    "title": "LOCAL58"
-  },
-  "gemini": {
-    "title": "GEMINI HOME ENTERTAINMENT"
-  },
-  "noc": {
-    "title": "NOC+10"
-  },
-  "petscop": {
-    "title": "PETSCOP"
-  },
   "valle": {
-    "title": "GREEN VALLEY"
+    "title": "VALLE VERDE"
+  },
+  "welcome": {
+    "title": "WELCOME HOME"
   }
 }
