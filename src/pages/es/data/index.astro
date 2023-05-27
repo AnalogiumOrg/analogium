@@ -3,8 +3,6 @@ import BaseHead from "../../../components/BaseHead.astro";
 import Header from "../../../components/Header.astro";
 import Footer from "../../../components/Footer.astro";
 import i18next, { t, changeLanguage } from "i18next";
-import { Trans } from "astro-i18next/components";
-import { getCollection } from "astro:content";
 
 changeLanguage("es");
 ---
@@ -33,7 +31,7 @@ changeLanguage("es");
 		<main>
 			<section>
 				<ul class="data">
-					<li>
+					<!--<li>
 						•     <a href={"../data/fnaf-vhs"}>{t("fnaf.title")}</a>
 					</li>
 					<li>
@@ -41,6 +39,9 @@ changeLanguage("es");
 					</li>
 					<li>
 						•     <a href={"../data/generation-loss"}>{t("loss.title")}</a>
+					</li>
+					<li>
+						•     <a href={"../data/valle-verde"}>{t("valle.title")}</a>
 					</li>
 					<li>
 						•     <a href={"../data/local58"}>{t("local.title")}</a>
@@ -59,19 +60,16 @@ changeLanguage("es");
 					</li>
 					<li>
 						•     <a href={"../data/monument-mythos"}>{t("mythos.title")}</a>
-					</li>
+					</li>-->
 					<li>
 						•     <a href={"../data/nixonverse"}>{t("nixon.title")}</a>
 					</li>
-					<li>
+					<!--<li>
 						•     <a href={"../data/walten-files"}>{t("walten.title")}</a>
 					</li>
 					<li>
-						•     <a href={"../data/valle-verde"}>{t("valle.title")}</a>
-					</li>
-					<li>
 						•     <a href={"../data/welcome-home"}>{t("welcome.title")}</a>
-					</li>
+					</li>-->
 				</ul>
 			</section>
 		</main>
