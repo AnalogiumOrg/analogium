@@ -202,6 +202,10 @@ content {
 
 table {
 	width: 100%;
+	align-items: center;
+	left: -30%;
+	float: left;
+	position: relative
 }
 
 img {

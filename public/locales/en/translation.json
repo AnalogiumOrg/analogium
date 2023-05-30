@@ -24,10 +24,18 @@
   },
   "chrono": {
     "chrono": "CHRONOLOGY",
-    "season": "SEASON",
-    "act": "ACT",
-    "part": "PART"
+    "s1": "SEASON 1",
+    "s2": "SEASON 2",
+    "s3": "SEASON 3",
+    "a1": "ACT I",
+    "a2": "ACT II",
+    "p1": "PART 1",
+    "p2": "PART 2",
+    "p3": "PART 3",
+    "p4": "PART 4",
+    "p5": "PART 5"
   },
+
   "fnaf": {
     "title": "FNAF VHS",
     "desc": "TOMORROW IS ANOTHER DAY",
@@ -71,7 +79,8 @@
   "mythos": {
     "title": "THE MONUMENT MYTHOS",
     "desc": "NO ONE IS GONE FOREVER",
-    "intro": ""
+    "intro": "<0>The Monument Mythos is a tale developed by MISTER MANTICORE (Alex Casanas) via YouTube. The series have 3 seasons and a Spin-Off known as <1>THE NIXONVERSE</1>.</0>",
+    "synop": "<0>SYNOPSIS</0><1>The series chronicles the strange happenings that America doesn't usually talk about, or do you think an entire government would chatter about a monster inside the Statue of Liberty like it's nothing?<2/>Some similar things happen all over the country (and somewhere in Egypt), like an entire island that actively sprawls, a parallel dimension, an “angel” inside the Air-Force One and a crystal as sharp as it is mysterious.</1>"
   },
   "nixon": {
     "title": "THE NIXONVERSE",

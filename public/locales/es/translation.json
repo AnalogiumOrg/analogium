@@ -24,10 +24,18 @@
   },
   "chrono": {
     "chrono": "CRONOLOGIA",
-    "season": "TEMPORADA",
-    "act": "ACTO",
-    "part": "PARTE"
+    "s1": "TEMPORADA 1",
+    "s2": "TEMPORADA 2",
+    "s3": "TEMPORADA 3",
+    "a1": "ACTO I",
+    "a2": "ACTO II",
+    "p1": "PARTE 1",
+    "p2": "PARTE 2",
+    "p3": "PARTE 3",
+    "p4": "PARTE 4",
+    "p5": "PARTE 5"
   },
+  
   "fnaf": {
     "title": "FNAF VHS"
   },

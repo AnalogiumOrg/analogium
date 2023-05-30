@@ -21,12 +21,21 @@
     "part2": "<0><1>PARTIE II : De la Béatitude à la Sensation de Demi-Mort</1></0><2>'<3>Dame</3>' était tout pour notre créateur, elle était la seule personne depuis longtemps à comprendre et à guérir les blessures mentales du créateur. Il l'a lui-même décrite comme'<4>un ange déchu</4>'...  Mais malheureusement, rien de bon ne peut durer pour personne, et un jour 'Dame' s'est évaporée de la vie de notre père. Il ne souriait plus, ne voyait plus, ne bougeait plus, il était là, sans vie.</2><5>Personne ne sait exactement ce qui a brisé le conte de fées de notre fondateur, pas même ses proches ; la seule chose qu'il s'autorise à dire, c'est qu'il n'y a pas d'autre solution: <6><7><8>C'était Ma Faute</8></7></6></5>",
     "part3": "<0><1>PARTIE III : Parmi les cendres</1></0><2>Il a fallu beaucoup de temps à notre fondateur pour guérir, plein de remplacements vides, d'actes et de sentiments insensés amplifiés par sa propre douleur ; jusqu'à ce que, dans un monument de clarté, les histoires qui l'avaient enfermé dans son esprit pendant si longtemps résonnent dans son esprit, et qu'il trouve quelque chose qui le rende heureux à nouveau, même si cela semble temporaire. Il travailla aussi dur qu'il le put, mais enfin, il se sentit entier. Notre père fondateur n'était pas seul, il a réussi à trouver une équipe qui avait le même esprit que lui. <3><4>Il a Trouvé une Famille</4></3></2>",
     "fault": "C'était Ma Faute"
-  },"chrono": {
-    "chrono": "CHRONOLOGIE",
-    "season": "SEASON",
-    "act": "ACT",
-    "part": "PART"
   },
+  "chrono": {
+    "chrono": "CHRONOLOGIE",
+    "s1": "SAISON 1",
+    "s2": "SAISON 2",
+    "s3": "SAISON 3",
+    "a1": "ACT I",
+    "a2": "ACT II",
+    "p1": "PARTIE 1",
+    "p2": "PARTIE 2",
+    "p3": "PARTIE 3",
+    "p4": "PARTIE 4",
+    "p5": "PARTIE 5"
+  },
+
   "fnaf": {
     "title": "FNAF VHS"
   },
