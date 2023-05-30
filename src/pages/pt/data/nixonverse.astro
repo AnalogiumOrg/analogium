@@ -1,6 +1,6 @@
 ---
-import i18next, { t, changeLanguage } from "i18next";
-import { localizePath, localizeUrl } from "astro-i18next";
+import { t, changeLanguage } from "i18next";
+import { localizePath } from "astro-i18next";
 import { Trans } from "astro-i18next/components";
 import Layout from "../../../layouts/BlogPost.astro";
 
@@ -31,49 +31,43 @@ changeLanguage("pt");
 			obsessed with power.
 		</p>
 	</Trans>
-	<Trans i18nKey="nixon.chrono">
+	<h1>{t("chrono.chrono")}</h1>
 		<h1>CHRONOLOGY</h1>
 		<ol>
 			<li>
-				<a href="https://youtu.be/VdcCQmMEKtk"
-					>THE LAST SON OF ALCATRAZ</a
-				>
+				<a href="https://youtu.be/VdcCQmMEKtk" target="_blank">THE LAST SON OF ALCATRAZ</a>
 			</li>
 			<li>
-				<a href="https://youtu.be/p18oxjNauM8"> THE D-DAY KNIGHT</a>
+				<a href="https://youtu.be/p18oxjNauM8" target="_blank"> THE D-DAY KNIGHT</a>
 			</li>
 			<li>
-				<a href="https://youtu.be/oWyklL0biuo"
-					>THE QUEEN OF THE LUNARIANS</a
-				>
-			</li>
-			<li><a href="https://youtu.be/DLWmWR8HrdI">JESUS IN VIETNAM</a></li>
-			<li>
-				<a href="https://youtu.be/vyxYFnxd7Q8"
-					>THE MISSING EYE OF JESUS CHRIST</a
-				>
+				<a href="https://youtu.be/oWyklL0biuo" target="_blank">THE QUEEN OF THE LUNARIANS</a>
 			</li>
 			<li>
-				<a href="https://youtu.be/D86OD5fa_aY">THE HOUSE IN THE OCEAN</a
-				>
+				<a href="https://youtu.be/DLWmWR8HrdI" target="_blank">JESUS IN VIETNAM</a>
 			</li>
 			<li>
-				<a href="https://youtu.be/IeRZ8USiRKI"> SEA OF THE LAST SON</a>
+				<a href="https://youtu.be/vyxYFnxd7Q8" target="_blank">THE MISSING EYE OF JESUS CHRIST</a>
 			</li>
 			<li>
-				<a href="https://youtu.be/gsXYUfw_09I"
-					>THE D-DAY KNIGHT RETURNS</a
-				>
+				<a href="https://youtu.be/D86OD5fa_aY" target="_blank">THE HOUSE IN THE OCEAN</a>
 			</li>
 			<li>
-				<a href="https://youtu.be/zsZwjmOe2pc"> D-DAY KNIGHTFALL</a>
+				<a href="https://youtu.be/IeRZ8USiRKI" target="_blank"> SEA OF THE LAST SON</a>
 			</li>
-			<li><a href="https://youtu.be/nYKzDV8T58A"> NIXON IS GOD</a></li>
 			<li>
-				<a href="https://youtu.be/Nmi3ENEOMXQ">THE ED DWIGHT PARADOX</a>
+				<a href="https://youtu.be/gsXYUfw_09I" target="_blank">THE D-DAY KNIGHT RETURNS</a>
+			</li>
+			<li>
+				<a href="https://youtu.be/zsZwjmOe2pc" target="_blank"> D-DAY KNIGHTFALL</a>
+			</li>
+			<li>
+				<a href="https://youtu.be/nYKzDV8T58A" target="_blank"> NIXON IS GOD</a>
+			</li>
+			<li>
+				<a href="https://youtu.be/Nmi3ENEOMXQ" target="_blank">THE ED DWIGHT PARADOX</a>
 			</li>
 		</ol>
-	</Trans>
 
 	<Trans i18nKey="nixon.part1">
 		<h1>INTERPRETATION</h1>
