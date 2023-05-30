@@ -3,7 +3,7 @@
 
 <script>
 	console.log("hello background");
-	import { Application, Container, Texture, Sprite } from "pixi.js";
+	import { Application, Container, Texture, Sprite, RAD_TO_DEG } from "pixi.js";
 	// Black background by default
 	const app = new Application({
 		backgroundAlpha: 0,
@@ -24,6 +24,7 @@
 		Texture.from("/images/web/eye2_dark.svg"),
 		Texture.from("/images/web/eye3_dark.svg"),
 	];
+	const texRotOffset = [-20, -20, -10];
 	const originalRatios = eyeTextures.map((t) => t.width / t.height);
 
 	// Distribute eyes deterministically
@@ -73,17 +74,28 @@
 				eye.height = thiseyeSize;
 				eye.x = calcEyePos(i, j).x;
 				eye.y = calcEyePos(i, j).y;
-				// Rotate towards the center assuming the eye is looking slightly down (10 degrees)
-				eye.angle =
-					Math.PI / 2 -
-					Math.atan2(
-						eye.y - window.innerHeight / 2,
-						eye.x - window.innerWidth / 2
-					) 
-					- 20;
+				// Rotate towards the center assuming the eye is looking slightly down (depends on texture)
+				// eye.angle is in degrees
+
 				if (j > distMtrx[i].length / 2) {
 					eye.scale.x *= -1;
-					eye.angle *= -1;
+					// Reverse y axis
+					eye.angle =
+						RAD_TO_DEG *
+							Math.atan2(
+								eye.y - window.innerHeight / 2,
+								eye.x - window.innerWidth / 2
+							) +
+						texRotOffset[distMtrx[i][j] - 1];
+					eye.rotation += Math.PI;
+				} else {
+					eye.angle =
+						RAD_TO_DEG *
+							Math.atan2(
+								eye.y - window.innerHeight / 2,
+								eye.x - window.innerWidth / 2
+							) +
+						texRotOffset[distMtrx[i][j] - 1];
 				}
 				container.addChild(eye);
 				totalI++;
