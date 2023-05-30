@@ -1,0 +1,100 @@
+---
+---
+
+<script>
+	console.log("hello background");
+	import { Application, Container, Texture, Sprite } from "pixi.js";
+	// Black background by default
+	const app = new Application({
+		backgroundAlpha: 0,
+		width: window.innerWidth,
+		height: window.innerHeight,
+		antialias: true,
+		resolution: 1,
+		resizeTo: window,
+	});
+	// @ts-ignore
+	document.body.append(app.view);
+
+	const container = new Container();
+	app.stage.addChild(container);
+
+	const eyeTextures = [
+		Texture.from("/images/web/eye1_dark.svg"),
+		Texture.from("/images/web/eye2_dark.svg"),
+		Texture.from("/images/web/eye3_dark.svg"),
+	];
+	const originalRatios = eyeTextures.map((t) => t.width / t.height);
+
+	// Distribute eyes deterministically
+	// Flip some of them horizontally if at the right side of the screen
+	// Keep some space around the edges
+	// Make the eyes bigger on bigger screens (logarithmic scale)
+	const eyeSize = 50 * Math.log(window.innerWidth / 100);
+
+	// 0 Means no eye
+	// 1 Means eye with texture 1
+	// 2 Means eye with texture 2
+	// And so on
+	const distMtrx = [
+		[0],
+		[0, 0, 2, 0, 0, 0, 0, 0, 0, 0],
+		[0, 0, 0, 0, 0, 1],
+		[1, 0, 0, 0, 0, 0],
+		[0, 0, 0, 0, 0, 2],
+		[0, 0, 3, 0, 0, 0, 0, 0, 0],
+		[0, 2, 0, 0, 0, 0, 0, 0, 0],
+		[],
+		[],
+		[1, 0, 0, 0, 0, 2],
+		[1, 0, 0, 0, 0, 2],
+		[1, 0, 0, 0, 0, 2],
+		[1, 0, 0, 0, 0, 2],
+		[0],
+	];
+	// This multiplies to any existing eye's size, counts for any eye with texture
+	// Defaults to 1 if not specified
+	const sizeMultArr = [0.7, 1];
+	const calcEyePos = (i: number, j: number) => {
+		return {
+			x: (window.innerWidth / (distMtrx[i].length + 1)) * (j + 1),
+			y: (window.innerHeight / (distMtrx.length + 1)) * (i + 1),
+		};
+	};
+	const calcMtrxPositions = () => {
+		let totalI = 0;
+		for (let i = 0; i < distMtrx.length; i++) {
+			for (let j = 0; j < distMtrx[i].length; j++) {
+				if (distMtrx[i][j] === 0) continue;
+				const eye = new Sprite(eyeTextures[distMtrx[i][j] - 1]);
+				const thiseyeSize = eyeSize * (sizeMultArr[totalI] || 1);
+				eye.anchor.set(0.5);
+				eye.width = thiseyeSize * originalRatios[distMtrx[i][j] - 1];
+				eye.height = thiseyeSize;
+				eye.x = calcEyePos(i, j).x;
+				eye.y = calcEyePos(i, j).y;
+				// Rotate towards the center assuming the eye is looking slightly down (10 degrees)
+				eye.angle =
+					Math.PI / 2 -
+					Math.atan2(
+						eye.y - window.innerHeight / 2,
+						eye.x - window.innerWidth / 2
+					) 
+					- 20;
+				if (j > distMtrx[i].length / 2) {
+					eye.scale.x *= -1;
+					eye.angle *= -1;
+				}
+				container.addChild(eye);
+				totalI++;
+			}
+		}
+	};
+	calcMtrxPositions();
+	// Keep Window size in sync
+	window.addEventListener("resize", () => {
+		console.log("resize");
+		container.removeChildren();
+		calcMtrxPositions();
+	});
+</script>

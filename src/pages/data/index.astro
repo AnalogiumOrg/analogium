@@ -3,6 +3,7 @@ import BaseHead from "../../components/BaseHead.astro";
 import Header from "../../components/Header.astro";
 import Footer from "../../components/Footer.astro";
 import i18next, { t, changeLanguage } from "i18next";
+import Background from "../../components/Background.astro";
 
 changeLanguage("en");
 ---
@@ -28,6 +29,7 @@ changeLanguage("en");
 	</head>
 	<body class={i18next.language}>
 		<Header />
+		<Background />
 		<main>
 			<section>
 				<ul class="data">
