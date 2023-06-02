@@ -232,6 +232,7 @@ pre>code {
 }
 
 blockquote {
+	font-family: 'Elementa';
 	border: 1px solid var(--border);
 	color: var(--font_color);
 	padding: 2px 0px 2px 20px;
