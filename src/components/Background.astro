@@ -86,7 +86,12 @@
 				);
 				// Assign angle to eye
 				eye.angle = (angle * RAD_TO_DEG) + texRotOffset[distMtrx[i][j] - 1];
-
+				if (eye.x > window.innerWidth / 2) {
+					eye.scale.x = -1;
+				}
+				else{
+					eye.angle += 180;
+				}
 				container.addChild(eye);
 				totalI++;
 			}
