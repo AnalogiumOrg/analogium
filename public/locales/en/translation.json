@@ -38,53 +38,53 @@
 
   "fnaf": {
     "title": "FNAF VHS",
-    "desc": "TOMORROW IS ANOTHER DAY",
+    "desc": "“TOMORROW IS ANOTHER DAY”",
     "intro": ""
   },
   "gemini": {
     "title": "GEMINI HOME ENTERTAINMENT",
-    "desc": "WE'RE NOT GOING ANYWHERE",
+    "desc": "“WE'RE NOT GOING ANYWHERE”",
     "intro": ""
   },
   "loss": {
     "title": "GENERATION LOSS",
-    "desc": "NO ONE IS GONE FOREVER",
+    "desc": "“NO ONE IS GONE FOREVER”",
     "intro": ""
   },
   "local": {
     "title": "LOCAL58",
-    "desc": "WE BEGIN OUR BROADCAST DAY",
+    "desc": "“WE BEGIN OUR BROADCAST DAY”",
     "intro": ""
   },
   "noc": {
     "title": "NOC+10",
-    "desc": "L I O U Y",
+    "desc": "“L I O U Y”",
     "intro": ""
   },
   "petscop": {
     "title": "PETSCOP",
-    "desc": "BRING THEM HOME!",
+    "desc": "“BRING THEM HOME!”",
     "intro": ""
   },
   "house": {
     "title": "THE HOUSE IN THE OCEAN",
-    "desc": "YOU ARE THE ONLY HOUSE IN THE OCEAN",
+    "desc": "“THERE IS NO HOUSE IN THE OCEAN”",
     "intro": ""
   },
   "mandela": {
     "title": "THE MANDELA CATALOGUE",
-    "desc": "I AM INSIDE YOUR HOME",
+    "desc": "“I AM INSIDE YOUR HOME”",
     "intro": ""
   },
   "mythos": {
     "title": "THE MONUMENT MYTHOS",
-    "desc": "NO ONE IS GONE FOREVER",
+    "desc": "“NO ONE IS GONE FOREVER”",
     "intro": "<0>The Monument Mythos is a tale developed by MISTER MANTICORE (Alex Casanas) via YouTube. The series have 3 seasons and a Spin-Off known as <1>THE NIXONVERSE</1>.</0>",
-    "synop": "<0>SYNOPSIS</0><1>The series chronicles the strange happenings that America doesn't usually talk about, or do you think an entire government would chatter about a monster inside the Statue of Liberty like it's nothing?<2/>Some similar things happen all over the country (and somewhere in Egypt), like an entire island that actively sprawls, a parallel dimension, an “angel” inside the Air-Force One and a crystal as sharp as it is mysterious.</1>"
+    "synop": "<0>SYNOPSIS</0><1>The series chronicles the strange happenings that America doesn't usually talk about, or do you think an entire government would chatter about a monster inside the Statue of Liberty like it's nothing?<2>Some similar things happen all over the country (and somewhere in Egypt), like an entire island that actively sprawls, a parallel dimension, an “angel” inside the Air-Force One and a crystal as sharp as it is mysterious.</1>"
   },
   "nixon": {
     "title": "THE NIXONVERSE",
-    "desc": "GRIEF CAN MAKE YOU A MONSTER",
+    "desc": "“GRIEF CAN MAKE YOU A MONSTER”",
     "intro": "<0>THE NIXONVERSE is a tale developed by MISTER MANTICORE (Alex Casanas) via YouTube. The series is a Spin-Off of his main story, <1>THE MONUMENT MYTHOS</1>.</0>",
     "synop": "<0>SYNOPSIS</0><1>The series take place after the events of the second season of MONUMENT MYTHOS, in a different universe with a familiar form; the story connects four entities very similar and powerful: the Son, the Knight, the Queen and... <2>God</2>. With these entities, there are some eyes that glow more than others, those being from Alice Avenue, Ed Dwight, and the egocentric self of the United States, always obsessed with power.</1>",
     "part1": "<0>INTERPRETATION</0><1><2><3>Faster than an airplane! More powerful than a locomotive! Impervious to bullets! Up in the sky, look! It's a bird! It's a plane! It's--</3></2></1><4>Our story begins with <5>The Last Son</5>, a real superhero who is always there to save us all, and yet some people are in constant fear that he will rebel against us and conquer us. It's worth noting that his physical appearance resembles Richard Nixon too closely when he was young.</4><6>Actually, he is not our only hero, there is another one baptized <7>The D-Day Knight</7>, the one who saved the US Army on the battlefield that day in 1944. He gave us all hope and faith from his intervention in Normandy, and no one more than Alice Avenue had great respect and affection for him. During D-Day, the Knight lost something that will prove very interesting later on, he lost his helmet.</6>",
@@ -97,16 +97,16 @@
   },
   "walten": {
     "title": "THE WALTEN FILES",
-    "desc": "HE THOUGHT I WAS HER",
+    "desc": "“HE THOUGHT I WAS HER”",
     "intro": ""
   },
   "valle": {
     "title": "VALLE VERDE",
-    "desc": "TURN ON THE CONSOLE ON MARCH 22, 1997",
+    "desc": "“TURN ON THE CONSOLE ON MARCH 22, 1997”",
     "intro": ""
   },
   "welcome": {
     "title": "WELCOME HOME",
-    "desc": "HELLO, NEIGHBOR!"
+    "desc": "“HELLO, NEIGHBOR!”"
   }
 }
