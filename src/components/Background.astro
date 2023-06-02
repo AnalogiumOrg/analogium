@@ -24,7 +24,7 @@
 		Texture.from("/images/web/eye2_dark.svg"),
 		Texture.from("/images/web/eye3_dark.svg"),
 	];
-	const texRotOffset = [-70, -30, -50];
+	const texRotOffset = [0, 0, 0];
 	const originalRatios = eyeTextures.map((t) => t.width / t.height);
 	const randEyeTex = () => {
 		return Math.ceil(( Math.random() + 0.2 ) * eyeTextures.length);
@@ -76,29 +76,17 @@
 				eye.x = calcEyePos(i, j).x;
 				eye.y = calcEyePos(i, j).y;
 				eye.alpha = opacityMod;
-				// Rotate towards the center assuming the eye is looking slightly down (depends on texture)
+				// Rotate towards the center
 				// eye.angle is in degrees
 
-				if (j > distMtrx[i].length / 2) {
-					eye.scale.x *= -1;
-					// Reverse y axis
-					eye.angle =
-						RAD_TO_DEG *
-							Math.atan2(
-								eye.y - window.innerHeight,
-								eye.x - window.innerWidth 
-							) +
-						texRotOffset[distMtrx[i][j] - 1];
-					eye.rotation += Math.PI;
-				} else {
-					eye.angle =
-						RAD_TO_DEG *
-							Math.atan2(
-								eye.y + window.innerHeight,
-								eye.x + window.innerWidth
-							) +
-						texRotOffset[distMtrx[i][j] - 1];
-				}
+				// Get angle from center
+				const angle = Math.atan2(
+					eye.y - window.innerHeight / 2,
+					eye.x - window.innerWidth / 2
+				);
+				// Assign angle to eye
+				eye.angle = (angle * RAD_TO_DEG) + texRotOffset[distMtrx[i][j] - 1];
+
 				container.addChild(eye);
 				totalI++;
 			}
