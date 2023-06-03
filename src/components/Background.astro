@@ -186,7 +186,7 @@
 					currentBehavior: initialBehavior,
 					currentTicks: 0,
 					maxTicks: 0,
-					maxDistance: irisSize * 0.5,
+					maxDistance: irisSize * 0.6,
 				};
 				eyeData.push(eye);
 				irisData.push(iris);
@@ -290,15 +290,14 @@
 		return ((value - inMin) * (outMax - outMin)) / (inMax - inMin) + outMin;
 	};
 	const getNewBehavior = () => {
-		const rand = Math.random();
-		if (rand < 0.5) {
-			return "center";
-		} else {
-			return "random";
-		}
+		const options = ["center", "random"];
+		return options[Math.floor(Math.random() * options.length)];
 	};
 	const getNewDirection = () => {
 		return Math.floor(Math.random() * 360);
+	};
+	const calcDistance = (x1: number, y1: number, x2: number, y2: number) => {
+		return Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
 	};
 	const calcMovementOffset = (iris: IrisData) => {
 		switch (iris.currentBehavior) {
@@ -336,6 +335,15 @@
 				const y = Math.sin(rad) * currDistance;
 				return { x, y };
 			}
+			case "follow":{
+				const mousePos = app.renderer.events.pointer.global;
+				const dx = mousePos.x - iris.initialPosition.x;
+				const dy = mousePos.y - iris.initialPosition.y;
+				const rad = Math.atan2(dy, dx);
+				const x = Math.cos(rad) * iris.maxDistance;
+				const y = Math.sin(rad) * iris.maxDistance;
+				return { x, y };
+			}
 			default:
 				return {
 					x: 0,
@@ -366,12 +374,14 @@
 				iris.currentBehavior = getNewBehavior();
 				if (iris.currentBehavior === "random") {
 					iris.movementAngle = getNewDirection();
-					iris.maxTicks = Math.random() * 300 + 150;
+					iris.maxTicks = Math.floor(Math.max(
+						200,
+						Math.random() * 600 + 50
+					));
 				}
 				else{
-					iris.maxTicks = Math.random() * 50 + 100;
+					iris.maxTicks = Math.floor(Math.random() * 10);
 				}
-
 			}
 			iris.currentTicks++;
 		}
