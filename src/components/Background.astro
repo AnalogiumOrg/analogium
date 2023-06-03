@@ -309,17 +309,29 @@
 				};
 			case "random": {
 				// Calculate position linearly based on the angle, and the current ticks
-				// Half maxtime moving towards max distance using angle, half moving back
+				// Half maxtime moving towards max distance, half moving back
+				// Then use angle to calculate x and y offsets
 				const cTicks = iris.currentTicks;
 				const mTicks = iris.maxTicks;
 				const rad = iris.movementAngle * DEG_TO_RAD;
-				const currDistance = mapInterpolate(
-					cTicks,
-					mTicks / 2,
-					mTicks,
-					0,
-					iris.maxDistance
-				);
+				let currDistance = 0;
+				if (cTicks < mTicks / 2) {
+					currDistance = mapInterpolate(
+						cTicks,
+						0,
+						mTicks / 2,
+						0,
+						iris.maxDistance
+					);
+				} else {
+					currDistance = mapInterpolate(
+						cTicks,
+						mTicks / 2,
+						mTicks,
+						iris.maxDistance,
+						0
+					);
+				}
 				const x = Math.cos(rad) * currDistance;
 				const y = Math.sin(rad) * currDistance;
 				return { x, y };
@@ -351,11 +363,15 @@
 			);
 			if (iris.currentTicks >= iris.maxTicks) {
 				iris.currentTicks = 0;
-				iris.maxTicks = Math.random() * 200 + 100;
 				iris.currentBehavior = getNewBehavior();
 				if (iris.currentBehavior === "random") {
 					iris.movementAngle = getNewDirection();
+					iris.maxTicks = Math.random() * 300 + 150;
 				}
+				else{
+					iris.maxTicks = Math.random() * 50 + 100;
+				}
+
 			}
 			iris.currentTicks++;
 		}
