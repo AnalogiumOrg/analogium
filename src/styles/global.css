@@ -248,8 +248,8 @@ blockquote {
 button {
 	font-family: 'Duke';
 	src: url(/fonts/duke_thin.ttf);
-	background-color: var(--color);
-	font-size: 15px;
+	background-color: rgba(0, 0, 0, 0);
+	font-size: 15.9px;
 	color: var(--link);
 	border: none;
 	cursor: pointer;
