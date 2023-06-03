@@ -2,8 +2,14 @@
 ---
 
 <script>
-	console.log("hello background");
-	import { Application, Container, Texture, Sprite, RAD_TO_DEG } from "pixi.js";
+	import {
+		Assets,
+		Application,
+		Container,
+		Sprite,
+		RAD_TO_DEG,
+	} from "pixi.js";
+
 	// Black background by default
 	const app = new Application({
 		backgroundAlpha: 0,
@@ -19,23 +25,41 @@
 	const container = new Container();
 	app.stage.addChild(container);
 
-	const eyeTextures = [
-		Texture.from("/images/web/eye1_dark.svg"),
-		Texture.from("/images/web/eye2_dark.svg"),
-		Texture.from("/images/web/eye3_dark.svg"),
-	];
-	const texRotOffset = [0, 0, 0];
-	const originalRatios = eyeTextures.map((t) => t.width / t.height);
-	const randEyeTex = () => {
-		return Math.ceil(( Math.random() + 0.2 ) * eyeTextures.length);
+	const eyeTextures = {
+		dark: [
+			await Assets.load("/images/web/eye1_dark.svg"),
+			await Assets.load("/images/web/eye2_dark.svg"),
+			await Assets.load("/images/web/eye3_dark.svg"),
+		],
+		light: [
+			await Assets.load("/images/web/eye1_light.svg"),
+			await Assets.load("/images/web/eye2_light.svg"),
+			await Assets.load("/images/web/eye3_light.svg"),
+		],
 	};
+	const irisTextures = {
+		dark: [
+			await Assets.load("/images/web/iris1_dark.svg"),
+			await Assets.load("/images/web/iris2_dark.svg"),
+			await Assets.load("/images/web/iris3_dark.svg"),
+		],
+		light: [
+			await Assets.load("/images/web/iris1_light.svg"),
+			await Assets.load("/images/web/iris2_light.svg"),
+			await Assets.load("/images/web/iris3_light.svg"),
+		],
+	};
+	const randEyeTex = () => {
+		return Math.ceil((Math.random() + 0.2) * eyeTextures.dark.length);
+	};
+	const origEyeRat = eyeTextures.dark.map(
+		(t) => t.orig.width / t.orig.height
+	);
+	const origIrisRat = irisTextures.dark.map(
+		(t) => t.orig.width / t.orig.height
+	);
 
-	// Distribute eyes deterministically
-	// Flip some of them horizontally if at the right side of the screen
-	// Keep some space around the edges
-	// Make the eyes bigger on bigger screens (logarithmic scale)
-	
-
+	// Eye distribution matrix
 	// 0 Means no eye
 	// 1 Means eye with texture 1
 	// 2 Means eye with texture 2
@@ -44,7 +68,20 @@
 		[randEyeTex(), 0, randEyeTex(), 0, 0, 0, randEyeTex(), 0, randEyeTex()],
 		[0, 0, randEyeTex(), 0, 0, 0, 0, 0, 0, 0, 0, randEyeTex(), 0, 0],
 		[0],
-		[randEyeTex(), 0, 0, randEyeTex(), 0, 0, 0, 0, randEyeTex(), 0, 0, randEyeTex()],
+		[
+			randEyeTex(),
+			0,
+			0,
+			randEyeTex(),
+			0,
+			0,
+			0,
+			0,
+			randEyeTex(),
+			0,
+			0,
+			randEyeTex(),
+		],
 		[0],
 		[0, 0, randEyeTex(), 0, 0, 0, 0, 0, 0, 0, 0, randEyeTex(), 0, 0],
 		[randEyeTex(), 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, randEyeTex()],
@@ -60,48 +97,172 @@
 			y: (window.innerHeight / (distMtrx.length + 1)) * (i + 1),
 		};
 	};
-	const calcMtrxPositions = () => {
-		const eyeSize = 50 * Math.log(window.innerWidth / 100);
-		// Depending on size, alter opacity to a lower value when smaller
-		const opacityMod = Math.min(1, Math.max(0.5, eyeSize / 150));
-		let totalI = 0;
+	const calcEyeSize = () => {
+		return 40 * Math.log(window.innerWidth / 100);
+	};
+	const calcIrisSize = () => {
+		return calcEyeSize() * 0.35
+	};
+	const calcOpacity = () => {
+		return Math.min(1, Math.max(0.5, calcEyeSize() / 150));
+	};
+	const eyeData: {
+		// Totally static
+		index: { i: number; j: number };
+		// Mostly static
+		texNum: number;
+		position: { x: number; y: number };
+		baseSize: { x: number; y: number };
+		alpha: number;
+		// Pretty dynamic
+		angle: number;
+		darkMode: boolean;
+		scale: number;
+	}[] = [];
+	const irisData: {
+		// Totally static
+		index: { i: number; j: number };
+		// Mostly static
+		texNum: number;
+		initialPosition: { x: number; y: number };
+		baseSize: { x: number; y: number };
+		alpha: number;
+		// Pretty dynamic
+		movementAngle: number;
+		movementOffset: number;
+		darkMode: boolean;
+		scale: number;
+	}[] = [];
+	const generateEntities = () => {
 		for (let i = 0; i < distMtrx.length; i++) {
 			for (let j = 0; j < distMtrx[i].length; j++) {
 				if (distMtrx[i][j] === 0) continue;
-				const eye = new Sprite(eyeTextures[distMtrx[i][j] - 1]);
-				const thiseyeSize = eyeSize //* (1 || 1);
-				eye.anchor.set(0.5);
-				eye.width = thiseyeSize * originalRatios[distMtrx[i][j] - 1];
-				eye.height = thiseyeSize;
-				eye.x = calcEyePos(i, j).x;
-				eye.y = calcEyePos(i, j).y;
-				eye.alpha = opacityMod;
-				// Rotate towards the center
-				// eye.angle is in degrees
-
-				// Get angle from center
-				const angle = Math.atan2(
-					eye.y - window.innerHeight / 2,
-					eye.x - window.innerWidth / 2
-				);
-				// Assign angle to eye
-				eye.angle = (angle * RAD_TO_DEG) + texRotOffset[distMtrx[i][j] - 1];
-				if (eye.x > window.innerWidth / 2) {
-					eye.scale.x = -1;
-				}
-				else{
-					eye.angle += 180;
-				}
-				container.addChild(eye);
-				totalI++;
+				const eyeSize = calcEyeSize();
+				const irisSize = calcIrisSize();
+				const opacityMod = calcOpacity();
+				const eye = {
+					index: { i, j },
+					texNum: distMtrx[i][j],
+					position: calcEyePos(i, j),
+					baseSize: {
+						x: eyeSize,
+						y: eyeSize * origEyeRat[distMtrx[i][j] - 1],
+					},
+					widthToHeightRatio: origEyeRat[distMtrx[i][j] - 1],
+					alpha: opacityMod,
+					// Initial values
+					angle: 0,
+					darkMode: true,
+					scale: 1,
+				};
+				const iris = {
+					index: { i, j },
+					texNum: distMtrx[i][j],
+					initialPosition: calcEyePos(i, j),
+					baseSize: {
+						x: irisSize,
+						y: irisSize
+					},
+					widthToHeightRatio: origIrisRat[distMtrx[i][j] - 1],
+					alpha: opacityMod,
+					// Initial values
+					movementAngle: Math.random() * Math.PI * 2,
+					movementOffset: Math.random() * 0.5,
+					darkMode: true,
+					scale: 1,
+				};
+				eyeData.push(eye);
+				irisData.push(iris);
 			}
 		}
 	};
-	calcMtrxPositions();
+	const updatePositions = () => {
+		for (let i = 0; i < eyeData.length; i++) {
+			eyeData[i].position = calcEyePos(
+				eyeData[i].index.i,
+				eyeData[i].index.j
+			);
+			irisData[i].initialPosition = calcEyePos(
+				irisData[i].index.i,
+				irisData[i].index.j
+			);
+		}
+	};
+	const updateRotation = () => {
+		for (let i = 0; i < eyeData.length; i++) {
+			// Rotate eyes and irises to face center
+			const angleRadians = Math.atan2(
+				eyeData[i].position.y - window.innerHeight / 2,
+				eyeData[i].position.x - window.innerWidth / 2
+			);
+			eyeData[i].angle = angleRadians * RAD_TO_DEG;
+			if (eyeData[i].position.x > window.innerWidth / 2) {
+				eyeData[i].scale = -1;
+			} else {
+				eyeData[i].scale = 1;
+				eyeData[i].angle += 180;
+			}
+			// Set height and width of eyes and irises
+			eyeData[i].baseSize.x = calcEyeSize() * origEyeRat[eyeData[i].texNum - 1];
+			eyeData[i].baseSize.y = calcEyeSize();
+
+			irisData[i].baseSize.x = calcIrisSize() * origIrisRat[irisData[i].texNum - 1];
+			irisData[i].baseSize.y = calcIrisSize();
+
+			// Set opacity of eyes and irises
+			eyeData[i].alpha = calcOpacity();
+			irisData[i].alpha = calcOpacity();
+		}
+	};
+	const draw = () => {
+		container.removeChildren();
+		for (let i = 0; i < eyeData.length; i++) {
+			let eye;
+			let iris;
+			// Set Textures
+			if (eyeData[i].darkMode) {
+				eye = new Sprite(eyeTextures.dark[eyeData[i].texNum - 1]);
+				iris = new Sprite(irisTextures.dark[eyeData[i].texNum - 1]);
+			} else {
+				eye = new Sprite(eyeTextures.light[eyeData[i].texNum - 1]);
+				iris = new Sprite(irisTextures.light[eyeData[i].texNum - 1]);
+			}
+			// Set Anchors
+			eye.anchor.set(0.5);
+			iris.anchor.set(0.5);
+			// Set Positions
+			eye.position.set(eyeData[i].position.x, eyeData[i].position.y);
+			iris.position.set(
+				irisData[i].initialPosition.x,
+				irisData[i].initialPosition.y
+			);
+			// Set Alphas
+			eye.alpha = eyeData[i].alpha;
+			iris.alpha = irisData[i].alpha;
+			// Set Rotation
+			eye.angle = eyeData[i].angle;
+			iris.angle = eyeData[i].angle + irisData[i].movementAngle;
+			// Set Scale
+			eye.scale.x = eyeData[i].scale;
+			iris.scale.x = irisData[i].scale;
+			// Set Sizes
+			eye.width = eyeData[i].baseSize.x;
+			eye.height = eyeData[i].baseSize.y;
+			iris.width = irisData[i].baseSize.x;
+			iris.height = irisData[i].baseSize.y;
+			// Add to container
+			container.addChild(eye);
+			container.addChild(iris);
+		}
+	};
+	generateEntities();
+	updateRotation();
+	draw();
+
 	// Keep Window size in sync
 	window.addEventListener("resize", () => {
-		console.log("resize");
-		container.removeChildren();
-		calcMtrxPositions();
+		updatePositions();
+		updateRotation();
+		draw();
 	});
 </script>
