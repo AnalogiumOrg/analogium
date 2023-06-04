@@ -121,8 +121,38 @@
 		// pixi.js objects
 		sprite?: Sprite;
 	}[] = [];
-	type IrisBehavior = "center" | "random" | "follow";
-	const initialBehavior: IrisBehavior = "center";
+	const IrisBehavior = {
+		center: {
+			name: "center",
+			timeMultiplier: 0.5,
+			weight: 1,
+		},
+		randomseesaw: {
+			name: "randomseesaw",
+			timeMultiplier: 1,
+			weight: 1,
+		},
+		randomtransitioned: {
+			name: "randomtransitioned",
+			timeMultiplier: 0.8,
+			weight: 10,
+		},
+		randomradial: {
+			name: "randomradial",
+			timeMultiplier: 0.3,
+			weight: 4,
+		},
+		follow: {
+			name: "follow",
+			timeMultiplier: 0.2,
+			weight: 0.5,
+		},
+	} as const;
+	type IrisBehavior = (typeof IrisBehavior)[keyof typeof IrisBehavior];
+	const getBehavior = (behaviorName: string) => {
+		return IrisBehavior[behaviorName as keyof typeof IrisBehavior];
+	};
+	const initialBehavior: IrisBehavior = getBehavior("center");
 	type IrisData = {
 		// Totally static
 		index: { i: number; j: number };
@@ -139,6 +169,7 @@
 		currentBehavior: IrisBehavior;
 		currentTicks: number;
 		maxTicks: number;
+		lockBehavior: boolean;
 		// pixi.js objects
 		sprite?: Sprite;
 	};
@@ -187,6 +218,7 @@
 					currentTicks: 0,
 					maxTicks: 0,
 					maxDistance: irisSize * 0.6,
+					lockBehavior: false,
 				};
 				eyeData.push(eye);
 				irisData.push(iris);
@@ -289,9 +321,22 @@
 	) => {
 		return ((value - inMin) * (outMax - outMin)) / (inMax - inMin) + outMin;
 	};
+	const weightedRandom = (weights: number[]) => {
+		const totalWeight = weights.reduce((a, b) => a + b);
+		const randomNum = Math.random() * totalWeight;
+		let weightSum = 0;
+		for (let i = 0; i < weights.length; i++) {
+			weightSum += weights[i];
+			if (randomNum <= weightSum) {
+				return i;
+			}
+		}
+		return 0;
+	};
 	const getNewBehavior = () => {
-		const options = ["center", "random"];
-		return options[Math.floor(Math.random() * options.length)];
+		return Object.values(IrisBehavior)[
+			weightedRandom(Object.values(IrisBehavior).map((b) => b.weight))
+		];
 	};
 	const getNewDirection = () => {
 		return Math.floor(Math.random() * 360);
@@ -300,16 +345,13 @@
 		return Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
 	};
 	const calcMovementOffset = (iris: IrisData) => {
-		switch (iris.currentBehavior) {
+		switch (iris.currentBehavior.name) {
 			case "center":
 				return {
 					x: 0,
 					y: 0,
 				};
-			case "random": {
-				// Calculate position linearly based on the angle, and the current ticks
-				// Half maxtime moving towards max distance, half moving back
-				// Then use angle to calculate x and y offsets
+			case "randomseesaw": {
 				const cTicks = iris.currentTicks;
 				const mTicks = iris.maxTicks;
 				const rad = iris.movementAngle * DEG_TO_RAD;
@@ -335,11 +377,94 @@
 				const y = Math.sin(rad) * currDistance;
 				return { x, y };
 			}
-			case "follow":{
+			case "randomtransitioned": {
+				const cTicks = iris.currentTicks;
+				const mTicks = iris.maxTicks;
+				const rad = iris.movementAngle * DEG_TO_RAD;
+				let currDistance = 0;
+				if (cTicks < mTicks / 6) {
+					currDistance = mapInterpolate(
+						cTicks,
+						0,
+						mTicks / 6,
+						0,
+						iris.maxDistance
+					);
+				} else if (cTicks < mTicks / 6 + (mTicks * 4) / 6) {
+					currDistance = iris.maxDistance;
+				} else {
+					currDistance = mapInterpolate(
+						cTicks,
+						mTicks / 6 + (mTicks * 4) / 6,
+						mTicks,
+						iris.maxDistance,
+						0
+					);
+				}
+				const x = Math.cos(rad) * currDistance;
+				const y = Math.sin(rad) * currDistance;
+				return { x, y };
+			}
+			case "randomradial" :{
+				const cTicks = iris.currentTicks;
+				const mTicks = iris.maxTicks;
+				const rad = iris.movementAngle * DEG_TO_RAD;
+				let currDistance = 0;
+				if (cTicks < mTicks / 6) {
+					currDistance = mapInterpolate(
+						cTicks,
+						0,
+						mTicks / 6,
+						0,
+						iris.maxDistance
+					);
+				} else if (cTicks < mTicks / 6 + (mTicks * 4) / 6) {
+					// If angle is more than 90 degrees and less than 270 degrees, reverse direction
+					if(iris.movementAngle > 90 && iris.movementAngle < 270) {
+						currDistance = iris.maxDistance;
+						iris.movementAngle ++;
+					} else {
+						currDistance = iris.maxDistance;
+						iris.movementAngle --;
+					}
+				} else {
+					currDistance = mapInterpolate(
+						cTicks,
+						mTicks / 6 + (mTicks * 4) / 6,
+						mTicks,
+						iris.maxDistance,
+						0
+					);
+				}
+				const x = Math.cos(rad) * currDistance;
+				const y = Math.sin(rad) * currDistance;
+				return { x, y };
+			}
+			case "follow": {
+				const transitionticks = iris.maxTicks / 3;
+				// For the first transitionticks ticks, move towards the mouse lower the mouse influence
+				const inMouseInfluence = iris.currentTicks <= transitionticks ? mapInterpolate(
+					iris.currentTicks,
+					0,
+					transitionticks,
+					0,
+					1
+				) : 1;
+				const outMouseInfluence = iris.maxTicks-transitionticks <= iris.currentTicks ?
+				mapInterpolate(
+					iris.currentTicks,
+					transitionticks,
+					0,
+					1,
+					0
+				) : 1;
 				const mousePos = app.renderer.events.pointer.global;
 				const dx = mousePos.x - iris.initialPosition.x;
 				const dy = mousePos.y - iris.initialPosition.y;
-				const rad = Math.atan2(dy, dx);
+				const rad = Math.atan2(
+					dy * inMouseInfluence * outMouseInfluence,
+					dx * inMouseInfluence * outMouseInfluence
+				);
 				const x = Math.cos(rad) * iris.maxDistance;
 				const y = Math.sin(rad) * iris.maxDistance;
 				return { x, y };
@@ -371,17 +496,14 @@
 			);
 			if (iris.currentTicks >= iris.maxTicks) {
 				iris.currentTicks = 0;
-				iris.currentBehavior = getNewBehavior();
-				if (iris.currentBehavior === "random") {
-					iris.movementAngle = getNewDirection();
-					iris.maxTicks = Math.floor(Math.max(
-						200,
-						Math.random() * 600 + 50
-					));
-				}
-				else{
-					iris.maxTicks = Math.floor(Math.random() * 10);
-				}
+				iris.currentBehavior = iris.lockBehavior
+					? iris.currentBehavior
+					: getNewBehavior();
+				iris.maxTicks = Math.floor(
+					Math.random() * 600 * iris.currentBehavior.timeMultiplier +
+						60
+				);
+				iris.movementAngle = getNewDirection();
 			}
 			iris.currentTicks++;
 		}
