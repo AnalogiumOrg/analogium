@@ -211,10 +211,14 @@ content {
 
 table {
 	width: 100%;
+	text-align: left;
 	align-items: center;
-	left: -30%;
 	float: left;
 	position: relative
+}
+
+.three {
+	left: -30%;
 }
 
 img {
