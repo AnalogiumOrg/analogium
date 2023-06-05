@@ -7,8 +7,6 @@ jobs:
   astro-build:
     runs-on: ubuntu-latest
     steps:
-      - name: Delete Artifact
-        uses: GeekyEggo/delete-artifact@v2.0.0
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
         with:
@@ -53,3 +51,11 @@ jobs:
           script: |
             cd ${{ secrets.DEPLOY_PATH }}
             mv ./dist/* ./ && rm -rf ./dist
+  clear-artifacts:
+    needs: upload-to-web
+    runs-on: ubuntu-latest
+    steps:
+    - uses: geekyeggo/delete-artifact@v2
+      with:
+          name: |
+              dist
