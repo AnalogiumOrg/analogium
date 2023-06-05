@@ -3,7 +3,7 @@
   https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
   License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
  */
-:root {
+ :root {
 	/* Automatically set */
 	--back: url(../../../images/web/eyes_dark.svg) no-repeat center fixed;
 	--color: #000;
@@ -62,7 +62,7 @@ body {
 	margin: auto;
 	padding: 20px;
 	text-align: justify;
-	background: var(--back), var(--color);
+	/* background: var(--back), var(--color); */
 	background-size: contain;
 	-moz-background-size: contain;
 	-webkit-background-size: contain;
@@ -71,6 +71,15 @@ body {
 	overflow-wrap: break-word;
 	line-height: 1.5;
 	color: var(--font_color);
+	background-color: var(--color);
+}
+
+canvas {
+	/* Keep always in place as the background */
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -1;
 }
 
 .en,
