@@ -4,7 +4,7 @@ on:
       - main
   workflow_dispatch:
 jobs:
-  astro-build:
+  test-build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -13,19 +13,16 @@ jobs:
           node-version: 18
       - run: npm install
       - run: npm run build
-      - uses: actions/upload-artifact@v2
-        with:
-          name: dist
-          path: dist
-  upload-to-web:
-    needs: astro-build
+  build-upload-to-web:
+    needs: test-build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/download-artifact@v3
+      - uses: actions/setup-node@v2
         with:
-          name: dist
-          path: dist
+          node-version: 18
+      - run: npm install
+      - run: npm run build
       # Clear the web directory
       - uses: appleboy/ssh-action@master
         with:
@@ -51,11 +48,3 @@ jobs:
           script: |
             cd ${{ secrets.DEPLOY_PATH }}
             mv ./dist/* ./ && rm -rf ./dist
-  clear-artifacts:
-    needs: upload-to-web
-    runs-on: ubuntu-latest
-    steps:
-    - uses: geekyeggo/delete-artifact@v2
-      with:
-          name: |
-              dist
