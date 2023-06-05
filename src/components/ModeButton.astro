@@ -44,6 +44,11 @@
 	}
 	function updateTheme() {
 		const theme = getTheme();
+		// Emit a custom event so that other scripts can react to the theme change
+		const event = theme == "dark" ? new Event("setdarkmode") : new Event("setlightmode");
+		window.dispatchEvent(event);
+		// Search for all elements with the toggleable class
+		// And update their src attributes
 		const found = window.document.getElementsByClassName("toggleable");
 		for (let i = 0; i < found.length; i++) {
 			let attributes = found[i].attributes;
@@ -81,5 +86,8 @@
 		? document.getElementsByClassName("themeToggleButton")[0]
 		: null;
 	button.addEventListener("click", handleToggleClick);
+	window.addEventListener("forceUpdateTheme", () => {
+		updateTheme();
+	});
 	updateTheme();
 </script>

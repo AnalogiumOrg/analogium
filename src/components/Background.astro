@@ -253,6 +253,16 @@
 			irisData[i].alpha = calcOpacity();
 		}
 	};
+	const setThemeMode = (m: "dark" | "light") => {
+		console.log("Setting theme mode to", m);
+		for (let i = 0; i < eyeData.length; i++) {
+			eyeData[i].darkMode = m === "dark";
+			irisData[i].darkMode = m === "dark";
+		}
+		setPositions();
+		setRotation();
+		initialDraw();
+	};
 	const initialDraw = () => {
 		container.removeChildren();
 		for (let i = 0; i < eyeData.length; i++) {
@@ -470,6 +480,12 @@
 		setRotation();
 		initialDraw();
 	});
+	window.addEventListener("setdarkmode", () => {
+		setThemeMode("dark");
+	});
+	window.addEventListener("setlightmode", () => {
+		setThemeMode("light");
+	});
 	/* Runtime */
 	generateEntities();
 	setRotation();
@@ -496,4 +512,5 @@
 			iris.currentTicks++;
 		}
 	});
+	window.dispatchEvent(new Event("forceUpdateTheme"));
 </script>
