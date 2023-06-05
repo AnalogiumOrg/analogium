@@ -1,5 +1,6 @@
 ---
 import HeaderLink from "./HeaderLink.astro";
+import Background from "../components/Background.astro";
 import i18next, { t } from "i18next";
 import { localizePath, localizeUrl } from "astro-i18next";
 
@@ -9,6 +10,7 @@ const logourl = `/images/web/LogoText_${lang}_light.png`;
 ---
 
 <header lang={i18next.language}>
+	<Background />
 	<h1></h1>
 	<a href={localizePath("/")} class="hid"><img src="/images/web/Logo_light.svg" class="logo toggleable" /></a>
 	<h2></h2>

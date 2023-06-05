@@ -4,7 +4,6 @@ import Header from "../../components/Header.astro";
 import Footer from "../../components/Footer.astro";
 import i18next, { t, changeLanguage } from "i18next";
 import { Trans } from "astro-i18next/components";
-import Background from "../../components/Background.astro";
 
 changeLanguage("fr");
 ---
@@ -16,7 +15,7 @@ changeLanguage("fr");
 	</head>
 	<body class={i18next.language}>
 		<Header title={t("web.name")} />
-		<Background />
+		
 		<main>
 			<center><h1>{t("home.title")}</h1></center>
 			<Trans i18nKey="home.subtitle">
