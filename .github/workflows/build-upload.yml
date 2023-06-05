@@ -7,6 +7,8 @@ jobs:
   astro-build:
     runs-on: ubuntu-latest
     steps:
+      - name: Delete Artifact
+        uses: GeekyEggo/delete-artifact@v2.0.0
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
         with:
