@@ -212,9 +212,10 @@ content {
 table {
 	width: 100%;
 	text-align: left;
-	align-items: center;
-	float: left;
 	position: relative
+}
+tr {
+	max-height: max-content;
 }
 
 .three {

@@ -22,6 +22,10 @@
     "part3": "<0><1>PARTIE III : Parmi les cendres</1></0><2>Il a fallu beaucoup de temps à notre fondateur pour guérir, plein de remplacements vides, d'actes et de sentiments insensés amplifiés par sa propre douleur ; jusqu'à ce que, dans un monument de clarté, les histoires qui l'avaient enfermé dans son esprit pendant si longtemps résonnent dans son esprit, et qu'il trouve quelque chose qui le rende heureux à nouveau, même si cela semble temporaire. Il travailla aussi dur qu'il le put, mais enfin, il se sentit entier. Notre père fondateur n'était pas seul, il a réussi à trouver une équipe qui avait le même esprit que lui. <3><4>Il a Trouvé une Famille</4></3></2>",
     "fault": "C'était Ma Faute"
   },
+  "data": {
+    "syn": "SYNOPSIS",
+    "inter": "INTERPRÉTATION"
+  },
   "chrono": {
     "chrono": "CHRONOLOGIE",
     "s1": "SAISON 1",
@@ -37,38 +41,72 @@
   },
 
   "fnaf": {
-    "title": "FNAF VHS"
+    "title": "FNAF VHS",
+    "desc": "“DEMAIN EST UN AUTRE JOUR”",
+    "intro": "<0>FNAF VHS est une série créée par Squimpus McGrimpus via YouTube. La série est composée de 2 saisons et est basée sur les jeux <1>Five Nights At Freddy's</1> (ne couvrant que les 4 premiers jeux), créés par Scott Cawthon.</0>",
+    "synop": "<0>De vieilles images de Fazbear Entertainment commencent à sortir de l'ombre, et il ne s'agit pas de guides de travail ordinaires. Il s'agit des souvenirs et de l'histoire des 8 composantes d'une malédiction géante : Le meurtrier, 5 victimes... et l'espoir de ceux qui sont tombés.</0>",
+    "part1": "",
+    "part2": "",
+    "part3": ""
   },
   "gemini": {
     "title": "GEMINI HOME ENTERTAINMENT"
   },
   "loss": {
-    "title": "GENERATION LOSS"
+    "title": "GENERATION LOSS",
+    "desc": "“VOTRE POINT DE VUE SUR L'INFINI”",
+    "intro": "",
+    "synop": "",
+    "part1": ""
   },
   "local": {
-    "title": "LOCAL58"
+    "title": "LOCAL58",
+    "desc": "“”",
+    "intro": "",
+    "synop": "",
+    "part1": ""
   },
   "noc": {
-    "title": "NOC+10"
+    "title": "NOC+10",
+    "desc": "“”",
+    "intro": "",
+    "synop": "",
+    "part1": ""
   },
   "petscop": {
-    "title": "PETSCOP"
+    "title": "PETSCOP",
+    "desc": "“”",
+    "intro": "",
+    "synop": "",
+    "part1": ""
   },
   "house": {
-    "title": "THE HOUSE IN THE OCEAN"
+    "title": "THE HOUSE IN THE OCEAN",
+    "desc": "“”",
+    "intro": "",
+    "synop": "",
+    "part1": ""
   },
   "mandela": {
-    "title": "THE MANDELA CATALOGUE"
+    "title": "THE MANDELA CATALOGUE",
+    "desc": "“”",
+    "intro": "",
+    "synop": "",
+    "part1": ""
   },
   "mythos": {
-    "title": "THE MONUMENT MYTHOS"
+    "title": "THE MONUMENT MYTHOS",
+    "desc": "“”",
+    "intro": "",
+    "synop": "",
+    "part1": ""
   },
   "nixon": {
     "title": "THE NIXONVERSE",
     "desc": "LE CHAGRIN PEUT FAIRE DE VOUS UN MONSTRE",
     "intro": "<0>THE NIXONVERSE est une histoire développée par MISTER MANTICORE (Alex Casanas) via YouTube. La série est un Spin-Off de son histoire principale, <1>THE MONUMENT MYTHOS</1>.</0>",
     "synop": "<0>SYNOPSIS</0><1>La série se déroule après les événements de la deuxième saison de MONUMENT MYTHOS, dans un univers différent avec une forme familière ; l'histoire relie quatre entités très similaires et puissantes : le Fils, le Chevalier, la Reine et... <2>Dieu</2>. Parmi ces entités, certains yeux brillent plus que d'autres, ceux d'Alice Avenue, d'Ed Dwight et du moi égocentrique des États-Unis, toujours obsédé par le pouvoir.",
-    "part1": "<0>INTERPRÉTATION</0><1><2><3>Plus rapide qu'un avion ! Plus puissant qu'une locomotive ! Insensible aux balles ! Dans le ciel, regardez ! C'est un oiseau ! C'est un avion ! C'est--</3></2></1><4>Notre histoire commence avec <5>Le Dernier Fils</5>, un véritable super-héros qui est toujours là pour nous sauver tous, et pourtant certains craignent constamment qu'il se rebelle contre nous et nous conquière. Il faut noter que son apparence physique ressemble trop à Richard Nixon lorsqu'il était jeune.</4><6>En fait, il n'est pas notre seul héros, il y en a un autre baptisé <7>Le Chevalier du Jour J</7>, celui qui a sauvé l'armée américaine sur le champ de bataille ce jour-là en 1944. Il nous a donné l'espoir et la foi depuis son intervention en Normandie, et personne plus qu'Alice Avenue n'avait de respect et d'affection pour lui. Pendant le jour J, le Chevalier a perdu quelque chose qui s'avérera très intéressant plus tard, il a perdu son casque.</6>",
+    "part1": "<0><1><2>Plus rapide qu'un avion ! Plus puissant qu'une locomotive ! Insensible aux balles ! Dans le ciel, regardez ! C'est un oiseau ! C'est un avion ! C'est--</2></1></0><3>Notre histoire commence avec <4>Le Dernier Fils</4>, un véritable super-héros qui est toujours là pour nous sauver tous, et pourtant certains craignent constamment qu'il se rebelle contre nous et nous conquière. Il faut noter que son apparence physique ressemble trop à Richard Nixon lorsqu'il était jeune.</3><5>En fait, il n'est pas notre seul héros, il y en a un autre baptisé <6>Le Chevalier du Jour J</6>, celui qui a sauvé l'armée américaine sur le champ de bataille ce jour-là en 1944. Il nous a donné l'espoir et la foi depuis son intervention en Normandie, et personne plus qu'Alice Avenue n'avait de respect et d'affection pour lui. Pendant le jour J, le Chevalier a perdu quelque chose qui s'avérera très intéressant plus tard, il a perdu son casque.</5>",
     "part2": "<0><1><2><3>Casque de chevalier du jour J</3></2></1></0><4>C'est le début de notre planète, mais si on monte ? Quelque part comme... <5>la Lune.</5></4><6>La première mission visant à faire atterrir des humains sur la Lune n'a pas été aussi normale que vous pourriez le penser, car Ed Dwight (le premier homme sur la Lune) et son équipe ont trouvé la <7>Reine des Lunarians</7>, et ont été témoins des premiers mots enregistrés sur notre satellite naturel. La reine prophétisait une grande division sur Terre, car les humains ne savaient pas comment vivre, comment aimer, comment voler... Malheureusement, une petite tache de sang a recouvert le moment, car après avoir ordonné à Ed de lui tirer dessus, John Glenn a été <8>évincé de la réalité</8>.</6>",
     "part3": "<0><1><2><3>La cause de la mort de John Glenn : une rencontre lunaire.</3></2></1></0><4>C'est à ce moment précis qu'Ed Dwight aurait une conversation très intéressante avec <5>quelqu'un de spécial,</5> mais nous y reviendrons plus tard. Maintenant que nous connaissons nos protagonistes, nous pouvons passer à notre antagoniste : États-Unis.</4><6><7>Après avoir interféré dans la guerre de Corée, LE DERNIER FILS est retourné dans sa forteresse en Alaska. <Des missiles nucléaires l'ont suivi jusque chez lui.</8></7></6><9>Après que la mission Apollo 11 ait révélé les propriétés de l'anatomie lunaire, les États-Unis n'ont pas tardé à envoyer Apollo 12 pour ramener l'ingrédient parfait pour réaliser le plan diabolique : un œil lunaire. La première phase est achevée, mais il manque encore quelque chose... ou plutôt quelqu'un. Un œil d'une race extraterrestre et l'équivalent de Superman, pourquoi le pays proclamé de la liberté voudrait-il ces éléments ? Facile, <10>pour créer leur propre Jésus</10>.</9><11>Après avoir lavé le cerveau du Dernier Fils, les États-Unis allaient apporter une version déformée de la paix pendant la guerre du Vietnam, maintenant appelée Bethlenam ou “le premier État sauvé” ; ce faux traité était appelé l'Équation de la paix. </11><12><13><14><15>Notre liberté ᐳ VOTRE LIBERTE<16>Notre CHRIST ᐳ VOTRE CHRIST<17>= PAIX MONDIALE</15></14></13></12><18>Par un retournement de situation, le Dernier Fils ouvrit les yeux (enfin... son seul œil), et réalisa tous les actes horribles qu'il avait commis sous le manteau du Messie. Dévasté par cela, il s'enfuit vers l'océan de son ancien foyer, Dark Alaska, et chercha un refuge isolé de l'homme, quelque chose qui lui rappellerait son enfance, quelque chose comme... une <19>Maison dans l'Océan</19>.</18><20>Le destin est très amusant, car quelque temps plus tard, le Dernier Fils allait faire la rencontre d'un vaisseau d'une race que nous connaissons très bien, les Lunariens venus accomplir une prophétie : ramener leur Roi à la maison. <21>Le Roi du Croissant est né.</21></20>",
     "part4": "<0><1><2><3>Evolution du dernier fils.</3></2></1></0><4>Lentement, les Lunariens ont commencé à prendre le contrôle de l'Amérique, non seulement en créant des “vaisseaux pour l'essence du roi”, mais aussi en s'attaquant à la culture humaine, à commencer par le langage. Personne ne comprenait ses propres pensées, il fallait donc accepter de force la culture lunarienne pour survivre. Cependant, au milieu de toute cette tempête, une voix familière est revenue pour apporter la foi à la race humaine... Alice Avenue diffusa à la radio l'histoire du Dernier Fils.</4><5>Le Dernier Fils était un jeune homme comme vous et moi, avec des parents qui étaient des égorgeurs et des camarades de classe qui étaient pires. Le garçon était toujours seul lorsqu'il allait à l'école, et toujours dans ces moments où il roulait vers son destin, il doutait de son rôle dans l'univers ; il pensait toujours qu'il devait aider tout le monde autour de lui, et qu'il devait gagner à tout prix. Un jour, au milieu de ses pensées, le jeune homme fut impliqué dans un accident de voiture ; encore assez fort pour bouger, il sortit de sa voiture et s'approcha de l'homme mourant avec lequel il était entré en collision, un visage familier d'un autre univers.... <6>James Dean</6>.</5><7>“Tu as gagné, petit bâtard... tu as gagné...”, tels furent les derniers mots de l'homme qui, dans cet univers, avait perdu. Le Dernier Fils, dévasté, ne put retenir ses larmes et, sous l'effet de la douleur et de l'épuisement causés par l'accident, il s'évanouit. Il se réveilla dans un rêve étrange, où il se trouvait sur une falaise avec un véhicule derrière lui, qui roulait à grande vitesse. Pour éviter l'impact, il saute dans le vide et commence à croire de plus en plus qu'il peut voler, qu'il peut vaincre la mort... il y parvient. Le jeune homme a commencé à voler très haut, plus vite qu'un avion. C'est là qu'il s'est réveillé et qu'il s'est envolé le plus loin possible du lieu de l'accident. Il continua à y croire et à gagner à tout prix pour sauver tout le monde.</7><8>Alice ne pria pas seulement pour que le Roi Croissant se souvienne du héros qu'il était avant que l'Amérique ne le capture, elle espérait aussi que le Chevalier revienne pour tous nous sauver à nouveau. Il écouta ses paroles et exécuta un plan désespéré pour que l'humanité du Dernier Fils se réveille à nouveau : jeter Alice du haut du Chrysler Building en espérant qu'il la sauverait.... <9>ce qui n'est jamais arrivé</9>.</8>",
@@ -77,12 +115,24 @@
     "part7": "<0><1><2><3><4>Le serpent à cornes vit</4></3></2></1></0><5>Nixon doit agir vite, il ne peut pas laisser tout cela se terminer comme son propre monde s'est terminé, alors il a décidé de rendre le Roi, le Chevalier, la Reine, et lui-même comme une fiction, afin que personne ne croie au Roi Croissant et qu'il perde ainsi ses pouvoirs. C'est ainsi que tout ce monde est devenu une bande dessinée appelée “The Nixonverse”, avec une histoire attachante réalisée par un certain “Mister Manticore” et de magnifiques illustrations réalisées par... <6>Ed Dwight?</6></5><7>Par rapport à Nixon, Ed Dwight était le double du Dieu qu'il était, Nixon n'était qu'un des nombreux survivants qui ont effacé le passé, pour fuir le présent. Ed était tout ce que Nixon n'était pas, quelqu'un d'audacieux, de gentil et de bon. Il n'est jamais allé sur la lune, et encore moins parlé à un Dieu, il est aujourd'hui dans notre monde en train de créer des monuments... <Ed Dwight préserve le passé."
   },
   "walten": {
-    "title": "THE WALTEN FILES"
+    "title": "THE WALTEN FILES",
+    "desc": "“”",
+    "intro": "",
+    "synop": "",
+    "part1": ""
   },
   "valle": {
-    "title": "VALLE VERDE"
+    "title": "VALLE VERDE",
+    "desc": "“”",
+    "intro": "",
+    "synop": "",
+    "part1": ""
   },
   "welcome": {
-    "title": "WELCOME HOME"
+    "title": "WELCOME HOME",
+    "desc": "“”",
+    "intro": "",
+    "synop": "",
+    "part1": ""
   }
 }
