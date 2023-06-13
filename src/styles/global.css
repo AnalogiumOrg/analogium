@@ -273,6 +273,7 @@ button {
 }
 
 .dropdown-options {
+	height: 4.15rem;
 	display: none;
 	position: absolute;
 	overflow: auto;
