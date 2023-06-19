@@ -1,0 +1,67 @@
+---
+import BaseHead from "../../components/BaseHead.astro";
+import i18next, { t, changeLanguage } from "i18next";
+import ModeButton from "../../components/ModeButton.astro";
+import { Trans } from "astro-i18next/components";
+import Background from "../../components/Background.astro";
+
+changeLanguage("fr");
+---
+
+<!DOCTYPE html>
+<html lang={i18next.language}>
+    <ModeButton />
+
+    <BaseHead title={t("head.feedback")} description="" />
+    <style type="text/css">
+        h1 {
+            text-align: center;
+        }
+
+        td {
+            padding: 0.2em 2em;
+        }
+
+        input,
+        select,
+        textarea {
+            font-family: "Elementa";
+        }
+    </style>
+
+    <body class={i18next.language}>
+        <Background />
+        <h1>{t("head.feedback")}</h1>
+        <form action="save.php" method="post">
+            <p>
+                FIRST NAME : <input type="text" name="name" size="33rem" />
+                LAST NAME : <input type="text" name="last" size="33rem" />
+            </p>
+            <p>
+                E-MAIL: <input type="text" name="email" size="35rem" />
+            </p>
+
+            <table>
+                <td>
+                    TYPE OF FEEDBACK:<br />
+                    <input type="checkbox" name="type" value="correct" /> CORRECTION<br />
+                    <input type="checkbox" name="type" value="comment" /> COMMENTARY<br />
+                    <input type="checkbox" name="type" value="ask" /> QUESTION<br />
+                    <input type="checkbox" name="type" value="suggest" /> SUGGESTION
+                </td>
+            </table>
+            
+            <p>
+                <textarea
+                name="feedback"
+                rows="5"
+                cols="50"
+                placeholder="WRITE YOUR FEEDBACK"></textarea>
+                <p>
+                    <input type="submit" value="SEND" style="font-size: 2rem;"/>
+                    <input type="reset" value="RESTART" style="position: relative; left: 12rem; font-size: 2rem;"/>
+                </p>
+            </p>
+        </form>
+    </body>
+</html>
