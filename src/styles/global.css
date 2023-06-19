@@ -58,11 +58,6 @@
 	src: url(/fonts/elementa.ttf);
 }
 
-@font-face {
-	font-family: 'GrecoRoman';
-	src: url(/fonts/grecoroman.ttf);
-}
-
 body {
 	margin: auto;
 	padding: 20px;
@@ -261,10 +256,6 @@ blockquote {
 	padding: 2px 0px 2px 20px;
 	margin: 0px;
 	font-style: italic;
-}
-
-.counter {
-	font-family: 'GrecoRoman', sans-serif;
 }
 
 .dropdown {

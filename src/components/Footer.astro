@@ -7,8 +7,6 @@ import ModeButton from "./ModeButton.astro";
 	<!-- Set mode button as client rendered and always hydrated -->
 	<ModeButton />
 	&copy; {today.getFullYear()} ANALOGIUM.
-	<br />
-	<center><h1 id="visitCounter"></h1></center>
 </footer>
 <style>
 	footer {
@@ -16,24 +14,3 @@ import ModeButton from "./ModeButton.astro";
 		text-align: center;
 	}
 </style>
-<script class="counter">
-var zero;
-const localCount =
-	localStorage.getItem("visitCount") != null
-		? localStorage.getItem("visitCount") != ""
-			? localStorage.getItem("visitCount")
-			: "0"
-		: "0";
-const lastCount = parseInt(localCount);
-const domCounter = document.getElementById("visitCounter");
-const newCount = lastCount + 1;
-
-console.log(newCount)
-if (newCount >= 0 && newCount < 10) zero = "000"
-else if (newCount >= 10 && newCount < 100) zero = "00"
-else if(newCount >= 100 && newCount < 1000) zero = "0"
-else zero = ""
-
-domCounter.innerText = zero + newCount;
-localStorage.setItem("visitCount", newCount);
-</script>
