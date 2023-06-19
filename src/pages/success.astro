@@ -1,0 +1,29 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import i18next, { t, changeLanguage } from "i18next";
+import ModeButton from "../components/ModeButton.astro";
+import { Trans } from "astro-i18next/components";
+import Background from "../components/Background.astro";
+
+changeLanguage("en");
+---
+
+<!DOCTYPE html>
+<html lang={i18next.language}>
+    <ModeButton />
+
+    <BaseHead title={t("head.feedback")} description="" />
+
+<body class={i18next.language} style="text-align: center">
+	<h1>FEEDBACK SENDED</h1>
+	<p>THANK YOU FOR COOPERATING WITH OUR RESEARCH</p>
+	<br />
+	<p>GO BACK HOME</p>
+</body>
+<script defer>
+	setTimeout(() => {
+		window.location.replace("/");
+	}, 5000);
+</script>
+
+</html>

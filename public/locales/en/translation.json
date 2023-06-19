@@ -9,7 +9,8 @@
     "twitter": "TWITTER",
     "youtube": "YOUTUBE",
     "origin": "ORIGIN",
-    "lang": "LANGUAGE"
+    "lang": "LANGUAGE",
+    "feedback": "FEEDBACK"
   },
   "home": {
     "title": "WELCOME TO ANALOGIUM",
