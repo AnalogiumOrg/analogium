@@ -30,10 +30,9 @@ if ($conn->connect_error) {
 // Creamos la tabla si no existe
 $sql = "CREATE TABLE IF NOT EXISTS $dbname.$tablename (
 	id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-	name VARCHAR(255) NOT NULL,
+	username VARCHAR(255) NOT NULL,
 	lastname VARCHAR(255) NOT NULL,
 	email VARCHAR(255) NOT NULL,
-	type VARCHAR(255) NOT NULL,
 	feedback VARCHAR(255) NOT NULL
 )";
 

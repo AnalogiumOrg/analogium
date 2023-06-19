@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+	<title>Exito!</title>
+</head>
+
+<body class="bg-gray-100">
+	<h1 class="text-4xl text-center mt-10">Suscripción electrónica a nuestro sitio WEB.</h1>
+	<p class="text-center">Tu formulario ha sido enviado exitosamente a la base de datos</p>
+	<p class="text-center">Gracias por suscribirte a nuestro sitio</p>
+	<p class="text-center">Serás redirigido en 5 segundos</p>
+</body>
+<script defer>
+	setTimeout(() => {
+		window.location.replace("formulario.html");
+	}, 5000);
+</script>
+
+</html>
