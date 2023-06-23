@@ -1,0 +1,43 @@
+---
+import { t, changeLanguage } from "i18next";
+import { localizePath } from "astro-i18next";
+import { Trans } from "astro-i18next/components";
+import Layout from "../../../layouts/BlogPost.astro";
+
+changeLanguage("es");
+---
+
+<Layout
+	title={t("walten.title")}
+	heroImage="../../../images/data/wf_dark.png"
+	description={t("walten.desc")}
+>
+	<h1>{t("chrono.chrono")}</h1>
+	<ol>
+		<li>
+			<a href="https://youtu.be/uShQXE1Dla8" target="_blank"
+				>Company Introductory Tape</a
+			>
+		</li>
+		<li>
+			<a href="https://youtu.be/iTFnNOL4hwg" target="_blank">
+				Relocate Project</a
+			>
+		</li>
+		<li>
+			<a href="https://youtu.be/K07tQqEDOfQ" target="_blank"
+				>Lucky You</a
+			>
+		</li>
+		<li>
+			<a href="https://youtu.be/egPO9kUJehU" target="_blank"
+				>BunnyFarm</a
+			>
+		</li>
+		<li>
+			<a href="https://youtu.be/hDTYwsiz09I" target="_blank"
+				>Guilty</a
+			>
+		</li>
+	</ol>
+</Layout>
