@@ -10,42 +10,28 @@
 	--font_color: #FFF;
 	--link: #C0C0C0;
 	--border: #999;
+	--chica: #F3C021;
+	--purple: #842593;
 	/* Manually set */
 	--back_dark: url(../../../images/web/eyes_dark.svg) no-repeat center fixed;
 	--color_dark: #000;
 	--font_color_dark: #FFF;
 	--link_dark: #C0C0C0;
 	--border_dark: #999;
+	--chica_dark: #F3C021;
+	--purple_dark: #842593;
 	--back_light: url(../../../images/web/eyes_light.svg) no-repeat center fixed;
 	--color_light: #FFF;
 	--font_color_light: #000000;
 	--link_light: #3f3f3f;
 	--border_light: #666;
+	--chica_light: #0C3FDE;
+	--purple_light: #7BDA6C;
 }
 
 @font-face {
 	font-family: 'Duke';
 	src: url(/fonts/duke_thin.ttf);
-}
-
-@font-face {
-	font-family: 'Yuji';
-	src: url(/fonts/yuji_boku.ttf);
-}
-
-@font-face {
-	font-family: 'Ebgaramond';
-	src: url(/fonts/garamond.ttf);
-}
-
-@font-face {
-	font-family: 'Playfair';
-	src: url(/fonts/playfair.ttf);
-}
-
-@font-face {
-	font-family: 'Nanum';
-	src: url(/fonts/nanum_myeongjo.ttf);
 }
 
 @font-face {
@@ -56,6 +42,16 @@
 @font-face {
 	font-family: 'Elementa';
 	src: url(/fonts/elementa.ttf);
+}
+
+@font-face {
+	font-family: 'Graffio';
+	src: url(/fonts/graffio.otf) format("opentype");
+}
+
+@font-face {
+	font-family: 'VCR';
+	src: url(/fonts/vcr.ttf);
 }
 
 body {
@@ -92,33 +88,9 @@ canvas {
 }
 
 .en,
-.es,
-.pt,
-.fr,
-.it,
-.de {
+.es {
 	font-family: 'Duke', sans-serif;
 	max-width: 67ch;
-}
-
-.ja {
-	font-family: 'Yuji', sans-serif;
-	max-width: 39ch;
-}
-
-.el {
-	font-family: 'Ebgaramond', sans-serif;
-	max-width: 62ch;
-}
-
-.ru {
-	font-family: 'Playfair', sans-serif;
-	max-width: 46ch;
-}
-
-.ko {
-	font-family: 'Nanum', sans-serif;
-	max-width: 50ch;
 }
 
 .fault_en {
@@ -129,46 +101,6 @@ canvas {
 .fault_es {
 	font-family: 'Elementa', sans-serif;
 	font-size: 5.7rem;
-}
-
-.fault_pt {
-	font-family: 'Elementa', sans-serif;
-	font-size: 4rem;
-}
-
-.fault_fr {
-	font-family: 'Elementa', sans-serif;
-	font-size: 4.3rem;
-}
-
-.fault_ja {
-	font-family: 'Yuji', sans-serif;
-	font-size: 7.1rem;
-}
-
-.fault_it {
-	font-family: 'Elementa', sans-serif;
-	font-size: 4rem;
-}
-
-.fault_el {
-	font-family: 'Ebgaramond', sans-serif;
-	font-size: 3.5rem;
-}
-
-.fault_ru {
-	font-family: 'Playfair', sans-serif;
-	font-size: 4rem;
-}
-
-.fault_de {
-	font-family: 'Elementa', sans-serif;
-	font-size: 3.6rem;
-}
-
-.fault_ko {
-	font-family: 'Nanum', sans-serif;
-	font-size: 6.1rem;
 }
 
 .hid {
@@ -250,12 +182,25 @@ pre>code {
 }
 
 blockquote {
-	font-family: 'Elementa';
 	border: 1px solid var(--border);
-	color: var(--font_color);
-	padding: 2px 0px 2px 20px;
+	text-align: center;
+	align-items: center;
+	padding: 2px 0px 2px 5px;
 	margin: 0px;
+}
+
+#default {
+	font-family: 'Elementa';
+	color: var(--font_color);
+	font-size: 0.8rem;
 	font-style: italic;
+}
+
+#snow {
+	font-family: 'VCR';
+	color: var(--chica);
+	font-size: 0.95rem;
+	font-style: normal;
 }
 
 .dropdown {
@@ -296,4 +241,16 @@ button {
 	color: var(--font_color);
 	background-color: var(--back);
 	border-radius: 1px;
+}
+
+#youcant {
+	font-family: 'Graffio';
+	text-decoration: none;
+	text-align: center;
+	color: var(--purple);
+}
+
+#note {
+	font-size: 0.8rem;
+	text-align: center;
 }
