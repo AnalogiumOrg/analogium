@@ -3,15 +3,16 @@
   https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
   License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
  */
- :root {
+:root {
 	/* Automatically set */
 	--back: url(../../../images/web/eyes_dark.svg) no-repeat center fixed;
 	--color: #000;
 	--font_color: #FFF;
 	--link: #C0C0C0;
 	--border: #999;
-	--chica: #F3C021;
+	--chica: #FFC100;
 	--purple: #842593;
+	--golden: #FFFF00;
 	/* Manually set */
 	--back_dark: url(../../../images/web/eyes_dark.svg) no-repeat center fixed;
 	--color_dark: #000;
@@ -20,13 +21,15 @@
 	--border_dark: #999;
 	--chica_dark: #F3C021;
 	--purple_dark: #842593;
+	--golden_dark: #FFFF00;
 	--back_light: url(../../../images/web/eyes_light.svg) no-repeat center fixed;
 	--color_light: #FFF;
 	--font_color_light: #000000;
 	--link_light: #3f3f3f;
 	--border_light: #666;
-	--chica_light: #0C3FDE;
+	--chica_light: #003EFF;
 	--purple_light: #7BDA6C;
+	--golden_light: #0000FF;
 }
 
 @font-face {
@@ -52,6 +55,11 @@
 @font-face {
 	font-family: 'VCR';
 	src: url(/fonts/vcr.ttf);
+}
+
+@font-face {
+	font-family: '1942';
+	src: url(/fonts/report.ttf);
 }
 
 body {
@@ -103,7 +111,7 @@ canvas {
 	font-size: 5.7rem;
 }
 
-.hid {
+#hid {
 	text-decoration: none;
 	cursor: default;
 	color: var(--font_color);
@@ -155,6 +163,7 @@ table {
 	text-align: left;
 	position: relative
 }
+
 tr {
 	max-height: max-content;
 }
@@ -193,14 +202,18 @@ blockquote {
 	font-family: 'Elementa';
 	color: var(--font_color);
 	font-size: 0.8rem;
-	font-style: italic;
 }
 
 #snow {
 	font-family: 'VCR';
 	color: var(--chica);
 	font-size: 0.95rem;
-	font-style: normal;
+}
+
+#golden {
+	font-family: '1942';
+	color: var(--golden);
+	font-size: 0.8rem;
 }
 
 .dropdown {
