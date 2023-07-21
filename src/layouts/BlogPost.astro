@@ -1,28 +1,22 @@
 ---
+import type { CollectionEntry } from 'astro:content';
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import i18next from "i18next";
-import Background from "../components/Background.astro";
+import FormattedDate from '../components/FormattedDate.astro';
 
-const { title, description, heroImage } = Astro.props;
+type Props = CollectionEntry<'data'>['data'];
+
+const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 ---
 
-<html lang={i18next.language}>
+<html lang="en">
 	<head>
 		<BaseHead title={title} description={description} />
 		<style>
 			.title {
-				font-size: 2rem;
-				margin: 0 0 0;
-				text-align: center;
-			}
-			.desc {
-				font-family: 'Elementa';
-				margin: 1% 0;
-				text-align: center;
-				text-decoration: none;
-				letter-spacing: 0.175rem;
+				font-size: 2em;
+				margin: 0.25em 0 0;
 			}
 			hr {
 				border-top: 1px solid #ddd;
@@ -34,24 +28,20 @@ const { title, description, heroImage } = Astro.props;
 		</style>
 	</head>
 
-	<body class={i18next.language}>
+	<body>
 		<Header />
-		<Background />
 		<main>
 			<article>
+				{heroImage && <img width={720} height={360} src={heroImage} alt="" />}
+				<h1 class="title">{title}</h1>
+				<FormattedDate date={pubDate} />
 				{
-					heroImage && (
-						<img
-							width={720}
-							height={360}
-							src={heroImage}
-							alt=""
-							class="logo toggleable"
-						/>
+					updatedDate && (
+						<div class="last-updated-on">
+							Last updated on <FormattedDate date={updatedDate} />
+						</div>
 					)
 				}
-				<h1 class="title">{title}</h1>
-				<p class="desc">{description}</p>
 				<hr />
 				<slot />
 			</article>

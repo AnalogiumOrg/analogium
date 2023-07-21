@@ -1,129 +1,19 @@
-/*
-  The CSS in this style tag is based off of Bear Blog's default CSS.
-  https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
-  License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
- */
-:root {
-	/* Automatically set */
-	--back: url(../../../images/web/eyes_dark.svg) no-repeat center fixed;
-	--color: #000;
-	--font_color: #FFF;
-	--link: #C0C0C0;
-	--border: #999;
-	--chica: #FFC100;
-	--purple: #842593;
-	--golden: #FFFF00;
-	/* Manually set */
-	--back_dark: url(../../../images/web/eyes_dark.svg) no-repeat center fixed;
-	--color_dark: #000;
-	--font_color_dark: #FFF;
-	--link_dark: #C0C0C0;
-	--border_dark: #999;
-	--chica_dark: #F3C021;
-	--purple_dark: #842593;
-	--golden_dark: #FFFF00;
-	--back_light: url(../../../images/web/eyes_light.svg) no-repeat center fixed;
-	--color_light: #FFF;
-	--font_color_light: #000000;
-	--link_light: #3f3f3f;
-	--border_light: #666;
-	--chica_light: #003EFF;
-	--purple_light: #7BDA6C;
-	--golden_light: #0000FF;
-}
-
 @font-face {
 	font-family: 'Duke';
-	src: url(/fonts/duke_thin.ttf);
-}
-
-@font-face {
-	font-family: 'CRAZY KILLER';
-	src: url(/fonts/crazy_killer.ttf);
-}
-
-@font-face {
-	font-family: 'Elementa';
-	src: url(/fonts/elementa.ttf);
-}
-
-@font-face {
-	font-family: 'Graffio';
-	src: url(/fonts/graffio.otf) format("opentype");
-}
-
-@font-face {
-	font-family: 'VCR';
-	src: url(/fonts/vcr.ttf);
-}
-
-@font-face {
-	font-family: '1942';
-	src: url(/fonts/report.ttf);
+	src: url(/duke_thin.ttf);
 }
 
 body {
+	font-family: 'Duke';
 	margin: auto;
 	padding: 20px;
+	max-width: 65ch;
 	text-align: justify;
-	/* background: var(--back), var(--color); */
-	background-size: contain;
-	-moz-background-size: contain;
-	-webkit-background-size: contain;
-	-o-background-size: contain;
+	background-color: #000;
 	word-wrap: break-word;
 	overflow-wrap: break-word;
 	line-height: 1.5;
-	color: var(--font_color);
-	background-color: var(--color);
-}
-
-canvas {
-	/* Keep always in place as the background */
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: -1;
-	background-color: var(--color);
-}
-
-canvas {
-	/* Keep always in place as the background */
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: -1;
-}
-
-.en,
-.es {
-	font-family: 'Duke', sans-serif;
-	max-width: 67ch;
-}
-
-.fault_en {
-	font-family: 'Elementa', sans-serif;
-	font-size: 4.6rem;
-}
-
-.fault_es {
-	font-family: 'Elementa', sans-serif;
-	font-size: 5.7rem;
-}
-
-#hid {
-	text-decoration: none;
-	cursor: default;
-	color: var(--font_color);
-}
-
-.data {
-	column-count: 2;
-	text-align: left;
-}
-
-.construction {
-	font-family: 'Elementa';
+	color: #fff;
 }
 
 h1,
@@ -134,11 +24,11 @@ h5,
 h6,
 strong,
 b {
-	color: var(--font_color);
+	color: #fff;
 }
 
 a {
-	color: var(--link);
+	color: #C0C0C0;
 }
 
 nav a {
@@ -160,26 +50,16 @@ content {
 
 table {
 	width: 100%;
-	text-align: left;
-	position: relative
-}
-
-tr {
-	max-height: max-content;
-}
-
-.three {
-	left: -30%;
 }
 
 img {
 	max-width: 100%;
-	height: 100%;
+	height: auto;
 }
 
 code {
 	padding: 2px 5px;
-	background-color: #4e4e4e;
+	background-color: #C0C0C0;
 }
 
 pre {
@@ -191,80 +71,9 @@ pre>code {
 }
 
 blockquote {
-	border: 1px solid var(--border);
-	text-align: center;
-	align-items: center;
-	padding: 2px 0px 2px 5px;
+	border: 1px solid #999;
+	color: #fff;
+	padding: 2px 0px 2px 20px;
 	margin: 0px;
-}
-
-#default {
-	font-family: 'Elementa';
-	color: var(--font_color);
-	font-size: 0.8rem;
-}
-
-#snow {
-	font-family: 'VCR';
-	color: var(--chica);
-	font-size: 0.95rem;
-}
-
-#golden {
-	font-family: '1942';
-	color: var(--golden);
-	font-size: 0.8rem;
-}
-
-.dropdown {
-	display: inline-block;
-	position: relative;
-}
-
-button {
-	font-family: 'Duke';
-	background-color: var(--color);
-	font-size: 15px;
-	color: var(--link);
-	border: none;
-	cursor: pointer;
-}
-
-.dropdown-options {
-	height: 4.15rem;
-	display: none;
-	position: absolute;
-	overflow: auto;
-	background-color: var(--color);
-	border-radius: 5px;
-}
-
-.dropdown:hover .dropdown-options {
-	display: block;
-}
-
-.dropdown-options a {
-	display: block;
-	color: var(--link);
-	text-decoration: none;
-	padding: 0.2rem 1rem;
-}
-
-.dropdown-options a:hover {
-	color: var(--font_color);
-	background-color: var(--back);
-	border-radius: 1px;
-}
-
-#youcant {
-	font-size: 1.3rem;
-	font-family: 'Graffio';
-	text-decoration: none;
-	text-align: center;
-	color: var(--purple);
-}
-
-#note {
-	font-size: 0.8rem;
-	text-align: center;
+	font-style: italic;
 }

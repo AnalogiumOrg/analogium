@@ -2,40 +2,28 @@
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
-import i18next, { t, changeLanguage } from "i18next";
-import { Trans } from "astro-i18next/components";
-import Background from "../components/Background.astro";
-
-changeLanguage("en");
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 ---
 
 <!DOCTYPE html>
-<html lang={i18next.language}>
-	<head>
-		<BaseHead title={t("web.name")} description={t("web.desc")} />
-	</head>
-	<body class={i18next.language}>
-		<Header title={t("web.name")} />
-		<Background />
-		<main>
-			<center><h1>{t("home.title")}</h1></center>
-			<Trans i18nKey="home.subtitle">
-				<p>
-					ANALOGIUM is a society committed to document twisted
-					universes, insane minds and creatures incomprehensible to
-					the average human, as well as the souls who gave their time
-					and sanity to develop them.
-				</p>
-				<p>
-					Imagine a world where the United States harbours strange
-					creatures among its monuments; imagine a county terrorised
-					by '<i>Doppelgängers</i>' of its inhabitants; imagine a
-					human trapped in a machine forgotten at the bottom of the
-					ocean. All these and more stories neatly documented in one
-					place.
-				</p>
-			</Trans>
-		</main>
-		<Footer />
-	</body>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header title={SITE_TITLE} />
+    <main>
+      <center><h1>WELCOME TO ANALOGIUM</h1></center>
+      <p>
+        ANALOGIUM is a project committed to archive twisted stories, unsettling
+        content of Internet, as well as the one who created them.
+      </p>
+      <p>
+        A TV Channel where strange things happens in the night? A group of
+        friends tormented by a "cult" of a mysterious figure? A forgotten PS1
+        title that never came out? That sounds like a usual Saturday to me!
+      </p>
+    </main>
+    <Footer />
+  </body>
 </html>

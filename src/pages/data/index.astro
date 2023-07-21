@@ -1,16 +1,20 @@
 ---
-import BaseHead from "../../components/BaseHead.astro";
-import Header from "../../components/Header.astro";
-import Footer from "../../components/Footer.astro";
-import i18next, { t, changeLanguage } from "i18next";
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
+import { getCollection } from 'astro:content';
+import FormattedDate from '../../components/FormattedDate.astro';
 
-changeLanguage("en");
+const posts = (await getCollection('data')).sort(
+	(a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
+);
 ---
 
 <!DOCTYPE html>
-<html lang={i18next.language}>
+<html lang="en">
 	<head>
-		<BaseHead title={t("web.name")} description={t("web.desc")} />
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 		<style>
 			ul {
 				list-style-type: none;
@@ -26,50 +30,19 @@ changeLanguage("en");
 			}
 		</style>
 	</head>
-	<body class={i18next.language}>
+	<body>
 		<Header />
 		<main>
 			<section>
-				<ul class="data">
-					<li>
-						•     <a href={"../data/fnaf-vhs"}>{t("fnaf.title")}</a>
-					</li>
-					<!--<li>
-						•     <a href={"../data/gemini-home-entertainment"}>{t("gemini.title")}</a>
-					</li>
-					<li>
-						•     <a href={"../data/generation-loss"}>{t("loss.title")}</a>
-					</li>
-					<li>
-						•     <a href={"../data/local58"}>{t("local.title")}</a>
-					</li>
-					<li>
-						•     <a href={"../data/noc+10"}>{t("noc.title")}</a>
-					</li>
-					<li>
-						•     <a href={"../data/petscop"}>{t("petscop.title")}</a>
-					</li>
-					<li>
-						•     <a href={"../data/house-in-the-ocean"}>{t("house.title")}</a>
-					</li>
-					<li>
-						•     <a href={"../data/mandela-catalogue"}>{t("mandela.title")}</a>
-					</li>
-					<li>
-						•     <a href={"../data/monument-mythos"}>{t("mythos.title")}</a>
-					</li>-->
-					<li>
-						•     <a href={"../data/nixonverse"}>{t("nixon.title")}</a>
-					</li>
-					<!--<li>
-						•     <a href={"../data/walten-files"}>{t("walten.title")}</a>
-					</li>
-					<li>
-						•     <a href={"../data/valle-verde"}>{t("valle.title")}</a>
-					</li>
-					<li>
-						•     <a href={"../data/welcome-home"}>{t("welcome.title")}</a>
-					</li>-->
+				<ul>
+					{
+						posts.map((post) => (
+							<li>
+								<FormattedDate date={post.data.pubDate} />
+								<a href={`/data/${post.slug}/`}>{post.data.title}</a>
+							</li>
+						))
+					}
 				</ul>
 			</section>
 		</main>
