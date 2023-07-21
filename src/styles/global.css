@@ -164,8 +164,10 @@ table {
 	position: relative
 }
 
-tr {
-	max-height: max-content;
+
+.two {
+	left: 6.25%;
+	top: -2rem;
 }
 
 .three {
