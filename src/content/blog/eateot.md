@@ -1,107 +1,48 @@
 ---
-title: 'EVERYWHERE AT THE END OF TIMES'
+title: 'EVERYWHERE AT THE END OF TIME'
 description: 'May the ballroom remain eternal.'
 pubDate: 'Sep 22 2016'
-heroImage: '/placeholder-hero.jpg'
+heroImage: '/eateot.png'
 ---
 
-Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.
+<abbr title="Everywhere at The End of Time">EATEOT</abbr> is an album created by Leyland Kirby under the name of **The Caretaker**. The album is composed by 6 _stages_ and totals 50 songs; all of these songs where published over [Bandcamp](https://thecaretaker.bandcamp.com/album/everywhere-at-the-end-of-time) and sold as vinlys.
 
-## Headings
+## SYNOPSIS
 
-The following HTML `<h1>`—`<h6>` elements represent six levels of section headings. `<h1>` is the highest section level while `<h6>` is the lowest.
+Just like some of The Caretakers past projects (like [An Empty Bliss Beyond this World](https://thecaretaker.bandcamp.com/album/an-empty-bliss-beyond-this-world) or [Theoretically Pure Anterograde Amnesia](https://thecaretaker.bandcamp.com/album/theoretically-pure-anterograde-amnesia)), this albums represents the effects of a mental desease, in this case being _**Dementia**_.
 
-# H1
+How is this representation possible? The tracks are ballroom songs, mixed with vinyl cracks, repetiton of certain segments, distortions more and more evident, reverb that adds a desolate and distant feel, alongside paintings (made by Ivan Seal) of barely recognisable objects that only gets worse the farther you go on the album. For most people is a boring and unsettling ambient album, but for me... **is a jewel**.
 
-## H2
+## INTERPRETATION
 
-### H3
+### STAGE 1
 
-#### H4
+The first 12 songs of the album are contained inside this stage, where the first symptoms of Dementia are visible. The memory loss is barely a problem, and it looks more like a daydream than Hell itself, but is here where the music and art complements the core idea of the album: in this particular stage 
 
-##### H5
+![Beaten Frowns After](/stage1.png)
+> **Beaten Frowns After**
 
-###### H6
+### STAGE 2
 
-## Paragraph
+![Pittor Pickgown in Khatheinstersper](/stage2.png)
+> **Pittor Pickgown in Khatheinstersper**
 
-Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.
+### STAGE 3
 
-Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sapicia is sinveli squiatum, core et que aut hariosam ex eat.
+![Hag](/stage3.png)
+> **Hag**
 
-## Images
+### STAGE 4
 
-![This is a placeholder image description](/placeholder-social.jpg)
+![Giltsholder](/stage4.png)
+> **Giltsholder**
 
-## Blockquotes
+### STAGE 5
 
-The blockquote element represents content that is quoted from another source, optionally with a citation which must be within a `footer` or `cite` element, and optionally with in-line changes such as annotations and abbreviations.
+![Eptitranxisticemestionscers Desending](/stage5.png)
+> **Eptitranxisticemestionscers Desending**
 
-#### Blockquote without attribution
+### STAGE 6
 
-> Tiam, ad mint andaepu dandae nostion secatur sequo quae.  
-> **Note** that you can use _Markdown syntax_ within a blockquote.
-
-#### Blockquote with attribution
-
-> Don't communicate by sharing memory, share memory by communicating.<br>
-> — <cite>Rob Pike[^1]</cite>
-
-[^1]: The above quote is excerpted from Rob Pike's [talk](https://www.youtube.com/watch?v=PAAkCSZUG1c) during Gopherfest, November 18, 2015.
-
-## Tables
-
-| Italics   | Bold     | Code   |
-| --------- | -------- | ------ |
-| _italics_ | **bold** | `code` |
-
-## Code Blocks
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Example HTML5 Document</title>
-  </head>
-  <body>
-    <p>Test</p>
-  </body>
-</html>
-```
-
-## List Types
-
-#### Ordered List
-
-1. First item
-2. Second item
-3. Third item
-
-#### Unordered List
-
-- List item
-- Another item
-- And another item
-
-#### Nested list
-
-- Fruit
-  - Apple
-  - Orange
-  - Banana
-- Dairy
-  - Milk
-  - Cheese
-
-## Other Elements — abbr, sub, sup, kbd, mark
-
-<abbr title="Graphics Interchange Format">GIF</abbr> is a bitmap image format.
-
-H<sub>2</sub>O
-
-X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
-
-Press <kbd><kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Delete</kbd></kbd> to end the session.
-
-Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.
+![Necrotomigaud](/stage6.png)
+> **Necrotomigaud**
