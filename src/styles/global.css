@@ -43,8 +43,8 @@
 }
 
 @font-face {
-	font-family: 'Elementa';
-	src: url(/fonts/elementa.ttf);
+	font-family: 'Through The Night';
+	src: url(/fonts/through_the_night.ttf);
 }
 
 @font-face {
@@ -102,12 +102,12 @@ canvas {
 }
 
 .fault_en {
-	font-family: 'Elementa', sans-serif;
+	font-family: 'Through The Night', sans-serif;
 	font-size: 4.6rem;
 }
 
 .fault_es {
-	font-family: 'Elementa', sans-serif;
+	font-family: 'Through The Night', sans-serif;
 	font-size: 5.7rem;
 }
 
@@ -123,7 +123,7 @@ canvas {
 }
 
 .construction {
-	font-family: 'Elementa';
+	font-family: 'Through The Night', sans-serif;
 }
 
 h1,
@@ -201,7 +201,7 @@ blockquote {
 }
 
 #default {
-	font-family: 'Elementa';
+	font-family: 'Through The Night';
 	color: var(--font_color);
 	font-size: 0.8rem;
 }
