@@ -17,7 +17,18 @@ How is this representation possible? The tracks are ballroom songs, mixed with v
 
 ### STAGE 1
 
-The first 12 songs of the album are contained inside this stage, where the first symptoms of Dementia are visible. The memory loss is barely a problem, and it looks more like a daydream than Hell itself, but is here where the music and art complements the core idea of the album: in this particular stage 
+The first 12 songs of the album are contained inside this stage, where the first symptoms of Dementia are visible. The memory loss is barely a problem, and it looks more like a daydream than Hell itself, but is here where the music and art complements the core idea of the album: in this particular stage the music sounds more **hollow** than anything, and the art looks mostly like a newspaper, just a little bit odd.
+
+The tracklist of Stage 1 is:
+
+|                  SIDE A                 |            SIDE B           |
+|-----------------------------------------|-----------------------------|
+|        It's Just a Burning Memory       |   All That Follows is True  |
+|         We Don't Have Many Days         |     An Autumnal Equinox     |
+|         Late Afternoon Drifting         |  Quiet Internal Rebellions  |
+|          Childishly Fresh Eyes          | The Loves of My Entire Life |
+|           Slightly Bewildered           |    Into Each Others Eyes    |
+| Things That Are Beautiful and Transient |  My Heart Will Stop in Joy  |
 
 ![Beaten Frowns After](/stage1.png)
 > **Beaten Frowns After**
