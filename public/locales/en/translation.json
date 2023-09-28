@@ -5,9 +5,6 @@
   },
   "head": {
     "home": "HOME",
-    "data": "DATA",
-    "twitter": "TWITTER",
-    "youtube": "YOUTUBE",
     "origin": "ORIGIN",
     "lang": "LANGUAGE"
   },
