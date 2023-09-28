@@ -15,9 +15,11 @@
   "dependencies": {
     "@astrojs/mdx": "^0.19.1",
     "@astrojs/sitemap": "^1.3.0",
-    "astro": "^2.4.1",
+    "@astrojs/vue": "^3.0.0",
+    "astro": "^3.1.4",
     "astro-i18next": "^1.0.0-beta.21",
     "pixi.js": "^7.2.4",
-    "seeded-rand": "^2.0.1"
+    "seeded-rand": "^2.0.1",
+    "vue": "^3.3.4"
   }
 }
