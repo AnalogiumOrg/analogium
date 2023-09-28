@@ -32,6 +32,10 @@ audio.addEventListener("timeupdate", () => {
 	current_time.value = transformTime(audio.currentTime);
 	duration.value = transformTime(audio.duration);
 });
+audio.addEventListener("ended", () => {
+	playing = false;
+	disk_class.value = "tape_disk";
+});
 </script>
 
 <template>
