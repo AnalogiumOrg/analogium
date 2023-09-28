@@ -62,6 +62,10 @@
 	src: url(/fonts/report.ttf);
 }
 
+@font-face {
+	font-family: 'DIEDIEDIE';
+	src: url(/fonts/diediedie.TTF);
+}
 body {
 	margin: auto;
 	padding: 20px;
