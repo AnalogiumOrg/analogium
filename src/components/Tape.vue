@@ -124,17 +124,17 @@ audio.addEventListener("ended", () => {
 	align-items: center;
 	z-index: 5;
 	font-family: "VCR", sans-serif;
-	color: var(--chica);
+	color: #000;
 }
 
 .tape_title {
-	font-size: 1.5rem;
-	font-weight: bold;
+	font-size: 1.2rem;
+	font-family: 'DIEDIEDIE';
 	z-index: 5;
 }
 
 .tape_time {
-	font-size: 1rem;
+	font-size: 0.875rem;
 }
 
 .playing {
