@@ -202,6 +202,7 @@ blockquote {
 	align-items: center;
 	padding: 2px 0px 2px 5px;
 	margin: 0px;
+	background-color: var(--color);
 }
 
 #default {

@@ -39,24 +39,26 @@ audio.addEventListener("ended", () => {
 </script>
 
 <template>
-	<div class="tape_container">
-		<div class="audio_tape" :onclick="toggle">
-			<img :src="tapePartsSources.back" alt="Back of the tape" class="tape_back" />
-			<div class="tape_disks">
-				<img :src="tapePartsSources.disk" alt="Disk of the tape" :class="disk_class" />
-				<div class="tape_separation"></div>
-				<img :src="tapePartsSources.disk" alt="Disk of the tape" :class="disk_class" />
-			</div>
-			<div class="middle_overlay">
+	<center>
+		<div class="tape_container">
+			<div class="audio_tape" :onclick="toggle">
+				<img :src="tapePartsSources.back" alt="Back of the tape" class="tape_back" />
+				<div class="tape_disks">
+					<img :src="tapePartsSources.disk" alt="Disk of the tape" :class="disk_class" />
+					<div class="tape_separation"></div>
+					<img :src="tapePartsSources.disk" alt="Disk of the tape" :class="disk_class" />
+				</div>
+				<div class="middle_overlay">
 
+				</div>
+				<img :src="tapePartsSources.front" alt="Front of the tape" class="tape_front" />
 			</div>
-			<img :src="tapePartsSources.front" alt="Front of the tape" class="tape_front" />
+			<div class="tape_details">
+				<div class="tape_title">{{ title }}</div>
+				<div class="tape_time">{{ current_time }} / {{ duration }}</div>
+			</div>
 		</div>
-		<div class="tape_details">
-			<div class="tape_title">{{ title }}</div>
-			<div class="tape_time">{{ current_time }} / {{ duration }}</div>
-		</div>
-	</div>
+	</center>
 </template>
 <style scoped>
 /* Inline all Tape*/
@@ -76,13 +78,13 @@ audio.addEventListener("ended", () => {
 }
 
 .audio_tape .tape_front {
-	height: 14rem;
+	height: 13.5rem;
 	z-index: 3;
 	position: absolute;
 }
 
 .tape_disk {
-	height: 7.5rem;
+	height: 7rem;
 }
 
 .tape_disks {
@@ -103,10 +105,11 @@ audio.addEventListener("ended", () => {
 
 .middle_overlay {
 	height: 14rem;
-	width: 12rem;
+	width: 11.5rem;
 	z-index: 3;
 	background-color: rgb(255, 255, 255);
 }
+
 .tape_container {
 	align-items: center;
 	height: 14rem;
@@ -114,6 +117,7 @@ audio.addEventListener("ended", () => {
 	display: flex;
 	flex-direction: column;
 }
+
 .tape_details {
 	position: absolute;
 	height: 14rem;
@@ -151,3 +155,4 @@ audio.addEventListener("ended", () => {
 	}
 }
 </style>
+
