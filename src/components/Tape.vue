@@ -25,8 +25,8 @@ const transformTime = (time: number) => {
 	return `${minutes}:${seconds}`;
 };
 const disk_class = ref("tape_disk");
-const current_time = ref("00");
-const duration = ref("00");
+const current_time = ref("0:0");
+const duration = ref("0:00");
 const title = ref(props.audio?.split("/").pop()?.split(".")[0]);
 audio.addEventListener("timeupdate", () => {
 	current_time.value = transformTime(audio.currentTime);
