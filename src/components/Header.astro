@@ -5,16 +5,14 @@ import i18next, { t } from "i18next";
 import { localizePath } from "astro-i18next";
 
 const lang = i18next.language;
-const logourl = `/images/web/LogoText_${lang}_light.png`;
+const logo = `/images/web/Logo_${lang}_light.png`;
 
 ---
 
 <header lang={i18next.language}>
 	<Background />
 	<h1></h1>
-	<a href={localizePath("/")} id="hid"><img src="/images/web/Logo_light.png" class="logo toggleable" /></a>
-	<h2></h2>
-	<img src={logourl} class="text toggleable" />
+	<a href={localizePath("/")} id="hid"><img src={logo} class="logo toggleable" /></a>
 	<h2></h2>
 	<nav>
 		<HeaderLink href={localizePath("/")}>{t("head.home")}</HeaderLink>
