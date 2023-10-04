@@ -5,8 +5,8 @@
  */
 :root {
 	/* Automatically set */
-	--back: url(../../../images/web/eyes_dark.svg) no-repeat center fixed;
 	--color: #000;
+	--color-rgba: rgba(0, 0, 0, 0.75);
 	--font_color: #FFF;
 	--link: #C0C0C0;
 	--border: #999;
@@ -14,16 +14,16 @@
 	--purple: #842593;
 	--golden: #FFFF00;
 	/* Manually set */
-	--back_dark: url(../../../images/web/eyes_dark.svg) no-repeat center fixed;
 	--color_dark: #000;
+	--color-rgba_dark: rgba(0, 0, 0, 0.75);
 	--font_color_dark: #FFF;
 	--link_dark: #C0C0C0;
 	--border_dark: #999;
 	--chica_dark: #F3C021;
 	--purple_dark: #842593;
 	--golden_dark: #FFFF00;
-	--back_light: url(../../../images/web/eyes_light.svg) no-repeat center fixed;
 	--color_light: #FFF;
+	--color-rgba_light: rgba(255, 255, 255, 0.75);
 	--font_color_light: #000000;
 	--link_light: #3f3f3f;
 	--border_light: #666;
