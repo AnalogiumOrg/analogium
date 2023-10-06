@@ -4,32 +4,25 @@
   License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
  */
 :root {
-	/* Automatically set */
 	--color: #000;
 	--color-rgba: rgba(0, 0, 0, 0.75);
 	--font_color: #FFF;
 	--link: #C0C0C0;
 	--border: #999;
-	--chica: #FFC100;
-	--purple: #842593;
-	--golden: #FFFF00;
-	/* Manually set */
+
+	/* DARK MODE */
 	--color_dark: #000;
 	--color-rgba_dark: rgba(0, 0, 0, 0.75);
 	--font_color_dark: #FFF;
 	--link_dark: #C0C0C0;
 	--border_dark: #999;
-	--chica_dark: #F3C021;
-	--purple_dark: #842593;
-	--golden_dark: #FFFF00;
+
+	/* LIGHT MODE */
 	--color_light: #FFF;
 	--color-rgba_light: rgba(255, 255, 255, 0.75);
 	--font_color_light: #000000;
 	--link_light: #3f3f3f;
 	--border_light: #666;
-	--chica_light: #003EFF;
-	--purple_light: #7BDA6C;
-	--golden_light: #0000FF;
 }
 
 @font-face {
@@ -65,6 +58,11 @@
 @font-face {
 	font-family: 'DIEDIEDIE';
 	src: url(/fonts/diediedie.TTF);
+}
+
+@font-face {
+	font-family: 'Falling For Autumn';
+	src: url(/fonts/falling_autumn.ttf);
 }
 body {
 	margin: auto;
@@ -132,13 +130,16 @@ canvas {
 
 h1,
 h2,
-h3,
 h4,
-h5,
 h6,
 strong,
 b {
 	color: var(--font_color);
+}
+
+h3,
+h5 {
+	text-align: center;
 }
 
 a {
@@ -198,29 +199,16 @@ pre>code {
 
 blockquote {
 	border: 1px solid var(--border);
-	text-align: center;
-	align-items: center;
-	padding: 2px 0px 2px 5px;
-	margin: 0px;
-	background-color: var(--color);
-}
-
-#default {
 	font-family: 'Through The Night';
 	color: var(--font_color);
 	font-size: 0.8rem;
-}
-
-#snow {
-	font-family: 'VCR';
-	color: var(--chica);
-	font-size: 0.95rem;
-}
-
-#golden {
-	font-family: '1942';
-	color: var(--golden);
-	font-size: 0.8rem;
+	text-align: center;
+	align-items: center;
+	align-content: center;
+	padding: 2px 0px 2px 5px;
+	margin: 0px;
+	background-color: var(--color);
+	font-style: italic;
 }
 
 .dropdown {
@@ -261,14 +249,6 @@ button {
 	color: var(--font_color);
 	background-color: var(--back);
 	border-radius: 1px;
-}
-
-#youcant {
-	font-size: 1.3rem;
-	font-family: 'Graffio';
-	text-decoration: none;
-	text-align: center;
-	color: var(--purple);
 }
 
 #note {

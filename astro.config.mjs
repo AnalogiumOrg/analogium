@@ -1,4 +1,4 @@
-import { defineConfig } from 'astro/config';
+import { defineConfig } from "astro/config";
 import astroI18next from "astro-i18next";
 import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
