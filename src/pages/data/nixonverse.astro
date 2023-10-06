@@ -8,42 +8,64 @@ import Tape from "../../components/Tape.vue";
 changeLanguage("en");
 ---
 
+<style>
+	:root {
+		--blood: #ff0000;
+		--lunarian: #26afff;
+
+		--blood_dark: #ff0000;
+		--blood_light: #00ffff;
+		--lunarian_dark: #26afff;
+		--lunarian_light: #d95000;
+	}
+
+	#queen {
+		font-family: "Falling For Autumn";
+		font-style: normal;
+		font-size: 0.975rem;
+		color: var(--lunarian);
+		line-height: 1.5rem;
+	}
+</style>
 <Layout
 	title={t("nixon.title")}
 	heroImage="../../../images/data/nv_dark.png"
 	description={t("nixon.desc")}
 >
-	<Trans i18nKey="nixon.intro">
-		<p>
-			THE NIXONVERSE is a tale developed by MISTER MANTICORE (Alex
-			Casanas) via YouTube. The series is a Spin-Off of his main story,
-			<a href={localizePath("data/monument-mythos")}
-				>THE MONUMENT MYTHOS</a
-			>.
-		</p>
-	</Trans>
+	<p>
+		THE NIXONVERSE is a tale developed by MISTER MANTICORE (Alex Casanas)
+		via YouTube in 2022. The series is a Spin-Off of his main story,
+		<a href={localizePath("data/monument-mythos")}>THE MONUMENT MYTHOS</a>,
+		and an expansion for one of Alex oldest videos, <a
+			href={localizePath("data/house-in-the-ocean")}
+			id="hid">THE HOUSE IN THE OCEAN</a
+		>. <br /><br /> In 2023 it got an expansion called “<a
+			href="https://youtu.be/aUbsgWa2CXY"
+			target="_blank">THE ABSOLUTE NIXONVERSE</a
+		>”, and a trailer for <a
+			href="https://youtu.be/LjfKyuzwfqc"
+			target="_blank">a 2 season</a
+		> was uploaded as an April Fools joke.
+	</p>
 	<h1>{t("data.syn")}</h1>
-	<Trans i18nKey="nixon.synop">
-		<p>
-			The series take place after the events of the second season of
-			MONUMENT MYTHOS, in a different universe with a familiar form; the
-			story connects four entities very similar and powerful: the Son, the
-			Knight, the Queen and... <i>God</i>. With these entities, there are
-			some eyes that glow more than others, those being from Alice Avenue,
-			Ed Dwight, and the egocentric self of the United States, always
-			obsessed with power.
-		</p>
-	</Trans>
+	<p>
+		The series take place after the events of the second season of MONUMENT
+		MYTHOS, in a different universe with a fairly familiar form; the story
+		connects three containers for God's GOODNESS, WILL and AUTHORITY, who
+		slowly become mad thanks to one simple thing: <b
+			>our world is not kind, <i>our world will never be kind</i></b
+		>.
+	</p>
 	<h1>{t("chrono.chrono")}</h1>
 	<ol>
 		<li>
-			<a href="https://youtu.be/VdcCQmMEKtk" target="_blank"
-				>THE LAST SON OF ALCATRAZ</a
+			<a href="https://youtu.be/p18oxjNauM8" target="_blank">
+				THE D-DAY KNIGHT</a
 			>
 		</li>
 		<li>
-			<a href="https://youtu.be/p18oxjNauM8" target="_blank">
-				THE D-DAY KNIGHT</a
+			<a href="https://youtu.be/VdcCQmMEKtk" target="_blank"
+				>THE LAST SON OF ALCATRAZ</a
 			>
 		</li>
 		<li>
@@ -59,11 +81,6 @@ changeLanguage("en");
 		<li>
 			<a href="https://youtu.be/vyxYFnxd7Q8" target="_blank"
 				>THE MISSING EYE OF JESUS CHRIST</a
-			>
-		</li>
-		<li>
-			<a href="https://youtu.be/D86OD5fa_aY" target="_blank"
-				>THE HOUSE IN THE OCEAN</a
 			>
 		</li>
 		<li>
@@ -93,298 +110,294 @@ changeLanguage("en");
 		</li>
 	</ol>
 	<h1>{t("data.inter")}</h1>
-	<Trans i18nKey="nixon.part1">
-		<center>
-			<p>
-				<b>
-					Faster than an airplane! More powerful than a locomotive!
-					Impervious to bullets! Up in the sky, look! It's a bird!
-					It's a plane! It's--
-				</b>
-			</p>
-		</center>
-		<p>
-			Our story begins with <b>The Last Son</b>, a real
-			superhero who is always there to save us all, and yet some people
-			are in constant fear that he will rebel against us and conquer us.
+	<h3>PROLOGUE - THE END OF ANOTHER WORLD</h3>
+	<p>
+		Before anything can happen, we need to adress one key element of our
+		world, <b>The Nature of Alcatraz Matter</b>: if we put together a
+		regular atom and an Alcatraz atom, the particles of the regular one will
+		mutate to the properties and characteristics of the Alcatraz one, acting
+		similarly to a parasite than anything else. This allegory makes more
+		sense knowing that every Alcatraz atom has <b
+			>its own mind, brain and neurons</b
+		>. Now with knowladge captured, we can <b>wake the Horned Serpent</b>.
+	</p>
+	<blockquote>
+		<img
+			src="../../../images/data/endofanotherworld_dark.png"
+			class="logo toggleable"
+		/>
+		<p>WELCOME TO THE NIXONVERSE</p>
+	</blockquote>
+
+	<h3>ACT I - THE CHILDREN OF GOD</h3>
+	<p>
+		Our story begins with a docummental created by Alice Avenue, talking
+		about a hero who turned the fate of the Amercian soldiers that arrived
+		to Normandy and accepted death as their destiny. They baptized him as <b
+			>The D-Day Knight</b
+		>, and prayed that at any time, at any place, he could save us. During
+		D-Day, the Knight lost his helmet and when researchers found it in the
+		battlefield, it had a lot of damage. Luckly for us, they managed to
+		restore it to its full glory... however something looked odd, why a
+		knight would have a whole craneum as his helmet? What kind of <i
+			>horned creature</i
+		> would ever have squeletic formation like that to begin with?
+	</p>
+	<p>
+		However, he's not the only hero of this land. There's another being
+		borned taller than a man, and stil decides to keep himself at the size
+		of one, but even he could conquer and hurt us all if he desires to: <b
+			>The Last Son of Alcatraz.</b
+		> He's just naive and has a great desire to protect humans, he's a better
+		hero than the Knight would ever aspire to be.
+	</p>
+	<p>
+		Finally the third container is showed to us, but not in our usual
+		planet, this time is somewhere more special... like <i>the Moon.</i>
+		<br />
+		The Apollo 11 odyssey captured in photos and recordings a woman living on
+		the Moon, a queen waiting for her people to come back to her authority: <b
+			>The Queen of the Lunarian.</b
+		> Before Ed Dwight could step out of the lander and become the first man
+		on the Moon, the Queen started a seech that she had prepared for a long time,
+		the first ever recorded words on the Moon. Unfortunely a tiny blood stain
+		covered the entire moment, as after commanding Ed to blast the Queen, John
+		Glenn was <b>evicted from reality</b>.
+	</p>
+	<blockquote>
+		<Tape audio="../../../audio/queen's_beauty.mp3" client:only />
+		<p id="queen">
+			Beuti is soomting els, soomting inxpicble that eech pirson cerriis
+			insid. This furm of beuti reeletd tot Her veshions.
+			<br /><br />
+			Thier's a <u>Greet Dibsion</u> coomig abuut on these planet. Thier arr
+			goinn tot be a lut of peepul jhuu wiil die bcos tey just don't nkow jhou
+			tot liev. Tey don't nkow waht lif's abuut, tey don't nkow jhow tot giv,
+			jhow tot lov - knor do thei wann tot.
+			<br /><br />
+			Ann thoos jhu are beutifuul enuugh - I don't meen pfiscalee but soomting
+			beejon taht - tey wiil haev the chaens tot leern jhow tot fly, tot be
+			beutifuul, tot reis avuub the levl of the nnormml jhumn - tot be supeeror
+			biigs first ann evntuelii <i>guds ann guddsses.</i>
 		</p>
+		<img
+			src="../../../images/data/containers_dark.png"
+			class="logo toggleable"
+		/>
+	</blockquote>
+	<h3>ACT II - THE HOUSE OF GOD</h3>
+	<p>
+		A queen for nobody living on the Moon, and the <b>Knight and Day</b> balance
+		in between the Knight and the Son, it was just a matter of time for everything
+		to go wrong... <i>way too wrong.</i> Going forward, in the middle of the
+		Korean War, the Last Son ended up interviening in the name of America, even
+		stopping the Knight for going <i style="font-weight: bold;"
+			>“<u>too far</u>”.</i
+		> Once his job was done, he returned to his fortress on Alaska, fully oblivious
+		about the tiny present that followed him home. <b
+			>American nuclear missiles</b
+		>.
+	</p>
+	<p>
+		Why would the United States kidnap one of their heros? They have a big
+		plan, but before it could take place they need something else: thanks to
+		the research that Apollo 11 did on Lunarian anatomy, Apollo 12 was
+		sended to the Moon with the objective to shoot the Queen and recover her
+		eye. Once back on Earth, the big transformation of the Last Son took
+		place, he was brainwashed and became a bastardized impersonator of our
+		original savior, the one who will bring to our land a distorted vision
+		of world peace: <b>Jesus Christ.</b>
+	</p>
+	<blockquote>
+		<img
+			src="../../../images/data/itwastheonlyway_dark.png"
+			class="logo toggleable"
+		/>
+		<p></p>
 		<p>
-			Actually, he is not our only hero, there is another one baptized
-			<b>The D-Day Knight</b>, the one who saved the US Army on
-			the battlefield that day in 1944. He gave us all hope and faith from
-			his intervention in Normandy, and no one more than Alice Avenue had
-			great respect and affection for him. During D-Day, the Knight lost
-			something that will prove very interesting later on, he lost his
-			helmet.
+			OUR FREEDOM ᐳ YOUR FREEDOM
+			<br />OUR CHRIST ᐳ YOUR CHRIST
+			<br />= WORLD PEACE
 		</p>
-	</Trans>
-	<img
-		src="../../../images/data/hornedhelmet_dark.png"
-		class="logo toggleable"
-	/>
-	<Trans i18nKey="nixon.part2">
-		<blockquote id="default">
-			<center><p><i>D-Day Knight's Helmet</i></p></center>
-		</blockquote>
-		<p>
-			That's the beginning of our planet, but what if we go up? Somewhere
-			like... <i>the Moon.</i>
-		</p>
-		<p>
-			The first mission to land humans on the Moon was not as normal as
-			you might think, because Ed Dwight (the first man on the Moon) and
-			his team found the <b>Queen of the Lunarians</b>, and
-			witnessed the first recorded words on our natural satellite. The
-			queen prophesied a Great Division on Earth, since humans did not
-			know how to live, how to love, how to fly... Unfortunately, a small
-			bloodstain covered the moment, because after ordering Ed to shoot
-			her, John Glenn was <b>evicted from reality</b>.
-		</p>
-	</Trans>
-	<img
-		src="../../../images/data/johndeath_dark.png"
-		class="logo toggleable"
-	/>
-	<Trans i18nKey="nixon.part3">
-		<blockquote id="default">
-			<center>
-				<p>
-					<i> John Glenn's cause of death: a Lunarian encounter.</i>
-				</p>
-			</center>
-		</blockquote>
-		<p>
-			It's at this very moment that Ed Dwight would have a very
-			interesting talk with <i>someone special,</i> but we'll come back to
-			that later. Now that we know our protagonists, we can move on to our
-			antagonist: United States.
-		</p>
-		<center>
-			<p>
-				After interfering in the Korean War, THE LAST SON returned to
-				his fortress in Alaska. <b
-					>Nuclear missiles followed him home.</b
-				>
-			</p>
-		</center>
-		<p>
-			After the Apollo 11 mission revealed the properties of the Lunarian
-			anatomy, the United States wasted no time in sending Apollo 12 to
-			bring back the perfect ingredient to fulfil the devious plan: a
-			Lunarian Eye. Phase one was completed, but something was still
-			missing... or rather, somebody. An eye of an alien race and the
-			equivalent of Superman, why would the proclaimed land of freedom
-			want these elements? Easy, <b>to create their own Jesus</b>.
-		</p>
-		<p>
-			After brainwashing the Last Son, the United States would bring a
-			distorted version of peace during the Vietnam War, now called
-			Bethlenam or “The First Saved State”; this fake treaty was referred
-			to as The Peace Equation.
-		</p>
-		<blockquote id="default">
-			<center>
-				<p>
-					<i
-						>OUR FREEDOM ᐳ YOUR FREEDOM
-						<br />OUR CHRIST ᐳ YOUR CHRIST
-						<br />= WORLD PEACE</i
-					>
-				</p>
-			</center>
-		</blockquote>
-		<p>
-			In a turn of events, the Last Son opened his eyes (well... his one
-			eye), and realized all the horrifying acts he had committed under
-			the mantle of the Messiah. Devastated by this, he fled to the ocean
-			of his former home, Dark Alaska, and sought a refuge isolated from
-			man, something that would remind him of his childhood, something
-			like... a <a href={localizePath("data/house-in-the-ocean")}
-				>House in the Ocean</a
-			>.
-		</p>
-		<p>
-			Fate is very funny, because some time later the Last Son would have
-			an encounter with a ship of a race we know very well, the Lunarians
-			come to fulfil a prophecy: bring their King back home. <b>
-				The Crescent King was born.</b
-			>
-		</p>
-	</Trans>
-	<img
+	</blockquote>
+	<p>
+		With our “Lord” created, tha US sended the Son to theoreticlly redeem
+		the rest of the world, starting on Vietnam (now called Bethlenam). They
+		started spreading their vision and their power everywhere, like a virus,
+		but at some point the Son regained his senses, he opened his eyes
+		(well... his one eye) and he saw all the pain he created under the Lord
+		mantra. He flew away into his hideout, now called Dark Alaska, and he
+		hid inside an imitation of his childhood home: the Son built a house... <b
+			>in the ocean.</b
+		>
+	</p>
+	<h4>
+		The House in the Ocean is not an urban legend.<br />IT IS A COVER STORY
+	</h4>
+	<h3>ACT III - THE THRONE OF GOD</h3>
+	<!-- 
+	<blockquote>
+		<img
 		src="../../../images/data/evolution_dark.png"
 		class="logo toggleable"
-	/>
-	<Trans i18nKey="nixon.part4">
-		<blockquote id="default">
-			<center><p><i>Evolution ofthe Last Son.</i></p></center>
-		</blockquote>
-		<p>
-			Slowly, the Lunarians began to take control of America, not only by
-			creating “vessels for the king's essence”, but also by attacking the
-			human culture, starting with language. No one understood their own
-			thoughts, so they had to accept the Lunarian culture by force in
-			order to survive. However, in the midst of all this storm, a
-			familiar voice returned to bring faith to the human race... Alice
-			Avenue broadcasted over the radio the story of the Last Son.
-		</p>
-		<p>
-			The Last Son was a young man like you and me, with parents who were
-			cutthroats and classmates who were worse. The boy was always alone
-			when he went to school, and always in those moments driving towards
-			his destiny, he doubted his role in the universe; he always thought
-			that he had to help everyone around him, and that he had to win at
-			any cost. One day in the midst of his thoughts, the young man was
-			involved in a car crash; still b enough to move, he got out of
-			his car and approached the dying man with whom he had collided, a
-			familiar face from another universe... <b>James Dean</b>.
-		</p>
-		<p>
-			“You won, little bastard... you won...”, this were the last words of
-			the man who in this universe, lost. The Last Son was devastated and
-			could not hold back his tears, and from the pain and exhaustion
-			caused by the accident, he fainted. He woke up in a strange dream,
-			where he found himself on a cliff with a vehicle behind him, which
-			was driving at high speed. He, to avoid the impact, jumped into the
-			void, and began to believe more and more that he could fly, that he
-			could beat death... he did it. The young man began to fly high,
-			faster than an airplane. It was right here that he woke up and flew
-			as far away as possible from the scene of the accident. He kept on
-			believing, and kept on winning at any cost in order to save
-			everyone.
-		</p>
-		<p>
-			Alice not only prayed that the Crescent King would remember the hero
-			he was before America captured him, she also hoped that the Knight
-			would return to save us all again. He listened to her words and
-			executed a desperate plan to make the humanity of the Last Son wake
-			up again: throw Alice off the top of the Chrysler Building hoping
-			that he would rescue her... <b>that never happened</b>.
-		</p>
-	</Trans>
-	<img
-	src="../../../images/data/avenuefall_dark.png"
-	class="logo toggleable"
-	/> <br />
-	<Tape audio="../../../audio/alice.mp3.mp3" client:only/>
-	<Trans i18nKey="nixon.part5">
-		<blockquote id="default">
-			<center><p><i>Alice Avenue's last moments of life.</i></p></center>
-		</blockquote>
-		<p>
-			After the Knight's plan failed in every way, the Lunarians continued
-			their invasion, brainwashing and altering human brains in major
-			cities such as New York. It's at this point that the Knight would
-			compose a message apologizing for what happened to Alice, and that
-			she was still alive...
-		</p>
-		<center
-			><p>
-				<a href={localizePath("data/monument-mythos")}
-					>IN MY WORLD, STATUES HELD SOULS</a
-				>
-			</p></center
-		>
-		<p>
-			Something still left the Knight unsatisfied, something made him feel
-			hollow, so to try to redeem himself he removed the head of the Alice
-			Avenue memorial statue and wear it as if it were his old helmet;
-			even though he had only worn it for a day something in him changed,
-			the only thing that could be seen was his eye, full of anger... <b
-				><i>Grief can make you a monster</i></b
-			>.
-		</p>
-		<p>
-			This precise moment is where Apollo 11 comes back to play a vital
-			role, so we'll have to go back in time a bit, and put ourselves in
-			Ed Dwight's spacesuit again. His body was found on the moon, and it
-			was determined that his death was caused by his own weapon; next to
-			him was a tape which would be referred to as “THE MOON GOD”. On this
-			tape is revealed the conversation Ed had with that someone special
-			who has been hidden for quite some time, the God behind the beings
-			that are causing so much damage right now... <b>Richard Nixon</b>.
-		</p>
-	</Trans>
-	<img src="../../../images/data/god_dark.png" class="logo toggleable" />
-	<Trans i18nKey="nixon.part6">
-		<blockquote id="default">
-			<center><p><i>Photograph of God<br />By Ed Dwight</i></p></center>
-		</blockquote>
-		<center>
-			<h5>
-				Note: The following audio does not feature the voice of Ed
-				Dwight.
-			</h5>
-		</center>
-	</Trans>
-	<Tape audio="../../../audio/THE_MOON_GOD.mp3" client:only/>
-	<Trans i18nKey="nixon.part7">		
-		<p>
-			Nixon explains in this tape that he managed to escape from the
-			Horned Serpent during the Great Division, and that he ended up on
-			the moon of this new universe. He had doubts about whether people
-			would accept him, so he created three extensions of himself to run a
-			little experiment, which is how The Son, The Knight and The Queen
-			were born. All three went somewhat insane, and Nixon concluded that
-			he couldn't risk entering an unfriendly planet. Besides, he already
-			knew that the Son would become King of the Lunarians, and that if he
-			didn't stop it, he would become exceedingly powerful.
-		</p>
-		<center>
-			<p>
-				I am sorry, Mr Dwight. No human was ever meant to hear what I
-				have said.
-			</p>
-		</center>
-		<p>
-			Back on our planet, the Queen of the Lunarians tries to talk to the
-			Knight telepathically, trying to convince him to leave Earth and
-			join the kingdom as Prince, to bring a place of harmony, to repair
-			the peace equation, so that he can return to his old self. However,
-			the Knight, amidst all the anger he has, still fulfils the words of
-			Alice Avenue: “At all times, in all places, the Knight can SAVE US”,
-			and unleashes a final attack that would not only destroy him, the
-			Queen and the Lunarians, but also restore human culture within 9
-			months: <b>ALCATRAZ CHECKMATE</b>.
-		</p>
-		<p>
-			However, there is still the King, who has finally become aware of
-			all he has done, and breaks down in tears once again. Grief made him
-			a monster, he will not stop crying, he does not want to live, but in
-			that instant, he mutates again, assimilating a very familiar form to
-			the Knight's helmet, becoming what Nixon feared he would become... <b
-				><u>THE HORNED SERPENT LIVES</u></b
-			>.
-		</p>
-	</Trans>
-	<img
-		src="../../../images/data/thehornedserpentlives_dark.png"
+		/>
+		<p>Evolution ofthe Last Son.</p>
+	</blockquote>
+	<h3>ACT IV - THE KNIGHT OF GOD</h3>
+	<p>
+		Slowly, the Lunarians began to take control of America, not only by
+		creating “vessels for the king's essence”, but also by attacking the
+		human culture, starting with language. No one understood their own
+		thoughts, so they had to accept the Lunarian culture by force in order
+		to survive. However, in the midst of all this storm, a familiar voice
+		returned to bring faith to the human race... Alice Avenue broadcasted
+		over the radio the story of the Last Son.
+	</p>
+	<p>
+		The Last Son was a young man like you and me, with parents who were
+		cutthroats and classmates who were worse. The boy was always alone when
+		he went to school, and always in those moments driving towards his
+		destiny, he doubted his role in the universe; he always thought that he
+		had to help everyone around him, and that he had to win at any cost. One
+		day in the midst of his thoughts, the young man was involved in a car
+		crash; still b enough to move, he got out of his car and approached the
+		dying man with whom he had collided, a familiar face from another
+		universe... <b>James Dean</b>.
+	</p>
+	<p>
+		“You won, little bastard... you won...”, this were the last words of the
+		man who in this universe, lost. The Last Son was devastated and could
+		not hold back his tears, and from the pain and exhaustion caused by the
+		accident, he fainted. He woke up in a strange dream, where he found
+		himself on a cliff with a vehicle behind him, which was driving at high
+		speed. He, to avoid the impact, jumped into the void, and began to
+		believe more and more that he could fly, that he could beat death... he
+		did it. The young man began to fly high, faster than an airplane. It was
+		right here that he woke up and flew as far away as possible from the
+		scene of the accident. He kept on believing, and kept on winning at any
+		cost in order to save everyone.
+	</p>
+	<p>
+		Alice not only prayed that the Crescent King would remember the hero he
+		was before America captured him, she also hoped that the Knight would
+		return to save us all again. He listened to her words and executed a
+		desperate plan to make the humanity of the Last Son wake up again: throw
+		Alice off the top of the Chrysler Building hoping that he would rescue
+		her... <b>that never happened</b>.
+	</p>
+	<blockquote>
+		<img
+		src="../../../images/data/avenuefall_dark.png"
 		class="logo toggleable"
-	/>
-	<Trans i18nKey="nixon.part8">
-		<blockquote id="default">
-			<center><p><b><u>THE HORNED SERPENT LIVES</u></b></p></center>
+		/>
+		<p>Alice Avenue last moments of life.</p>
+	</blockquote>
+	<p>
+		After the Knight's plan failed in every way, the Lunarians continued
+		their invasion, brainwashing and altering human brains in major cities
+		such as New York. It's at this point that the Knight would compose a
+		message apologizing for what happened to Alice, and that she was still
+		alive...
+	</p>
+	<p style="text-align: center;">
+		<a href={localizePath("data/monument-mythos")}
+		>IN MY WURLD, STATUUES HELLD SOLES</a
+		>
+	</p>
+	<p>
+		Something still left the Knight unsatisfied, something made him feel
+		hollow, so to try to redeem himself he removed the head of the Alice
+		Avenue memorial statue and wear it as if it were his old helmet; even
+		though he had only worn it for a day something in him changed, the only
+		thing that could be seen was his eye, full of anger... <b
+		><i>Grief can make you a monster</i></b
+		>.
+	</p>
+	<h3>ACT V - GOD</h3>
+	<p>
+		This precise moment is where Apollo 11 comes back to play a vital role,
+		so we'll have to go back in time a bit, and put ourselves in Ed Dwight's
+		spacesuit again. His body was found on the moon, and it was determined
+		that his death was caused by his own weapon; next to him was a tape
+		which would be referred to as “THE MOON GOD”. On this tape is revealed
+		the conversation Ed had with that someone special who has been hidden
+		for quite some time, the God behind the beings that are causing so much
+		damage right now... <b>Richard Nixon</b>.
+	</p>
+	<blockquote>
+		<p style="font-size: 0.7rem; font-style: normal;">
+			Note: The following audio does not feature the voice of Ed Dwight.
+		</p>
+		<Tape audio="../../../audio/the_moon_god.mp3" client:only />
+		<blockquote>
+			<img
+				src="../../../images/data/god_dark.png"
+				class="logo toggleable"
+			/>
+			<p>“PHOTOGRAPH OF GOD”<br />by Ed Dwight</p>
 		</blockquote>
-		<p>
-			Nixon must act fast, he can't let it all end like his own world
-			ended, so he decided to render the King, the Knight, the Queen, and
-			himself as fiction, so no one will believe in the Crescent King and
-			so he loses his powers. That's how this whole world became a comic
-			book called “The Nixonverse”, with an endearing story made by a
-			certain “Mister Manticore” and beautiful illustrations made by... <b
-				>Ed Dwight?</b
-			>
+	</blockquote>
+	<p>
+		Nixon explains in this tape that he managed to escape from the Horned
+		Serpent during the Great Division, and that he ended up on the moon of
+		this new universe. He had doubts about whether people would accept him,
+		so he created three extensions of himself to run a little experiment,
+		which is how The Son, The Knight and The Queen were born. All three went
+		somewhat insane, and Nixon concluded that he couldn't risk entering an
+		unfriendly planet. Besides, he already knew that the Son would become
+		King of the Lunarians, and that if he didn't stop it, he would become
+		exceedingly powerful.
+	</p>
+	<p style="text-align: center;">
+		I am sorry, Mr Dwight. No human was ever meant to hear what I have said.
+	</p>
+	<p>
+		Back on our planet, the Queen of the Lunarians tries to talk to the
+		Knight telepathically, trying to convince him to leave Earth and join
+		the kingdom as Prince, to bring a place of harmony, to repair the peace
+		equation, so that he can return to his old self. However, the Knight,
+		amidst all the anger he has, still fulfils the words of Alice Avenue:
+		“At all times, in all places, the Knight can SAVE US”, and unleashes a
+		final attack that would not only destroy him, the Queen and the
+		Lunarians, but also restore human culture within 9 months: <b
+			>ALCATRAZ CHECKMATE</b
+		>.
+	</p>
+	<p>
+		However, there is still the King, who has finally become aware of all he
+		has done, and breaks down in tears once again. Grief made him a monster,
+		he will not stop crying, he does not want to live, but in that instant,
+		he mutates again, assimilating a very familiar form to the Knight's
+		helmet, becoming what Nixon feared he would become... <b
+			><u>THE HORNED SERPENT LIVES</u></b
+		>.
+	</p>
+	<blockquote>
+		<img
+			src="../../../images/data/thehornedserpentlives_dark.png"
+			class="logo toggleable"
+		/>
+		<p
+			style="font-family: 'VCR'; font-style: normal; text-decoration: underline; font-size: 1.1rem; color: var(--blood);"
+		>
+			THE HORNED SERPENT LIVES.
 		</p>
-		<p>
-			Compared to Nixon, Ed Dwight was twice the God he was, Nixon was
-			just one of many survivors who erased the past, to run from the
-			present. Ed was everything Nixon wasn't, someone bold, kind and
-			good. He never went to the moon, let alone talked to a God, he is
-			today in our world creating monuments... <i
-				>Ed Dwight preserves the past.</i
-			>
-		</p>
-	</Trans>
+	</blockquote>
+	<p>
+		Nixon must act fast, he can't let it all end like his own world ended,
+		so he decided to render the King, the Knight, the Queen, and himself as
+		fiction, so no one will believe in the Crescent King and so he loses his
+		powers. That's how this whole world became a comic book called “The
+		Nixonverse”, with an endearing story made by a certain “Mister
+		Manticore” and beautiful illustrations made by... <b>Ed Dwight?</b>
+	</p>
+	<p>
+		Compared to Nixon, Ed Dwight was twice the God he was, Nixon was just
+		one of many survivors who erased the past, to run from the present. Ed
+		was everything Nixon wasn't, someone bold, kind and good. He never went
+		to the moon, let alone talked to a God, he is today in our world
+		creating monuments... <i>Ed Dwight preserves the past.</i>
+	</p>
 	<a
 		href="https://twitter.com/MagicBunnyStar/status/1555336147139715076"
 		target="_blank"
@@ -393,5 +406,5 @@ changeLanguage("en");
 			src="../../../images/data/preservethepast_dark.png"
 			class="logo toggleable"
 		/>
-	</a>
+	</a> -->
 </Layout>

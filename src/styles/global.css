@@ -77,7 +77,6 @@ body {
 	overflow-wrap: break-word;
 	line-height: 1.5;
 	color: var(--font_color);
-	background-color: var(--color);
 }
 
 canvas {
@@ -87,14 +86,6 @@ canvas {
 	left: 0;
 	z-index: -1;
 	background-color: var(--color);
-}
-
-canvas {
-	/* Keep always in place as the background */
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: -1;
 }
 
 .en,
@@ -117,6 +108,10 @@ canvas {
 	text-decoration: none;
 	cursor: default;
 	color: var(--font_color);
+}
+
+#rgba {
+	background-color: var(--color-rgba);
 }
 
 .data {
@@ -214,6 +209,7 @@ blockquote {
 .dropdown {
 	display: inline-block;
 	position: relative;
+	background-color: var(--color-rgba);
 }
 
 button {

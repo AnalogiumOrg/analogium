@@ -28,18 +28,13 @@ const { title, description, heroImage } = Astro.props;
 				border-top: 1px solid #ddd;
 				margin: 1rem 0;
 			}
-
-			article {
-				background-color: var(--color-rgba);
-			}
-			
 		</style>
 	</head>
 
 	<body class={i18next.language}>
 		<Header />
 		<Background />
-		<main>
+		<main id="rgba">
 			<article>
 				{
 					heroImage && (
