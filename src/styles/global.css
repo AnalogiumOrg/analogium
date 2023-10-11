@@ -61,8 +61,13 @@
 }
 
 @font-face {
-	font-family: 'Falling For Autumn';
-	src: url(/fonts/falling_autumn.ttf);
+	font-family: 'Times for Punks';
+	src: url(/fonts/times_for_punks.ttf);
+}
+
+@font-face {
+	font-family: 'Astigma';
+	src: url(/fonts/astigma.TTF);
 }
 body {
 	margin: auto;
