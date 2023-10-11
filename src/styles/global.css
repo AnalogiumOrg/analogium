@@ -66,8 +66,8 @@
 }
 
 @font-face {
-	font-family: 'Astigma';
-	src: url(/fonts/astigma.TTF);
+	font-family: 'Linographer';
+	src: url(/fonts/linographer.ttf);
 }
 body {
 	margin: auto;
