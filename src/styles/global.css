@@ -3,23 +3,21 @@
   https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
   License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
  */
-:root {
+
+ :root {
 	--color: #000;
-	--color-rgba: rgba(0, 0, 0, 0.75);
 	--font_color: #FFF;
 	--link: #C0C0C0;
 	--border: #999;
 
 	/* DARK MODE */
 	--color_dark: #000;
-	--color-rgba_dark: rgba(0, 0, 0, 0.75);
 	--font_color_dark: #FFF;
 	--link_dark: #C0C0C0;
 	--border_dark: #999;
 
 	/* LIGHT MODE */
 	--color_light: #FFF;
-	--color-rgba_light: rgba(255, 255, 255, 0.75);
 	--font_color_light: #000000;
 	--link_light: #3f3f3f;
 	--border_light: #666;
@@ -41,13 +39,13 @@
 }
 
 @font-face {
-	font-family: 'Graffio';
-	src: url(/fonts/graffio.otf) format("opentype");
+	font-family: 'DIEDIEDIE';
+	src: url(/fonts/diediedie.TTF);
 }
 
 @font-face {
-	font-family: 'VCR';
-	src: url(/fonts/vcr.ttf);
+	font-family: 'Graffio';
+	src: url(/fonts/graffio.otf) format("opentype");
 }
 
 @font-face {
@@ -55,23 +53,11 @@
 	src: url(/fonts/report.ttf);
 }
 
-@font-face {
-	font-family: 'DIEDIEDIE';
-	src: url(/fonts/diediedie.TTF);
-}
-
-@font-face {
-	font-family: 'Times for Punks';
-	src: url(/fonts/times_for_punks.ttf);
-}
-
-@font-face {
-	font-family: 'Linographer';
-	src: url(/fonts/linographer.ttf);
-}
 body {
+	font-family: 'Duke', sans-serif;
 	margin: auto;
 	padding: 20px;
+	max-width: 70ch;
 	text-align: justify;
 	/* background: var(--back), var(--color); */
 	background-size: contain;
@@ -84,70 +70,15 @@ body {
 	color: var(--font_color);
 }
 
-canvas {
-	/* Keep always in place as the background */
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: -1;
-	background-color: var(--color);
-}
-
-.en,
-.es {
-	font-family: 'Duke', sans-serif;
-	max-width: 67ch;
-}
-
-.fault_en {
-	font-family: 'Through The Night', sans-serif;
-	font-size: 4.6rem;
-}
-
-.fault_es {
-	font-family: 'Through The Night', sans-serif;
-	font-size: 5.7rem;
-}
-
-#hid {
-	text-decoration: none;
-	cursor: default;
-	color: var(--font_color);
-}
-
-#rgba {
-	background-color: var(--color-rgba);
-}
-
-.data {
-	column-count: 2;
-	text-align: left;
-}
-
-.construction {
-	font-family: 'Through The Night', sans-serif;
-}
-
-h1,
-h2,
-h4,
-h6,
-strong,
-b {
-	color: var(--font_color);
-}
-
-h3,
-h5 {
-	text-align: center;
+p {
+	font-size: 1.1rem;
 }
 
 a {
 	color: var(--link);
 }
-
-nav a {
-	margin-right: 10px;
+a:hover {
+	color: var(--border);
 }
 
 textarea {
@@ -169,19 +100,10 @@ table {
 	position: relative
 }
 
-
-.two {
-	left: 6.25%;
-	top: -2rem;
-}
-
-.three {
-	left: -30%;
-}
-
 img {
 	max-width: 100%;
 	height: 100%;
+	
 }
 
 code {
@@ -205,16 +127,11 @@ blockquote {
 	text-align: center;
 	align-items: center;
 	align-content: center;
+	font-style: normal;
 	padding: 2px 0px 2px 5px;
 	margin: 0px;
 	background-color: var(--color);
-	font-style: italic;
-}
-
-.dropdown {
-	display: inline-block;
-	position: relative;
-	background-color: var(--color-rgba);
+	font-style: normal;
 }
 
 button {
@@ -226,33 +143,21 @@ button {
 	cursor: pointer;
 }
 
-.dropdown-options {
-	height: 4.15rem;
-	display: none;
-	position: absolute;
-	overflow: auto;
+canvas {
+	/* Keep always in place as the background */
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -1;
 	background-color: var(--color);
-	border-radius: 5px;
 }
 
-.dropdown:hover .dropdown-options {
-	display: block;
+.fault {
+	font-family: 'Through The Night', sans-serif;
+	font-size: 4.6rem;
 }
-
-.dropdown-options a {
-	display: block;
-	color: var(--link);
+.hid {
 	text-decoration: none;
-	padding: 0.2rem 1rem;
-}
-
-.dropdown-options a:hover {
+	cursor: default;
 	color: var(--font_color);
-	background-color: var(--back);
-	border-radius: 1px;
-}
-
-#note {
-	font-size: 0.8rem;
-	text-align: center;
 }

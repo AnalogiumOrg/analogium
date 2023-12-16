@@ -1,39 +1,27 @@
 ---
 import HeaderLink from "./HeaderLink.astro";
 import Background from "../components/Background.astro";
-import i18next, { t } from "i18next";
-import { localizePath } from "astro-i18next";
-import { LanguageSelector } from "astro-i18next/components";
 
-const lang = i18next.language;
-const logo = `/images/web/Logo_${lang}_light.png`;
-
+const logo = `/images/web/Logo_en_light.png`;
 ---
 
-<header lang={i18next.language}>
+<header>
 	<Background />
 	<h1></h1>
-	<a href={localizePath("/")} id="hid"><img src={logo} class="logo toggleable" /></a>
-	<h2 id="rgba"></h2>
-	<nav id="rgba">
-		<HeaderLink href={localizePath("/")}>{t("head.home")}</HeaderLink>
-		<HeaderLink href={localizePath("/data")}>DATA</HeaderLink>
+	<img src={logo} class="logo toggleable" />
+	<h2></h2>
+	<nav>
+		<HeaderLink href="/">HOME</HeaderLink> •
+		<HeaderLink href="/data">DATA</HeaderLink> •
 		<HeaderLink href="https://twitter.com/ANALOGIUM414" target="_blank">
 			TWITTER ⧸ X
-		</HeaderLink>
+		</HeaderLink> • 
 		<HeaderLink href="https://www.youtube.com/@analogium" target="_blank">
 			YOUTUBE
+		</HeaderLink> • 
+		<HeaderLink href="/origin">
+			ORIGIN
 		</HeaderLink>
-		<HeaderLink href={localizePath("/origin")}>
-			{t("head.origin")}
-		</HeaderLink>
-		<div class="dropdown" class={i18next.language}>
-			<button>{t("head.lang")}</button>
-			<div class="dropdown-options">
-				<a href="/" class="en">ENGLISH</a>
-				<a href="/es" class="es">ESPAÑOL</a>
-			</div>
-		</div>
 	</nav>
 	<br />
 </header>

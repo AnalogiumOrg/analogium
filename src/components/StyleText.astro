@@ -1,0 +1,55 @@
+---
+const { id, content } = Astro.props;
+---
+
+<p class={id}>{content}</p>
+
+<style>
+	:root {
+		--blood: #ff0000;
+		--lunarian: #26afff;
+
+		/* MODES */
+		--blood_dark: #ff0000;
+		--blood_light: #00ffff;
+		--lunarian_dark: #26afff;
+		--lunarian_light: #d95000;
+	}
+
+	@font-face {
+		font-family: "Times for Punks";
+		src: url(/fonts/times_for_punks.ttf);
+	}
+
+	@font-face {
+		font-family: "Linographer";
+		src: url(/fonts/linographer.ttf);
+	}
+
+	@font-face {
+		font-family: "VCR";
+		src: url(/fonts/vcr.ttf);
+	}
+
+	.lunarian {
+		font-family: "Times for Punks";
+		font-style: normal;
+		font-size: 1.125rem;
+		color: var(--lunarian);
+	}
+
+	
+	.nixon {
+		font-family: "Astigma";
+		font-style: italic;
+		font-size: 1.03rem;
+		line-height: 1.375rem;
+	}
+	
+	.serpent {
+		font-family: "VCR";
+		color: var(--blood);
+		font-style: normal;
+		font-weight: bold;
+	}
+</style>

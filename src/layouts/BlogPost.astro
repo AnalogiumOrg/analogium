@@ -1,14 +1,16 @@
 ---
+import type { CollectionEntry } from 'astro:content';
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import i18next from "i18next";
 import Background from "../components/Background.astro";
 
-const { title, description, heroImage } = Astro.props;
+type Props = CollectionEntry<'blog'>['data'];
+
+const { title, description, heroImage, autor } = Astro.props;
 ---
 
-<html lang={i18next.language}>
+<html lang="en">
 	<head>
 		<BaseHead title={title} description={description} />
 		<style>
@@ -28,13 +30,16 @@ const { title, description, heroImage } = Astro.props;
 				border-top: 1px solid #ddd;
 				margin: 1rem 0;
 			}
+			h4 {
+				text-align: right;
+			}
 		</style>
 	</head>
 
-	<body class={i18next.language}>
+	<body>
 		<Header />
 		<Background />
-		<main id="rgba">
+		<main>
 			<article>
 				{
 					heroImage && (
@@ -53,6 +58,7 @@ const { title, description, heroImage } = Astro.props;
 				<slot />
 			</article>
 		</main>
+		<h4>Written by - {autor}</h4>
 		<Footer />
 	</body>
 </html>
