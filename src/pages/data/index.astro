@@ -13,11 +13,18 @@ const posts = await getCollection("blog");
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 		<style>
+			a {
+				color: var(--link);
+				text-align: left;
+			}
+			a:hover {
+				color: var(--border);
+				font-weight: bold;
+			}
 			ul {
 				display: flex;
 				flex-wrap: wrap;
 				gap: 2rem;
-				list-style-type: none;
 				margin: 0;
 				padding: 0;
 			}

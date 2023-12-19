@@ -75,10 +75,9 @@ p {
 }
 
 a {
-	color: var(--link);
-}
-a:hover {
-	color: var(--border);
+	text-decoration: none;
+	cursor: default;
+	color: var(--font_color);
 }
 
 textarea {
@@ -155,9 +154,4 @@ canvas {
 .fault {
 	font-family: 'Through The Night', sans-serif;
 	font-size: 4.6rem;
-}
-.hid {
-	text-decoration: none;
-	cursor: default;
-	color: var(--font_color);
 }

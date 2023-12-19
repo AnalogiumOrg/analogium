@@ -8,12 +8,21 @@ const { id, content } = Astro.props;
 	:root {
 		--blood: #ff0000;
 		--lunarian: #26afff;
+		--chica: #ffc100;
+		--purple: #842593;
+		--golden: #ffff00;
 
 		/* MODES */
 		--blood_dark: #ff0000;
 		--blood_light: #00ffff;
 		--lunarian_dark: #26afff;
 		--lunarian_light: #d95000;
+		--chica_dark: #f3c021;
+		--chica_light: #003eff;
+		--purple_dark: #842593;
+		--purple_light: #7bda6c;
+		--golden_dark: #ffff00;
+		--golden_light: #0000ff;
 	}
 
 	@font-face {
@@ -51,5 +60,24 @@ const { id, content } = Astro.props;
 		color: var(--blood);
 		font-style: normal;
 		font-weight: bold;
+	}
+
+	.snow {
+		font-family: "VCR";
+		color: var(--chica);
+		font-size: 0.95rem;
+		line-height: 1.75rem;
+	}
+
+	.youcant {
+		font-size: 1.5rem;
+		font-family: "Graffio";
+		color: var(--purple);
+	}
+
+	.golden {
+		font-family: "1942";
+		color: var(--golden);
+		font-size: 0.8rem;
 	}
 </style>

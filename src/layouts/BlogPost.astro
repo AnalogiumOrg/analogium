@@ -37,8 +37,8 @@ const { title, description, heroImage, autor } = Astro.props;
 	</head>
 
 	<body>
-		<Header />
 		<Background />
+		<Header />
 		<main>
 			<article>
 				{
@@ -46,7 +46,7 @@ const { title, description, heroImage, autor } = Astro.props;
 						<img
 							width={720}
 							height={360}
-							src={heroImage}
+							src=`/images/data/${heroImage}_dark.png`
 							alt=""
 							class="logo toggleable"
 						/>

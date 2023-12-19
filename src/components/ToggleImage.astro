@@ -2,11 +2,9 @@
 // This is pointless
 
 const { src } = Astro.props;
-const { pathname } = Astro.url;
-const isActive = src === pathname || src === pathname.replace(/\/$/, '');
 ---
 
 	<img
-		src={src}
+		src=`/images/data/${src}_dark.png`
 		class="logo toggleable"
 	/>
