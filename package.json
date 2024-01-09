@@ -1,5 +1,5 @@
 {
-  "name": "ajajo",
+  "name": "analogium",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -14,7 +14,9 @@
     "@astrojs/mdx": "^2.0.1",
     "@astrojs/rss": "^4.0.1",
     "@astrojs/sitemap": "^3.0.3",
+    "@astrojs/vue": "^4.0.8",
     "astro": "^4.0.4",
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "vue": "^3.4.5"
   }
 }
