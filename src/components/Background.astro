@@ -44,10 +44,7 @@
 			await Assets.load("/images/web/backeyes/iris.png"),
 			await Assets.load("/images/web/backeyes/iris.png"),
 			await Assets.load("/images/web/backeyes/iris.png"),
-		],
-		light: [
-			await Assets.load(""),
-		],
+		]
 	};
 	const randEyeTex = () => {
 		return Math.ceil((Math.random() + 0.2) * eyeTextures.dark.length);
@@ -276,7 +273,7 @@
 				iris = new Sprite(irisTextures.dark[eyeData[i].texNum - 1]);
 			} else {
 				eye = new Sprite(eyeTextures.light[eyeData[i].texNum - 1]);
-				iris = new Sprite(irisTextures.light[eyeData[i].texNum - 1]);
+				iris = new Sprite();
 			}
 			// Set Anchors
 			eye.anchor.set(0.5);
