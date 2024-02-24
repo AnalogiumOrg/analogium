@@ -13,38 +13,38 @@ jobs:
           node-version: 18
       - run: npm install
       - run: npm run build
-  build-upload-to-web:
-    needs: test-build
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v2
-        with:
-          node-version: 18
-      - run: npm install
-      - run: npm run build
-      # Clear the web directory
-      - uses: appleboy/ssh-action@master
-        with:
-          host: ${{ secrets.DEPLOY_HOST }}
-          username: ${{ secrets.DEPLOY_USERNAME }}
-          key: ${{ secrets.DEPLOY_KEY }}
-          script: |
-            cd ${{ secrets.DEPLOY_PATH }}
-            rm -rf ./*
-      - uses: appleboy/scp-action@master
-        with:
-          host: ${{ secrets.DEPLOY_HOST }}
-          username: ${{ secrets.DEPLOY_USERNAME }}
-          key: ${{ secrets.DEPLOY_KEY }}
-          source: "dist/*"
-          target: "${{ secrets.DEPLOY_PATH }}"
-        # Move everything from dist to the root of the web directory
-      - uses: appleboy/ssh-action@master
-        with:
-          host: ${{ secrets.DEPLOY_HOST }}
-          username: ${{ secrets.DEPLOY_USERNAME }}
-          key: ${{ secrets.DEPLOY_KEY }}
-          script: |
-            cd ${{ secrets.DEPLOY_PATH }}
-            mv ./dist/* ./ && rm -rf ./dist
+#  build-upload-to-web:
+#    needs: test-build
+#    runs-on: ubuntu-latest
+#    steps:
+#      - uses: actions/checkout@v3
+#      - uses: actions/setup-node@v2
+#        with:
+#          node-version: 18
+#      - run: npm install
+#      - run: npm run build
+#      # Clear the web directory
+#      - uses: appleboy/ssh-action@master
+#        with:
+#          host: ${{ secrets.DEPLOY_HOST }}
+#          username: ${{ secrets.DEPLOY_USERNAME }}
+#          key: ${{ secrets.DEPLOY_KEY }}
+#          script: |
+#            cd ${{ secrets.DEPLOY_PATH }}
+#            rm -rf ./*
+#      - uses: appleboy/scp-action@master
+#        with:
+#          host: ${{ secrets.DEPLOY_HOST }}
+#          username: ${{ secrets.DEPLOY_USERNAME }}
+#          key: ${{ secrets.DEPLOY_KEY }}
+#          source: "dist/*"
+#          target: "${{ secrets.DEPLOY_PATH }}"
+#        # Move everything from dist to the root of the web directory
+#      - uses: appleboy/ssh-action@master
+#        with:
+#          host: ${{ secrets.DEPLOY_HOST }}
+#          username: ${{ secrets.DEPLOY_USERNAME }}
+#          key: ${{ secrets.DEPLOY_KEY }}
+#          script: |
+#            cd ${{ secrets.DEPLOY_PATH }}
+#            mv ./dist/* ./ && rm -rf ./dist
