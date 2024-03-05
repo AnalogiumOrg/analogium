@@ -1,4 +1,5 @@
 ---
+
 ---
 
 <script>
@@ -44,16 +45,14 @@
 			await Assets.load("/images/web/backeyes/iris.png"),
 			await Assets.load("/images/web/backeyes/iris.png"),
 			await Assets.load("/images/web/backeyes/iris.png"),
-		]
+		],
 	};
 	const randEyeTex = () => {
 		return Math.ceil((Math.random() + 0.2) * eyeTextures.dark.length);
 	};
-	const origEyeRat = eyeTextures.dark.map(
-		(t) => t.orig.width / t.orig.height
-	);
+	const origEyeRat = eyeTextures.dark.map((t) => t.orig.width / t.orig.height);
 	const origIrisRat = irisTextures.dark.map(
-		(t) => t.orig.width / t.orig.height
+		(t) => t.orig.width / t.orig.height,
 	);
 	// Eye distribution matrix
 	// 0 Means no eye
@@ -63,14 +62,44 @@
 	const distMtrx = [
 		[randEyeTex(), 0, randEyeTex(), 0, 0, 0, 0, randEyeTex(), 0, randEyeTex()],
 		[],
-		[0, randEyeTex(), 0, 0, 0, 0, 0, 0, 0, 0, 0,  0, randEyeTex(), 0],
+		[0, randEyeTex(), 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, randEyeTex(), 0],
 		[],
-		[randEyeTex(), 0, 0, randEyeTex(), 0, 0, 0, 0, 0, 0, 0, randEyeTex(), 0, 0, randEyeTex()],
+		[
+			randEyeTex(),
+			0,
+			0,
+			randEyeTex(),
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			randEyeTex(),
+			0,
+			0,
+			randEyeTex(),
+		],
 		[],
 		[0, 0, 0, randEyeTex(), 0, 0, 0, 0, 0, 0, 0, 0, randEyeTex(), 0, 0, 0],
 		[randEyeTex(), 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, randEyeTex()],
 		[],
-		[randEyeTex(), 0, randEyeTex(), 0, 0, 0, 0, 0, 0, 0, randEyeTex(), 0, randEyeTex()],
+		[
+			randEyeTex(),
+			0,
+			randEyeTex(),
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			0,
+			randEyeTex(),
+			0,
+			randEyeTex(),
+		],
 	];
 	// This multiplies to any existing eye's size, counts for any eye with texture
 	// Defaults to 1 if not specified
@@ -212,13 +241,10 @@
 	};
 	const setPositions = () => {
 		for (let i = 0; i < eyeData.length; i++) {
-			eyeData[i].position = calcEyePos(
-				eyeData[i].index.i,
-				eyeData[i].index.j
-			);
+			eyeData[i].position = calcEyePos(eyeData[i].index.i, eyeData[i].index.j);
 			irisData[i].initialPosition = calcEyePos(
 				irisData[i].index.i,
-				irisData[i].index.j
+				irisData[i].index.j,
 			);
 		}
 	};
@@ -227,7 +253,7 @@
 			// Rotate eyes and irises to face center
 			const angleRadians = Math.atan2(
 				eyeData[i].position.y - window.innerHeight / 2,
-				eyeData[i].position.x - window.innerWidth / 2
+				eyeData[i].position.x - window.innerWidth / 2,
 			);
 			eyeData[i].angle = angleRadians * RAD_TO_DEG;
 			irisData[i].angle = angleRadians * RAD_TO_DEG;
@@ -239,8 +265,7 @@
 				eyeData[i].angle += 180;
 			}
 			// Set height and width of eyes and irises
-			eyeData[i].baseSize.x =
-				calcEyeSize() * origEyeRat[eyeData[i].texNum - 1];
+			eyeData[i].baseSize.x = calcEyeSize() * origEyeRat[eyeData[i].texNum - 1];
 			eyeData[i].baseSize.y = calcEyeSize();
 
 			irisData[i].baseSize.x =
@@ -282,7 +307,7 @@
 			eye.position.set(eyeData[i].position.x, eyeData[i].position.y);
 			iris.position.set(
 				irisData[i].initialPosition.x,
-				irisData[i].initialPosition.y
+				irisData[i].initialPosition.y,
 			);
 			// Set Alphas
 			eye.alpha = eyeData[i].alpha;
@@ -314,7 +339,7 @@
 		inMin: number,
 		inMax: number,
 		outMin: number,
-		outMax: number
+		outMax: number,
 	) => {
 		return ((value - inMin) * (outMax - outMin)) / (inMax - inMin) + outMin;
 	};
@@ -359,7 +384,7 @@
 						0,
 						mTicks / 2,
 						0,
-						iris.maxDistance
+						iris.maxDistance,
 					);
 				} else {
 					currDistance = mapInterpolate(
@@ -367,7 +392,7 @@
 						mTicks / 2,
 						mTicks,
 						iris.maxDistance,
-						0
+						0,
 					);
 				}
 				const x = Math.cos(rad) * currDistance;
@@ -385,7 +410,7 @@
 						0,
 						mTicks / 6,
 						0,
-						iris.maxDistance
+						iris.maxDistance,
 					);
 				} else if (cTicks < mTicks / 6 + (mTicks * 4) / 6) {
 					currDistance = iris.maxDistance;
@@ -395,14 +420,14 @@
 						mTicks / 6 + (mTicks * 4) / 6,
 						mTicks,
 						iris.maxDistance,
-						0
+						0,
 					);
 				}
 				const x = Math.cos(rad) * currDistance;
 				const y = Math.sin(rad) * currDistance;
 				return { x, y };
 			}
-			case "randomradial" :{
+			case "randomradial": {
 				const cTicks = iris.currentTicks;
 				const mTicks = iris.maxTicks;
 				const rad = iris.movementAngle * DEG_TO_RAD;
@@ -413,16 +438,16 @@
 						0,
 						mTicks / 6,
 						0,
-						iris.maxDistance
+						iris.maxDistance,
 					);
 				} else if (cTicks < mTicks / 6 + (mTicks * 4) / 6) {
 					// If angle is more than 90 degrees and less than 270 degrees, reverse direction
-					if(iris.movementAngle > 90 && iris.movementAngle < 270) {
+					if (iris.movementAngle > 90 && iris.movementAngle < 270) {
 						currDistance = iris.maxDistance;
-						iris.movementAngle ++;
+						iris.movementAngle++;
 					} else {
 						currDistance = iris.maxDistance;
-						iris.movementAngle --;
+						iris.movementAngle--;
 					}
 				} else {
 					currDistance = mapInterpolate(
@@ -430,7 +455,7 @@
 						mTicks / 6 + (mTicks * 4) / 6,
 						mTicks,
 						iris.maxDistance,
-						0
+						0,
 					);
 				}
 				const x = Math.cos(rad) * currDistance;
@@ -440,27 +465,20 @@
 			case "follow": {
 				const transitionticks = iris.maxTicks / 3;
 				// For the first transitionticks ticks, move towards the mouse lower the mouse influence
-				const inMouseInfluence = iris.currentTicks <= transitionticks ? mapInterpolate(
-					iris.currentTicks,
-					0,
-					transitionticks,
-					0,
-					1
-				) : 1;
-				const outMouseInfluence = iris.maxTicks-transitionticks <= iris.currentTicks ?
-				mapInterpolate(
-					iris.currentTicks,
-					transitionticks,
-					0,
-					1,
-					0
-				) : 1;
+				const inMouseInfluence =
+					iris.currentTicks <= transitionticks
+						? mapInterpolate(iris.currentTicks, 0, transitionticks, 0, 1)
+						: 1;
+				const outMouseInfluence =
+					iris.maxTicks - transitionticks <= iris.currentTicks
+						? mapInterpolate(iris.currentTicks, transitionticks, 0, 1, 0)
+						: 1;
 				const mousePos = app.renderer.events.pointer.global;
 				const dx = mousePos.x - iris.initialPosition.x;
 				const dy = mousePos.y - iris.initialPosition.y;
 				const rad = Math.atan2(
 					dy * inMouseInfluence * outMouseInfluence,
-					dx * inMouseInfluence * outMouseInfluence
+					dx * inMouseInfluence * outMouseInfluence,
 				);
 				const x = Math.cos(rad) * iris.maxDistance;
 				const y = Math.sin(rad) * iris.maxDistance;
@@ -495,7 +513,7 @@
 			const movementOffset = calcMovementOffset(iris);
 			iris.sprite.position.set(
 				iris.initialPosition.x + movementOffset.x,
-				iris.initialPosition.y + movementOffset.y
+				iris.initialPosition.y + movementOffset.y,
 			);
 			if (iris.currentTicks >= iris.maxTicks) {
 				iris.currentTicks = 0;
@@ -503,8 +521,7 @@
 					? iris.currentBehavior
 					: getNewBehavior();
 				iris.maxTicks = Math.floor(
-					Math.random() * 600 * iris.currentBehavior.timeMultiplier +
-						60
+					Math.random() * 600 * iris.currentBehavior.timeMultiplier + 60,
 				);
 				iris.movementAngle = getNewDirection();
 			}

@@ -2,13 +2,12 @@
 import BaseHead from "../../components/BaseHead.astro";
 import Header from "../../components/Header.astro";
 import Footer from "../../components/Footer.astro";
+import DataArticleList from "../../components/Data/ArticleList.vue";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../../consts";
 import { getCollection } from "astro:content";
-
-const posts = await getCollection("blog");
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
@@ -67,17 +66,7 @@ const posts = await getCollection("blog");
 		<Header />
 		<main>
 			<section>
-				<ul>
-					{
-						posts.map((post) => (
-							<li>
-								<a href={`/data/${post.slug}/`}>
-									<h3 class="title">{post.data.title}</h3>
-								</a>
-							</li>
-						))
-					}
-				</ul>
+				<DataArticleList client:load />
 			</section>
 		</main>
 		<Footer />
