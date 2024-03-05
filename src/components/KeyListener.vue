@@ -39,8 +39,9 @@ async function matchHashes() {
 		keystrokes: combined,
 	}).catch((err) => {
 		console.error(err);
+		return { data: "" };
 	});
-	console.log(res);
+	console.log(res.data);
 }
 
 onMounted(async () => {
@@ -49,6 +50,7 @@ onMounted(async () => {
 		return { data: [] };
 	});
 	combinationHashes.push(...res.data);
+	console.debug("combinationHashes: ", combinationHashes);
 });
 </script>
 
