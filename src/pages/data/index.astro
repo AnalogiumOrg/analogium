@@ -4,7 +4,6 @@ import Header from "../../components/Header.astro";
 import Footer from "../../components/Footer.astro";
 import DataArticleList from "../../components/Data/ArticleList.vue";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../../consts";
-import { getCollection } from "astro:content";
 ---
 
 <!doctype html>
@@ -66,7 +65,7 @@ import { getCollection } from "astro:content";
 		<Header />
 		<main>
 			<section>
-				<DataArticleList client:load />
+				<DataArticleList client:only />
 			</section>
 		</main>
 		<Footer />
