@@ -43,14 +43,17 @@ async function matchHashes() {
 	});
 	console.log(res.data);
 }
-
-onMounted(async () => {
+async function getCombinations() {
 	const res = await axios.get("/presentation/keycombinations").catch((err) => {
 		console.error(err);
 		return { data: [] };
 	});
+	combinationHashes.splice(0, combinationHashes.length);
 	combinationHashes.push(...res.data);
 	console.debug("combinationHashes: ", combinationHashes);
+}
+onMounted(async () => {
+	await getCombinations();
 });
 </script>
 
