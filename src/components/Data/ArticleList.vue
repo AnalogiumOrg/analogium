@@ -9,7 +9,10 @@ const posts: Ref<{
 }[]> = ref([]);
 
 onMounted(async () => {
-	const res = await axios.get("/database/articles");
+	const res = await axios.get("/database/articles").catch((err) => {
+		console.error(err);
+		return { data: [] };
+	});
 	posts.value = res.data;
 });
 </script>

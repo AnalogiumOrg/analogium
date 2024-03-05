@@ -1,5 +1,5 @@
 ---
-
+import KeyListener from "./KeyListener.vue";
 ---
 
 <script>
@@ -530,3 +530,5 @@
 	});
 	window.dispatchEvent(new Event("forceUpdateTheme"));
 </script>
+
+<KeyListener client:only/>
