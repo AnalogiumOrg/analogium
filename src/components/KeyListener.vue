@@ -1,6 +1,6 @@
 <script lang="ts">
 import axios from "axios";
-import { onMounted } from "vue";
+import { onMounted, type Ref, ref } from "vue";
 const buffer: string[] = [];
 const maxBufferLength = 255;
 let lastTimestamp = 0;
@@ -21,7 +21,7 @@ window.addEventListener('keydown', async function (e) {
 	matchHashes();
 });
 
-const combinationHashes: string[] = [];
+const combinationHashes: Ref<string[]> = ref([]);
 
 async function getHash(input: string) {
 	const hash = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(input))
@@ -31,7 +31,7 @@ async function getHash(input: string) {
 async function matchHashes() {
 	const combined = buffer.join("");
 	const hash = await getHash(combined);
-	if (!combinationHashes.includes(hash)) {
+	if (!combinationHashes.value.includes(hash)) {
 		return;
 	}
 	console.log("Matched hash: ", hash);
@@ -48,8 +48,8 @@ async function getCombinations() {
 		console.error(err);
 		return { data: [] };
 	});
-	combinationHashes.splice(0, combinationHashes.length);
-	combinationHashes.push(...res.data);
+	combinationHashes.value.splice(0, combinationHashes.value.length);
+	combinationHashes.value.push(...res.data);
 	console.debug("combinationHashes: ", combinationHashes);
 }
 onMounted(async () => {
@@ -59,4 +59,4 @@ onMounted(async () => {
 
 <template>
 	<div><!-- KeyCombinator --></div>
-</template>
+</template>, ref, type Ref
