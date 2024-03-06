@@ -8,8 +8,8 @@ let lastTimestamp = 0;
 window.addEventListener('keydown', async function (e) {
 	const time = new Date().getTime();
 	if (time - lastTimestamp > 1000) {
-		console.debug("last buffer: ", buffer.join(""));
-		console.debug("hash for last buffer: ", await getHash(buffer.join("")));
+		//console.debug("last buffer: ", buffer.join(""));
+		//console.debug("hash for last buffer: ", await getHash(buffer.join("")));
 		buffer.splice(0, buffer.length);
 	}
 	if (buffer.length > maxBufferLength) {
@@ -17,7 +17,7 @@ window.addEventListener('keydown', async function (e) {
 	}
 	lastTimestamp = time;
 	buffer.push(e.key);
-	console.debug("buffer: ", buffer.join(""));
+	//console.debug("buffer: ", buffer.join(""));
 	matchHashes();
 });
 
@@ -34,7 +34,7 @@ async function matchHashes() {
 	if (!combinationHashes.value.includes(hash)) {
 		return;
 	}
-	console.log("Matched hash: ", hash);
+	//console.log("Matched hash: ", hash);
 	const res = await axios.post("/presentation/keycombinations", {
 		keystrokes: combined,
 	}).catch((err) => {
@@ -42,6 +42,9 @@ async function matchHashes() {
 		return { data: "" };
 	});
 	console.log(res.data);
+	if(res.data && res.data !== "") {
+		window.dispatchEvent(new Event(res.data));
+	}
 }
 async function getCombinations() {
 	const res = await axios.get("/presentation/keycombinations").catch((err) => {
@@ -50,13 +53,11 @@ async function getCombinations() {
 	});
 	combinationHashes.value.splice(0, combinationHashes.value.length);
 	combinationHashes.value.push(...res.data);
-	console.debug("combinationHashes: ", combinationHashes);
+	//console.debug("combinationHashes: ", combinationHashes.value);
 }
-onMounted(async () => {
-	await getCombinations();
-});
+await getCombinations();
 </script>
 
 <template>
 	<div><!-- KeyCombinator --></div>
-</template>, ref, type Ref
+</template>
