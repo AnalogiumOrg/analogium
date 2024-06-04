@@ -47,14 +47,6 @@ import KeyListener from "./KeyListener.vue";
 			await Assets.load("/images/web/backeyes/iris.png"),
 		],
 	};
-
-	const tbbtTextures = {
-		light: [
-			await Assets.load("/images/secret/SheldonHead.png"),
-			await Assets.load("/images/secret/SheldonHead.png"),
-			await Assets.load("/images/secret/SheldonHead.png"),
-		],
-	}
 	const randEyeTex = () => {
 		return Math.ceil((Math.random() + 0.2) * eyeTextures.dark.length);
 	};
@@ -322,11 +314,7 @@ import KeyListener from "./KeyListener.vue";
 				eye = new Sprite(eyeTextures.dark[eyeData[i].texNum - 1]);
 				iris = new Sprite(irisTextures.dark[eyeData[i].texNum - 1]);
 			} else {
-				if(isBBT) {
-					eye = new Sprite(eyeTextures.light[eyeData[i].texNum - 1]);
-				} else {
-					eye = new Sprite(tbbtTextures.light[eyeData[i].texNum - 1]);
-				}
+				eye = new Sprite(eyeTextures.light[eyeData[i].texNum - 1]);
 				iris = new Sprite();
 			}
 			// Set Anchors
@@ -546,20 +534,25 @@ import KeyListener from "./KeyListener.vue";
 	});
 	// huh...
 	window.addEventListener("THEBBTEVENT", () => {
-		// ONLY LIGHT MODE
-		window.addEventListener("setlightmode", () => {
+		const behab = () => {
 			setTimeout(async () => {
 				const bbtAsset = await Assets.load(
 					"/images/secret/SheldonHead.png",
 				);
 				const bbt = new Sprite(bbtAsset);
 				// Iterate eyes, make em' bbt
-				for await (const iris of irisData) {
-					if (!iris.sprite) continue;
-					iris.sprite.texture = bbt.texture;
+				for await (const eye of eyeData) {
+					if (!eye.sprite) continue;
+					if (eye.darkMode) continue;
+					eye.sprite.texture = bbt.texture;
 				}
 			}, 500);
+		};
+		// ONLY LIGHT MODE
+		window.addEventListener("setlightmode", () => {
+			behab();
 		});
+		behab();
 	});
 	/* Runtime */
 	generateEntities();
@@ -588,15 +581,6 @@ import KeyListener from "./KeyListener.vue";
 		}
 	});
 	window.dispatchEvent(new Event("forceUpdateTheme"));
-
-	// TBBTCHANGE
-	let isBBT = false;
-
-	window.addEventListener("THEBBTEVENT", () => {
-		isBBT = true;
-	});
-
-
 </script>
 
 <KeyListener client:only />
