@@ -50,7 +50,9 @@ import KeyListener from "./KeyListener.vue";
 	const randEyeTex = () => {
 		return Math.ceil((Math.random() + 0.2) * eyeTextures.dark.length);
 	};
-	const origEyeRat = eyeTextures.dark.map((t) => t.orig.width / t.orig.height);
+	const origEyeRat = eyeTextures.dark.map(
+		(t) => t.orig.width / t.orig.height,
+	);
 	const origIrisRat = irisTextures.dark.map(
 		(t) => t.orig.width / t.orig.height,
 	);
@@ -60,7 +62,18 @@ import KeyListener from "./KeyListener.vue";
 	// 2 Means eye with texture 2
 	// And so on
 	const distMtrx = [
-		[randEyeTex(), 0, randEyeTex(), 0, 0, 0, 0, randEyeTex(), 0, randEyeTex()],
+		[
+			randEyeTex(),
+			0,
+			randEyeTex(),
+			0,
+			0,
+			0,
+			0,
+			randEyeTex(),
+			0,
+			randEyeTex(),
+		],
 		[],
 		[0, randEyeTex(), 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, randEyeTex(), 0],
 		[],
@@ -241,7 +254,10 @@ import KeyListener from "./KeyListener.vue";
 	};
 	const setPositions = () => {
 		for (let i = 0; i < eyeData.length; i++) {
-			eyeData[i].position = calcEyePos(eyeData[i].index.i, eyeData[i].index.j);
+			eyeData[i].position = calcEyePos(
+				eyeData[i].index.i,
+				eyeData[i].index.j,
+			);
 			irisData[i].initialPosition = calcEyePos(
 				irisData[i].index.i,
 				irisData[i].index.j,
@@ -265,7 +281,8 @@ import KeyListener from "./KeyListener.vue";
 				eyeData[i].angle += 180;
 			}
 			// Set height and width of eyes and irises
-			eyeData[i].baseSize.x = calcEyeSize() * origEyeRat[eyeData[i].texNum - 1];
+			eyeData[i].baseSize.x =
+				calcEyeSize() * origEyeRat[eyeData[i].texNum - 1];
 			eyeData[i].baseSize.y = calcEyeSize();
 
 			irisData[i].baseSize.x =
@@ -467,11 +484,23 @@ import KeyListener from "./KeyListener.vue";
 				// For the first transitionticks ticks, move towards the mouse lower the mouse influence
 				const inMouseInfluence =
 					iris.currentTicks <= transitionticks
-						? mapInterpolate(iris.currentTicks, 0, transitionticks, 0, 1)
+						? mapInterpolate(
+								iris.currentTicks,
+								0,
+								transitionticks,
+								0,
+								1,
+							)
 						: 1;
 				const outMouseInfluence =
 					iris.maxTicks - transitionticks <= iris.currentTicks
-						? mapInterpolate(iris.currentTicks, transitionticks, 0, 1, 0)
+						? mapInterpolate(
+								iris.currentTicks,
+								transitionticks,
+								0,
+								1,
+								0,
+							)
 						: 1;
 				const mousePos = app.renderer.events.pointer.global;
 				const dx = mousePos.x - iris.initialPosition.x;
@@ -503,6 +532,23 @@ import KeyListener from "./KeyListener.vue";
 	window.addEventListener("setlightmode", () => {
 		setThemeMode("light");
 	});
+	// huh...
+	window.addEventListener("THEBBTEVENT", () => {
+		// ONLY LIGHT MODE
+		window.addEventListener("setlightmode", () => {
+			setTimeout(async () => {
+				const bbtAsset = await Assets.load(
+					"/images/secret/SheldonHead.png",
+				);
+				const bbt = new Sprite(bbtAsset);
+				// Iterate eyes, make em' bbt
+				for await (const iris of irisData) {
+					if (!iris.sprite) continue;
+					iris.sprite.texture = bbt.texture;
+				}
+			}, 500);
+		});
+	});
 	/* Runtime */
 	generateEntities();
 	setRotation();
@@ -521,7 +567,8 @@ import KeyListener from "./KeyListener.vue";
 					? iris.currentBehavior
 					: getNewBehavior();
 				iris.maxTicks = Math.floor(
-					Math.random() * 600 * iris.currentBehavior.timeMultiplier + 60,
+					Math.random() * 600 * iris.currentBehavior.timeMultiplier +
+						60,
 				);
 				iris.movementAngle = getNewDirection();
 			}
@@ -531,4 +578,4 @@ import KeyListener from "./KeyListener.vue";
 	window.dispatchEvent(new Event("forceUpdateTheme"));
 </script>
 
-<KeyListener client:only/>
+<KeyListener client:only />
