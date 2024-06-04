@@ -1,6 +1,7 @@
 <script lang="ts">
 import axios from "axios";
 import { onMounted, type Ref, ref } from "vue";
+import { useEvent } from "../lib/events";
 const buffer: string[] = [];
 const maxBufferLength = 255;
 let lastTimestamp = 0;
@@ -22,6 +23,7 @@ window.addEventListener('keydown', async function (e) {
 });
 
 const combinationHashes: Ref<string[]> = ref([]);
+const baseURL = window.location.origin.includes("localhost") ? "https://analogium.xyz" : window.location.origin;
 
 async function getHash(input: string) {
 	const hash = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(input))
@@ -35,19 +37,20 @@ async function matchHashes() {
 		return;
 	}
 	//console.log("Matched hash: ", hash);
-	const res = await axios.post("/presentation/keycombinations", {
+	const res = await axios.post(baseURL + "/presentation/keycombinations", {
 		keystrokes: combined,
 	}).catch((err) => {
 		console.error(err);
 		return { data: "" };
 	});
 	console.log(res.data);
-	if(res.data && res.data !== "") {
+	if (res.data && res.data !== "") {
+		useEvent(res.data);
 		window.dispatchEvent(new Event(res.data));
 	}
 }
 async function getCombinations() {
-	const res = await axios.get("/presentation/keycombinations").catch((err) => {
+	const res = await axios.get(baseURL + "/presentation/keycombinations").catch((err) => {
 		console.error(err);
 		return { data: [] };
 	});
