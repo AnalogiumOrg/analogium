@@ -21,7 +21,7 @@ const makeBBT = () => {
 			audio.loop = true;
 			audio.play();
 		}
-	}, 200);
+	}, 1);
 };
 
 const undoBBT = () => {
