@@ -93,10 +93,20 @@ content {
 	line-height: 1.6;
 }
 
-table {
+table, th, td {
+	table-layout: fixed;
 	width: 100%;
-	text-align: left;
-	position: relative
+	background-color: var(--color);
+	border: 1px solid var(--border);
+	border-collapse: collapse;
+	/*
+	width: 100%;
+	*/
+}
+
+thead {
+	font-size: 1.3rem;
+	font-style: italic;
 }
 
 img {
