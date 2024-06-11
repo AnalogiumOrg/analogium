@@ -1,13 +1,11 @@
 {
-	"extends": "astro/tsconfigs/strict",
-	"compilerOptions": {
-		"strictNullChecks": true,
-		"moduleResolution": "node",
-		"jsx": "preserve",
-		"plugins": [
-			{
-				"name": "@astrojs/ts-plugin"
-			}
-		]
-	}
+  "files": [],
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    },
+    {
+      "path": "./tsconfig.app.json"
+    }
+  ]
 }
