@@ -2,6 +2,7 @@
 import axios from "axios";
 import { onMounted, type Ref, ref } from "vue";
 import { useEvent } from "../lib/events";
+import { addModifier } from "../lib/modifiers";
 const buffer: string[] = [];
 const maxBufferLength = 255;
 let lastTimestamp = 0;
@@ -40,18 +41,19 @@ async function matchHashes() {
 	const res = await axios.post(baseURL + "/presentation/keycombinations", {
 		keystrokes: combined,
 	}).catch((err) => {
-		console.error(err);
+		//console.error(err);
 		return { data: "" };
 	});
 	console.log(res.data);
 	if (res.data && res.data !== "") {
-		useEvent(res.data);
-		window.dispatchEvent(new Event(res.data));
+		/* useEvent(res.data);
+		window.dispatchEvent(new Event(res.data)); */
+		addModifier(res.data);
 	}
 }
 async function getCombinations() {
 	const res = await axios.get(baseURL + "/presentation/keycombinations").catch((err) => {
-		console.error(err);
+		//console.error(err);
 		return { data: [] };
 	});
 	combinationHashes.value.splice(0, combinationHashes.value.length);

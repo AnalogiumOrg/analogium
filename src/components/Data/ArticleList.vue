@@ -10,7 +10,8 @@ const posts: Ref<{
 
 onMounted(async () => {
 	const res = await axios.get("/database/articles").catch((err) => {
-		console.error(err);
+		//console.error(err);
+		console.error("Failed to fetch articles");
 		return { data: [] };
 	});
 	posts.value = res.data;
