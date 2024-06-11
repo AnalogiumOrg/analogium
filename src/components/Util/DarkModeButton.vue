@@ -9,12 +9,31 @@ const handleToggleClick = () => {
 };
 
 const updateTheme = () => {
-	const root = document.documentElement;
-	const blockquote = document.querySelector("blockquote");
+	window.dispatchEvent(useDarkMode().isDark ? new Event("setdarkmode") : new Event("setlightmode"));
+	const found = window.document.getElementsByClassName("toggleable");
+	for (let i = 0; i < found.length; i++) {
+		let attributes = found[i].attributes;
+		for (let j = 0; j < attributes.length; j++) {
+			// Find any src attributes and swap the image from _dark to _light or vice versa
+			if (attributes[j].name == "src") {
+				let src = attributes[j].value;
+				if (useDarkMode().isDark) {
+					src = src.replace("_light", "_dark");
+				} else {
+					src = src.replace("_dark", "_light");
+				}
+				attributes[j].value = src;
+			}
+		}
+	}
 	const theme = useDarkMode().mode;
+	// @ts-ignore
+	const root = document.getRootNode().querySelector(":root");
+	// @ts-ignore
+	const blockquote = document.getRootNode().querySelector(":root");
 	root.style.setProperty("--back", `var(--back_${theme})`);
-	blockquote?.style.setProperty("--color", `var(--color_${theme})`);
-	blockquote?.style.setProperty("--color-rgba", `var(--color-rgba_${theme})`);
+	blockquote.style.setProperty("--color", `var(--color_${theme})`);
+	blockquote.style.setProperty("--color-rgba", `var(--color-rgba_${theme})`);
 	root.style.setProperty("--font_color", `var(--font_color_${theme})`);
 	root.style.setProperty("--link", `var(--link_${theme})`);
 	root.style.setProperty("--border", `var(--border_${theme})`);

@@ -1,5 +1,6 @@
-
 <script setup lang="ts">
+import KeyListener from "@/components/Util/KeyListener.vue";
+import { useDarkMode } from "@/stores/darkmode";
 import {
 	Assets,
 	Application,
@@ -8,6 +9,7 @@ import {
 	RAD_TO_DEG,
 	DEG_TO_RAD,
 } from "pixi.js";
+import { watch } from "vue";
 
 // Black background by default
 const app = new Application({
@@ -523,6 +525,7 @@ window.addEventListener("resize", () => {
 	setRotation();
 	initialDraw();
 });
+const darkmode = useDarkMode();
 window.addEventListener("setdarkmode", () => {
 	setThemeMode("dark");
 });
@@ -580,3 +583,8 @@ app.ticker.add(() => {
 window.dispatchEvent(new Event("forceUpdateTheme"));
 </script>
 
+<template>
+	<Suspense>
+		<KeyListener />
+	</Suspense>
+</template>

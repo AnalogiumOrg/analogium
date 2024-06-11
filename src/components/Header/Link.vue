@@ -1,6 +1,7 @@
 <template>
 	<template v-if="props.href.startsWith('http')">
-		<a :href="props.href" :class="[props.className, { active: isActive }]" target="_blank" rel="noopener noreferrer">
+		<a :href="props.href" :class="[props.className, { active: isActive }]" target="_blank"
+			rel="noopener noreferrer">
 			<slot />
 		</a>
 	</template>
@@ -11,15 +12,17 @@
 	</template>
 </template>
 <script setup lang="ts">
-import { useRoute } from 'vue-router';
+import { computed, toRef } from 'vue';
+import { useRouter } from 'vue-router';
 
 const props = defineProps<{
 	href: string;
 	className?: string;
 }>();
-const pathname = useRoute().path;
-const thehref = props.href;
-const isActive = thehref === pathname || thehref === pathname.replace(/\/$/, "");
+const router = useRouter();
+const isActive = computed(() => {
+	return toRef(router, 'currentRoute').value.path === props.href;
+});
 </script>
 
 <style>
