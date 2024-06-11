@@ -1,10 +1,14 @@
 <template>
-	<!-- <a href={href} class:list={[className, { active: isActive }]} {...props}>
-		<slot />
-	</a> -->
-	<RouterLink :to="props.href" :class="[props.className, { active: isActive }]">
-		<slot />
-	</RouterLink>
+	<template v-if="props.href.startsWith('http')">
+		<a :href="props.href" :class="[props.className, { active: isActive }]" target="_blank" rel="noopener noreferrer">
+			<slot />
+		</a>
+	</template>
+	<template v-else>
+		<RouterLink :to="props.href" :class="[props.className, { active: isActive }]">
+			<slot />
+		</RouterLink>
+	</template>
 </template>
 <script setup lang="ts">
 import { useRoute } from 'vue-router';
