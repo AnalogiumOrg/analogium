@@ -1,6 +1,9 @@
 <template>
 	<header>
-		<Background />
+		<Suspense>
+			<!-- No Fallback -->
+			<Background />
+		</Suspense>
 		<img :src="logo" alt="ANALOGIUM" class="logo" />
 		<h2></h2>
 		<nav>

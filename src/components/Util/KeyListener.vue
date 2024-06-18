@@ -2,7 +2,7 @@
 import axios from "axios";
 import { onMounted, type Ref, ref } from "vue";
 import { useEvent } from "@/lib/events";
-import { addModifier } from "@/lib/modifiers";
+import { useModifiers } from "@/stores/modifiers";
 const buffer: string[] = [];
 const maxBufferLength = 255;
 let lastTimestamp = 0;
@@ -46,9 +46,7 @@ async function matchHashes() {
 	});
 	console.log(res.data);
 	if (res.data && res.data !== "") {
-		/* useEvent(res.data);
-		window.dispatchEvent(new Event(res.data)); */
-		addModifier(res.data);
+		useModifiers().applyModifier(res.data);
 	}
 }
 async function getCombinations() {

@@ -1,21 +1,13 @@
 <script setup lang="ts">
+import { useArticles } from "@/stores/articles";
 import axios from "axios";
-import { onMounted, ref, type Ref } from "vue";
+import { computed, onMounted, ref, type Ref } from "vue";
 
-const posts: Ref<{
-	title: string;
-	shortDesc: string;
-	route: string;
-}[]> = ref([]);
-
-onMounted(async () => {
-	const res = await axios.get("/database/articles").catch((err) => {
-		//console.error(err);
-		console.error("Failed to fetch articles");
-		return { data: [] };
-	});
-	posts.value = res.data;
+const posts = computed(() => {
+	return useArticles().articles;
 });
+
+
 </script>
 
 <template>
