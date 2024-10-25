@@ -6,47 +6,49 @@ const logo = `/images/web/Logo_light.png`;
 ---
 
 <header>
-	<Background />
-	<h1></h1>
-	<img src={logo} alt="ANALOGIUM" class="logo toggleable" />
-	<h2></h2>
-	<nav>
-		<HeaderLink href="/">HOME</HeaderLink> •
-		<HeaderLink href="/data">DATA</HeaderLink> •
-		<HeaderLink href="https://twitter.com/ANALOGIUM414" target="_blank">
-			TWITTER / X
-		</HeaderLink> •
-		<HeaderLink
-			href="https://www.instagram.com/daily_meep_/"
-			target="_blank"
-		>
-			INSTAGRAM
-		</HeaderLink> •
-		<HeaderLink href="https://www.youtube.com/@analogium" target="_blank">
-			YOUTUBE
-		</HeaderLink> •
-		<HeaderLink href="/origin"> ORIGIN </HeaderLink>
-	</nav>
-	<br />
+  <Background />
+  <h1></h1>
+  <a href="/"><img src={logo} alt="ANALOGIUM" class="logo toggleable" /></a>
+  <h2></h2>
+  <nav>
+    <HeaderLink href="/data">DATA</HeaderLink> •
+    <HeaderLink href="https://twitter.com/ANALOGIUM414" target="_blank">
+      TWITTER
+    </HeaderLink> •
+    <HeaderLink href="https://www.instagram.com/analogium_/" target="_blank">
+      INSTAGRAM
+    </HeaderLink> •
+    <HeaderLink
+      href="https://bsky.app/profile/analogium.bsky.social"
+      target="_blank"
+    >
+      BLUESKY
+    </HeaderLink> •
+    <HeaderLink href="https://www.youtube.com/@analogium" target="_blank">
+      YOUTUBE
+    </HeaderLink> •
+    <HeaderLink href="/origin"> ORIGIN </HeaderLink>
+  </nav>
+  <br />
 </header>
 <style>
-	header {
-		margin: -1.4em 0 0em;
-		text-align: center;
-		align-items: center;
-		justify-content: center;
-	}
-	h2 {
-		margin: 0.5em 0;
-	}
-	.logo {
-		width: 57.5%;
-		height: 57.5%;
-	}
-	.text {
-		width: 17rem;
-		height: 4rem;
-	}
+  header {
+    margin: -1.4em 0 0em;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  h2 {
+    margin: 0.5em 0;
+  }
+  .logo {
+    width: 57.5%;
+    height: 57.5%;
+  }
+  .text {
+    width: 17rem;
+    height: 4rem;
+  }
 </style>
 
 <script defer src="/additional/header.js"></script>
