@@ -4,175 +4,175 @@
   License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
  */
 
- :root {
-	--color: #000;
-	--font_color: #FFF;
-	--link: #C0C0C0;
-	--border: #999;
+:root {
+  --color: #000;
+  --font_color: #fff;
+  --link: #c0c0c0;
+  --border: #999;
 
-	/* DARK MODE */
-	--color_dark: #000;
-	--font_color_dark: #FFF;
-	--link_dark: #C0C0C0;
-	--border_dark: #999;
+  /* DARK MODE */
+  --color_dark: #000;
+  --font_color_dark: #fff;
+  --link_dark: #c0c0c0;
+  --border_dark: #999;
 
-	/* LIGHT MODE */
-	--color_light: #FFF;
-	--font_color_light: #000000;
-	--link_light: #3f3f3f;
-	--border_light: #666;
+  /* LIGHT MODE */
+  --color_light: #fff;
+  --font_color_light: #000000;
+  --link_light: #3f3f3f;
+  --border_light: #666;
 }
 
 @font-face {
-	font-family: 'Duke';
-	src: url(/fonts/duke_thin.ttf);
+  font-family: "Duke";
+  src: url(/fonts/duke_thin.ttf);
 }
 
 @font-face {
-	font-family: 'OldStyle';
-	src: url(/fonts/OldStyle.TTF);
+  font-family: "OldStyle";
+  src: url(/fonts/OldStyle.TTF);
 }
 
 @font-face {
-	font-family: 'CRAZY KILLER';
-	src: url(/fonts/crazy_killer.ttf);
+  font-family: "CRAZY KILLER";
+  src: url(/fonts/crazy_killer.ttf);
 }
 
 @font-face {
-	font-family: 'Through The Night';
-	src: url(/fonts/through_the_night.ttf);
+  font-family: "Through The Night";
+  src: url(/fonts/through_the_night.ttf);
 }
 
 @font-face {
-	font-family: 'DIEDIEDIE';
-	src: url(/fonts/diediedie.TTF);
+  font-family: "DIEDIEDIE";
+  src: url(/fonts/diediedie.TTF);
 }
 
 @font-face {
-	font-family: 'Graffio';
-	src: url(/fonts/graffio.otf) format("opentype");
+  font-family: "Graffio";
+  src: url(/fonts/graffio.otf) format("opentype");
 }
 
 @font-face {
-	font-family: '1942';
-	src: url(/fonts/report.ttf);
+  font-family: "1942";
+  src: url(/fonts/report.ttf);
 }
 
 body {
-	font-family: 'OldStyle', sans-serif;
-	margin: auto;
-	padding: 20px;
-	max-width: 70ch;
-	text-align: justify;
-	/* background: var(--back), var(--color); */
-	background-size: contain;
-	-moz-background-size: contain;
-	-webkit-background-size: contain;
-	-o-background-size: contain;
-	word-wrap: break-word;
-	overflow-wrap: break-word;
-	line-height: 1.5;
-	color: var(--font_color);
+  font-family: "OldStyle", sans-serif;
+  margin: auto;
+  padding: 20px;
+  max-width: 70ch;
+  text-align: justify;
+  /* background: var(--back), var(--color); */
+  background-size: contain;
+  -moz-background-size: contain;
+  -webkit-background-size: contain;
+  -o-background-size: contain;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  line-height: 1.5;
+  color: var(--font_color);
 }
 
 p {
-	font-size: 1.1rem;
+  font-size: 1.1rem;
 }
 
 a {
-	text-decoration: none;
-	cursor: default;
-	color: var(--font_color);
+  text-decoration: none;
+  cursor: default;
+  color: var(--font_color);
 }
 
 textarea {
-	width: 100%;
-	font-size: 16px;
+  width: 100%;
+  font-size: 16px;
 }
 
 input {
-	font-size: 16px;
+  font-size: 16px;
 }
 
 content {
-	line-height: 1.6;
+  line-height: 1.6;
 }
 
-table, th, td {
-	table-layout: fixed;
-	width: 100%;
-	background-color: var(--color);
-	border: 1px solid var(--border);
-	border-collapse: collapse;
-	/*
+table,
+th,
+td {
+  table-layout: fixed;
+  width: 100%;
+  background-color: var(--color);
+  border: 1px solid var(--border);
+  border-collapse: collapse;
+  /*
 	width: 100%;
 	*/
 }
 
 thead {
-	font-size: 1.3rem;
-	font-style: italic;
+  font-size: 1.3rem;
+  font-style: italic;
 }
 
 img {
-	max-width: 100%;
-	height: 100%;
-	
+  max-width: 100%;
+  height: 100%;
 }
 
 #logo {
-	max-width: 50%;
-	height: 100%;
-	
+  max-width: 50%;
+  height: 100%;
 }
 
 code {
-	padding: 2px 5px;
-	background-color: #4e4e4e;
+  padding: 2px 5px;
+  background-color: #4e4e4e;
 }
 
 pre {
-	padding: 1rem;
+  padding: 1rem;
 }
 
-pre>code {
-	all: unset;
+pre > code {
+  all: unset;
 }
 
 blockquote {
-	border: 1px solid var(--border);
-	font-family: 'Through The Night';
-	color: var(--font_color);
-	font-size: 0.8rem;
-	text-align: center;
-	align-items: center;
-	align-content: center;
-	font-style: normal;
-	padding: 2px 0px 2px 5px;
-	margin: 0px;
-	background-color: var(--color);
-	font-style: normal;
+  border: 1px solid var(--border);
+  font-family: "Through The Night";
+  color: var(--font_color);
+  font-size: 0.8rem;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  font-style: normal;
+  padding: 2px 0px 2px 5px;
+  margin: 0px;
+  background-color: var(--color);
+  font-style: normal;
 }
 
 button {
-	font-family: 'OldStyle';
-	background-color: var(--color);
-	font-size: 15px;
-	color: var(--link);
-	border: none;
-	cursor: pointer;
+  font-family: "OldStyle";
+  background-color: var(--color);
+  font-size: 15px;
+  color: var(--link);
+  border: none;
+  cursor: pointer;
 }
 
 canvas {
-	/* Keep always in place as the background */
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: -1;
-	background-color: var(--color);
+  /* Keep always in place as the background */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-color: var(--color);
 }
 
 .fault {
-	font-family: 'Through The Night', sans-serif;
-	font-size: 4.6rem;
+  font-family: "Through The Night", sans-serif;
+  font-size: 4.6rem;
 }
