@@ -8,7 +8,7 @@ import Background from "../components/Background.astro";
 
 type Props = CollectionEntry<'blog'>['data'];
 
-const { title, description, heroImage, autor } = Astro.props;
+const { title, description, heroImage, author } = Astro.props;
 ---
 
 <html lang="en">
@@ -60,7 +60,7 @@ const { title, description, heroImage, autor } = Astro.props;
 				<slot />
 			</article>
 		</main>
-		<h4>Written by - {autor}</h4>
+		<h4>Written by - {author}</h4>
 		<Footer />
 	</body>
 </html>

@@ -7,7 +7,7 @@ const blog = defineCollection({
 		title: z.string(),
 		description: z.string(),
 		heroImage: z.string().optional(),
-		autor: z.string().optional(),
+		author: z.string().optional(),
 	}),
 });
 
@@ -18,7 +18,7 @@ const staff = defineCollection({
 		title: z.string(),
 		description: z.string(),
 		heroImage: z.string().optional(),
-		autor: z.string().optional(),
+		author: z.string().optional(),
 	}),
 });
 
