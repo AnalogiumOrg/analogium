@@ -23,6 +23,11 @@
 }
 
 @font-face {
+	font-family: 'OldStyle';
+	src: url(/fonts/OldStyle.TTF);
+}
+
+@font-face {
 	font-family: 'CRAZY KILLER';
 	src: url(/fonts/crazy_killer.ttf);
 }
@@ -52,7 +57,7 @@ html {
 }
 
 body {
-	font-family: 'Duke', sans-serif;
+	font-family: 'OldStyle', sans-serif;
 	margin: auto;
 	padding: 20px;
 	min-height: 90vh;
@@ -145,7 +150,7 @@ blockquote {
 }
 
 button {
-	font-family: 'Duke';
+	font-family: 'OldStyle';
 	background-color: var(--color);
 	font-size: 15px;
 	color: var(--link);

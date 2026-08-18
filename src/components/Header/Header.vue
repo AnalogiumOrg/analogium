@@ -12,13 +12,16 @@
 			<HeaderLink href="https://twitter.com/ANALOGIUM414" target="_blank">
 				TWITTER / X
 			</HeaderLink> •
-			<HeaderLink href="https://www.instagram.com/daily_meep_/" target="_blank">
+			<HeaderLink href="https://www.instagram.com/analogium_/" target="_blank">
 				INSTAGRAM
+			</HeaderLink> •
+			<HeaderLink href="https://bsky.app/profile/analogium.bsky.social" target="_blank">
+				BLUESKY
 			</HeaderLink> •
 			<HeaderLink href="https://www.youtube.com/@analogium" target="_blank">
 				YOUTUBE
 			</HeaderLink> •
-			<HeaderLink href="/origin"> ORIGIN </HeaderLink>
+			<HeaderLink href="/staff"> STAFF </HeaderLink>
 		</nav>
 		<br />
 	</header>
