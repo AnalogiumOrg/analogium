@@ -7,11 +7,8 @@ import {
 	Container,
 	Sprite,
 	RAD_TO_DEG,
-	DEG_TO_RAD,
 } from "pixi.js";
-import { watch } from "vue";
 
-// Black background by default
 const app = new Application({
 	backgroundAlpha: 0,
 	width: window.innerWidth,
@@ -25,7 +22,6 @@ document.body.append(app.view);
 
 const container = new Container();
 app.stage.addChild(container);
-/* Definitions */
 
 const eyeTextures = {
 	dark: [
@@ -55,11 +51,6 @@ const origEyeRat = eyeTextures.dark.map(
 const origIrisRat = irisTextures.dark.map(
 	(t) => t.orig.width / t.orig.height,
 );
-// Eye distribution matrix
-// 0 Means no eye
-// 1 Means eye with texture 1
-// 2 Means eye with texture 2
-// And so on
 const distMtrx = [
 	[
 		randEyeTex(),
@@ -110,12 +101,8 @@ const distMtrx = [
 		0,
 		randEyeTex(),
 		0,
-		randEyeTex(),
 	],
 ];
-// This multiplies to any existing eye's size, counts for any eye with texture
-// Defaults to 1 if not specified
-//const sizeMultArr = [0.7, 1];
 const calcEyePos = (i: number, j: number) => {
 	return {
 		x: (window.innerWidth / (distMtrx[i].length + 1)) * (j + 1),
@@ -132,9 +119,7 @@ const calcOpacity = () => {
 	return Math.min(1, Math.max(0.5, calcEyeSize() / 125));
 };
 const eyeData: {
-	// Totally static
 	index: { i: number; j: number };
-	// Mostly static
 	texNum: number;
 	position: { x: number; y: number };
 	baseSize: { x: number; y: number };
@@ -142,45 +127,30 @@ const eyeData: {
 	angle: number;
 	darkMode: boolean;
 	scale: number;
-	// pixi.js objects
 	sprite?: Sprite;
 }[] = [];
+
 const IrisBehavior = {
-	center: {
-		name: "center",
-		timeMultiplier: 0.5,
-		weight: 1,
-	},
-	randomseesaw: {
-		name: "randomseesaw",
-		timeMultiplier: 1,
-		weight: 1,
-	},
-	randomtransitioned: {
-		name: "randomtransitioned",
+	fixation: {
+		name: "fixation",
 		timeMultiplier: 0.8,
 		weight: 10,
 	},
-	randomradial: {
-		name: "randomradial",
-		timeMultiplier: 0.3,
-		weight: 4,
+	stare: {
+		name: "stare",
+		timeMultiplier: 0.5,
+		weight: 2,
 	},
 	follow: {
 		name: "follow",
-		timeMultiplier: 0.2,
-		weight: 0.5,
+		timeMultiplier: 0.3,
+		weight: 3,
 	},
 } as const;
 type IrisBehavior = (typeof IrisBehavior)[keyof typeof IrisBehavior];
-const getBehavior = (behaviorName: string) => {
-	return IrisBehavior[behaviorName as keyof typeof IrisBehavior];
-};
-const initialBehavior: IrisBehavior = getBehavior("center");
+
 type IrisData = {
-	// Totally static
 	index: { i: number; j: number };
-	// Mostly static
 	texNum: number;
 	initialPosition: { x: number; y: number };
 	baseSize: { x: number; y: number };
@@ -189,19 +159,24 @@ type IrisData = {
 	darkMode: boolean;
 	scale: number;
 	maxDistance: number;
-	// Pretty dynamic
-	movementAngle: number;
+	currentOffset: { x: number; y: number };
+	startOffset: { x: number; y: number };
+	targetOffset: { x: number; y: number };
+	saccadeElapsedMs: number;
+	saccadeDurationMs: number;
+	isFixating: boolean;
+	fixationElapsedMs: number;
+	maxFixationMs: number;
 	currentBehavior: IrisBehavior;
-	currentTicks: number;
-	maxTicks: number;
+	behaviorElapsedMs: number;
+	maxBehaviorMs: number;
 	lockBehavior: boolean;
-	// pixi.js objects
+	widthToHeightRatio: number;
 	sprite?: Sprite;
 };
+
 const irisData: IrisData[] = [];
-/**
- * Initializing functions
- */
+
 const generateEntities = () => {
 	for (let i = 0; i < distMtrx.length; i++) {
 		for (let j = 0; j < distMtrx[i].length; j++) {
@@ -219,12 +194,11 @@ const generateEntities = () => {
 				},
 				widthToHeightRatio: origEyeRat[distMtrx[i][j] - 1],
 				alpha: opacityMod,
-				// Initial values
 				angle: 0,
 				darkMode: true,
 				scale: 1,
 			};
-			const iris = {
+			const iris: IrisData = {
 				index: { i, j },
 				texNum: distMtrx[i][j],
 				initialPosition: calcEyePos(i, j),
@@ -234,16 +208,21 @@ const generateEntities = () => {
 				},
 				widthToHeightRatio: origIrisRat[distMtrx[i][j] - 1],
 				alpha: opacityMod,
-				// Initial values
 				angle: 0,
-				movementAngle: Math.random() * Math.PI * 2,
-				movementOffset: Math.random() * 0.5,
 				darkMode: true,
 				scale: 1,
-				currentBehavior: initialBehavior,
-				currentTicks: 0,
-				maxTicks: 0,
 				maxDistance: irisSize * 0.3625,
+				currentOffset: { x: 0, y: 0 },
+				startOffset: { x: 0, y: 0 },
+				targetOffset: { x: 0, y: 0 },
+				saccadeElapsedMs: 0,
+				saccadeDurationMs: 40,
+				isFixating: false,
+				fixationElapsedMs: 0,
+				maxFixationMs: Math.floor(200 + Math.pow(Math.random(), 2.2) * 7200),
+				currentBehavior: IrisBehavior.fixation,
+				behaviorElapsedMs: 0,
+				maxBehaviorMs: 3000 + Math.random() * 5000,
 				lockBehavior: false,
 			};
 			eyeData.push(eye);
@@ -265,7 +244,6 @@ const setPositions = () => {
 };
 const setRotation = () => {
 	for (let i = 0; i < eyeData.length; i++) {
-		// Rotate eyes and irises to face center
 		const angleRadians = Math.atan2(
 			eyeData[i].position.y - window.innerHeight / 2,
 			eyeData[i].position.x - window.innerWidth / 2,
@@ -279,7 +257,6 @@ const setRotation = () => {
 			eyeData[i].scale = 1;
 			eyeData[i].angle += 180;
 		}
-		// Set height and width of eyes and irises
 		eyeData[i].baseSize.x =
 			calcEyeSize() * origEyeRat[eyeData[i].texNum - 1];
 		eyeData[i].baseSize.y = calcEyeSize();
@@ -288,13 +265,11 @@ const setRotation = () => {
 			calcIrisSize() * origIrisRat[irisData[i].texNum - 1];
 		irisData[i].baseSize.y = calcIrisSize();
 
-		// Set opacity of eyes and irises
 		eyeData[i].alpha = calcOpacity();
 		irisData[i].alpha = calcOpacity();
 	}
 };
 const setThemeMode = (m: "dark" | "light") => {
-	console.log("Setting theme mode to", m);
 	for (let i = 0; i < eyeData.length; i++) {
 		eyeData[i].darkMode = m === "dark";
 		irisData[i].darkMode = m === "dark";
@@ -308,7 +283,6 @@ const initialDraw = () => {
 	for (let i = 0; i < eyeData.length; i++) {
 		let eye;
 		let iris;
-		// Set Textures
 		if (eyeData[i].darkMode) {
 			eye = new Sprite(eyeTextures.dark[eyeData[i].texNum - 1]);
 			iris = new Sprite(irisTextures.dark[eyeData[i].texNum - 1]);
@@ -316,49 +290,30 @@ const initialDraw = () => {
 			eye = new Sprite(eyeTextures.light[eyeData[i].texNum - 1]);
 			iris = new Sprite();
 		}
-		// Set Anchors
 		eye.anchor.set(0.5);
 		iris.anchor.set(0.5);
-		// Set Positions
 		eye.position.set(eyeData[i].position.x, eyeData[i].position.y);
 		iris.position.set(
 			irisData[i].initialPosition.x,
 			irisData[i].initialPosition.y,
 		);
-		// Set Alphas
 		eye.alpha = eyeData[i].alpha;
 		iris.alpha = irisData[i].alpha;
-		// Set Rotation
 		eye.angle = eyeData[i].angle;
 		iris.angle = irisData[i].angle;
-		// Set Scale
 		eye.scale.x = eyeData[i].scale;
 		iris.scale.x = irisData[i].scale;
-		// Set Sizes
 		eye.width = eyeData[i].baseSize.x;
 		eye.height = eyeData[i].baseSize.y;
 		iris.width = irisData[i].baseSize.x;
 		iris.height = irisData[i].baseSize.y;
-		// Save to data
 		eyeData[i].sprite = eye;
 		irisData[i].sprite = iris;
-		// Add to container
 		container.addChild(eye);
 		container.addChild(iris);
 	}
 };
-/*
- * Ticking Functions
- */
-const mapInterpolate = (
-	value: number,
-	inMin: number,
-	inMax: number,
-	outMin: number,
-	outMax: number,
-) => {
-	return ((value - inMin) * (outMax - outMin)) / (inMax - inMin) + outMin;
-};
+
 const weightedRandom = (weights: number[]) => {
 	const totalWeight = weights.reduce((a, b) => a + b);
 	const randomNum = Math.random() * totalWeight;
@@ -371,155 +326,50 @@ const weightedRandom = (weights: number[]) => {
 	}
 	return 0;
 };
-const getNewBehavior = () => {
+const getNewBehavior = (): IrisBehavior => {
 	return Object.values(IrisBehavior)[
 		weightedRandom(Object.values(IrisBehavior).map((b) => b.weight))
 	];
 };
-const getNewDirection = () => {
-	return Math.floor(Math.random() * 360);
+
+const getRandomTarget = (iris: IrisData): { x: number; y: number } => {
+	const angle = Math.random() * Math.PI * 2;
+	const distFraction =
+		iris.currentBehavior.name === "stare"
+			? Math.random() * 0.2
+			: 0.6 + Math.random() * 0.4;
+	const dist = iris.maxDistance * distFraction;
+	return {
+		x: Math.cos(angle) * dist,
+		y: Math.sin(angle) * dist,
+	};
 };
-const calcDistance = (x1: number, y1: number, x2: number, y2: number) => {
-	return Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
+
+const calcFixationMs = (iris: IrisData) => {
+	const timeMult = iris.currentBehavior.timeMultiplier ?? 0.8;
+	const rand = Math.random();
+	const minHoldMs = 200;
+	const maxSpanMs = 9000 * timeMult;
+	return Math.floor(minHoldMs + Math.pow(rand, 2.2) * maxSpanMs);
 };
-const calcMovementOffset = (iris: IrisData) => {
-	switch (iris.currentBehavior.name) {
-		case "center":
-			return {
-				x: 0,
-				y: 0,
-			};
-		case "randomseesaw": {
-			const cTicks = iris.currentTicks;
-			const mTicks = iris.maxTicks;
-			const rad = iris.movementAngle * DEG_TO_RAD;
-			let currDistance = 0;
-			if (cTicks < mTicks / 2) {
-				currDistance = mapInterpolate(
-					cTicks,
-					0,
-					mTicks / 2,
-					0,
-					iris.maxDistance,
-				);
-			} else {
-				currDistance = mapInterpolate(
-					cTicks,
-					mTicks / 2,
-					mTicks,
-					iris.maxDistance,
-					0,
-				);
-			}
-			const x = Math.cos(rad) * currDistance;
-			const y = Math.sin(rad) * currDistance;
-			return { x, y };
-		}
-		case "randomtransitioned": {
-			const cTicks = iris.currentTicks;
-			const mTicks = iris.maxTicks;
-			const rad = iris.movementAngle * DEG_TO_RAD;
-			let currDistance = 0;
-			if (cTicks < mTicks / 6) {
-				currDistance = mapInterpolate(
-					cTicks,
-					0,
-					mTicks / 6,
-					0,
-					iris.maxDistance,
-				);
-			} else if (cTicks < mTicks / 6 + (mTicks * 4) / 6) {
-				currDistance = iris.maxDistance;
-			} else {
-				currDistance = mapInterpolate(
-					cTicks,
-					mTicks / 6 + (mTicks * 4) / 6,
-					mTicks,
-					iris.maxDistance,
-					0,
-				);
-			}
-			const x = Math.cos(rad) * currDistance;
-			const y = Math.sin(rad) * currDistance;
-			return { x, y };
-		}
-		case "randomradial": {
-			const cTicks = iris.currentTicks;
-			const mTicks = iris.maxTicks;
-			const rad = iris.movementAngle * DEG_TO_RAD;
-			let currDistance = 0;
-			if (cTicks < mTicks / 6) {
-				currDistance = mapInterpolate(
-					cTicks,
-					0,
-					mTicks / 6,
-					0,
-					iris.maxDistance,
-				);
-			} else if (cTicks < mTicks / 6 + (mTicks * 4) / 6) {
-				// If angle is more than 90 degrees and less than 270 degrees, reverse direction
-				if (iris.movementAngle > 90 && iris.movementAngle < 270) {
-					currDistance = iris.maxDistance;
-					iris.movementAngle++;
-				} else {
-					currDistance = iris.maxDistance;
-					iris.movementAngle--;
-				}
-			} else {
-				currDistance = mapInterpolate(
-					cTicks,
-					mTicks / 6 + (mTicks * 4) / 6,
-					mTicks,
-					iris.maxDistance,
-					0,
-				);
-			}
-			const x = Math.cos(rad) * currDistance;
-			const y = Math.sin(rad) * currDistance;
-			return { x, y };
-		}
-		case "follow": {
-			const transitionticks = iris.maxTicks / 3;
-			// For the first transitionticks ticks, move towards the mouse lower the mouse influence
-			const inMouseInfluence =
-				iris.currentTicks <= transitionticks
-					? mapInterpolate(
-						iris.currentTicks,
-						0,
-						transitionticks,
-						0,
-						1,
-					)
-					: 1;
-			const outMouseInfluence =
-				iris.maxTicks - transitionticks <= iris.currentTicks
-					? mapInterpolate(
-						iris.currentTicks,
-						transitionticks,
-						0,
-						1,
-						0,
-					)
-					: 1;
-			const mousePos = app.renderer.events.pointer.global;
-			const dx = mousePos.x - iris.initialPosition.x;
-			const dy = mousePos.y - iris.initialPosition.y;
-			const rad = Math.atan2(
-				dy * inMouseInfluence * outMouseInfluence,
-				dx * inMouseInfluence * outMouseInfluence,
-			);
-			const x = Math.cos(rad) * iris.maxDistance;
-			const y = Math.sin(rad) * iris.maxDistance;
-			return { x, y };
-		}
-		default:
-			return {
-				x: 0,
-				y: 0,
-			};
+
+const startSaccade = (iris: IrisData, target: { x: number; y: number }) => {
+	iris.startOffset = { ...iris.currentOffset };
+	iris.targetOffset = target;
+	iris.saccadeDurationMs = 30 + Math.random() * 30;
+	iris.saccadeElapsedMs = 0;
+	iris.isFixating = false;
+};
+
+const advanceBehavior = (iris: IrisData) => {
+	if (!iris.lockBehavior) {
+		iris.currentBehavior = getNewBehavior();
 	}
+	iris.behaviorElapsedMs = 0;
+	iris.maxBehaviorMs = 3000 + Math.random() * 5000;
+	startSaccade(iris, getRandomTarget(iris));
 };
-// Keep Window size in sync
+
 window.addEventListener("resize", () => {
 	setPositions();
 	setRotation();
@@ -540,7 +390,6 @@ window.addEventListener("THEBBTEVENT", () => {
 				"/images/secret/SheldonHead.png",
 			);
 			const bbt = new Sprite(bbtAsset);
-			// Iterate eyes, make em' bbt
 			for await (const eye of eyeData) {
 				if (!eye.sprite) continue;
 				if (eye.darkMode) continue;
@@ -548,36 +397,85 @@ window.addEventListener("THEBBTEVENT", () => {
 			}
 		}, 1);
 	};
-	// ONLY LIGHT MODE
 	window.addEventListener("setlightmode", () => {
 		behab();
 	});
 	behab();
 });
-/* Runtime */
+
 generateEntities();
 setRotation();
 initialDraw();
+
 app.ticker.add(() => {
+	const deltaMS = app.ticker.deltaMS;
+	const mousePos = app.renderer.events.pointer.global;
+
 	for (const iris of irisData) {
 		if (!iris.sprite) continue;
-		const movementOffset = calcMovementOffset(iris);
-		iris.sprite.position.set(
-			iris.initialPosition.x + movementOffset.x,
-			iris.initialPosition.y + movementOffset.y,
-		);
-		if (iris.currentTicks >= iris.maxTicks) {
-			iris.currentTicks = 0;
-			iris.currentBehavior = iris.lockBehavior
-				? iris.currentBehavior
-				: getNewBehavior();
-			iris.maxTicks = Math.floor(
-				Math.random() * 600 * iris.currentBehavior.timeMultiplier +
-				60,
-			);
-			iris.movementAngle = getNewDirection();
+
+		iris.behaviorElapsedMs += deltaMS;
+		if (!iris.lockBehavior && iris.behaviorElapsedMs >= iris.maxBehaviorMs) {
+			advanceBehavior(iris);
 		}
-		iris.currentTicks++;
+
+		if (iris.currentBehavior.name === "follow") {
+			const dx = mousePos.x - iris.initialPosition.x;
+			const dy = mousePos.y - iris.initialPosition.y;
+			const dist = Math.sqrt(dx * dx + dy * dy);
+			const clampedDist = Math.min(dist, iris.maxDistance);
+			const scale = dist > 0.001 ? clampedDist / dist : 0;
+			const targetX = dx * scale;
+			const targetY = dy * scale;
+
+			const lerpFactor = 1 - Math.exp(-12 * deltaMS / 1000);
+			iris.currentOffset.x += (targetX - iris.currentOffset.x) * lerpFactor;
+			iris.currentOffset.y += (targetY - iris.currentOffset.y) * lerpFactor;
+		} else {
+			if (!iris.isFixating) {
+				iris.saccadeElapsedMs += deltaMS;
+				const t = Math.min(
+					iris.saccadeElapsedMs / iris.saccadeDurationMs,
+					1,
+				);
+				const eased = 1 - Math.pow(1 - t, 3);
+				iris.currentOffset.x =
+					iris.startOffset.x +
+					(iris.targetOffset.x - iris.startOffset.x) * eased;
+				iris.currentOffset.y =
+					iris.startOffset.y +
+					(iris.targetOffset.y - iris.startOffset.y) * eased;
+
+				if (t >= 1) {
+					iris.currentOffset.x = iris.targetOffset.x;
+					iris.currentOffset.y = iris.targetOffset.y;
+					iris.isFixating = true;
+					iris.fixationElapsedMs = 0;
+					iris.maxFixationMs = calcFixationMs(iris);
+				}
+			} else {
+				iris.fixationElapsedMs += deltaMS;
+				const jitter = 0.15;
+				iris.currentOffset.x += (Math.random() - 0.5) * jitter;
+				iris.currentOffset.y += (Math.random() - 0.5) * jitter;
+
+				if (iris.fixationElapsedMs >= iris.maxFixationMs) {
+					startSaccade(iris, getRandomTarget(iris));
+				}
+			}
+		}
+
+		const ox = iris.currentOffset.x;
+		const oy = iris.currentOffset.y;
+		const r = Math.sqrt(ox * ox + oy * oy);
+		const clampR = iris.maxDistance;
+		const clampedOx = r > clampR ? (ox / r) * clampR : ox;
+		const clampedOy = r > clampR ? (oy / r) * clampR : oy;
+
+		iris.sprite.position.set(
+			iris.initialPosition.x + clampedOx,
+			iris.initialPosition.y + clampedOy,
+		);
 	}
 });
 window.dispatchEvent(new Event("forceUpdateTheme"));
