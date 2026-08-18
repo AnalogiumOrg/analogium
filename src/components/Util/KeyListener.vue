@@ -24,7 +24,7 @@ window.addEventListener('keydown', async function (e) {
 });
 
 const combinationHashes: Ref<string[]> = ref([]);
-const baseURL = "https://analogium.xyz"
+const dailySalt = ref("");
 
 async function getHash(input: string) {
 	const hash = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(input))
@@ -33,12 +33,12 @@ async function getHash(input: string) {
 }
 async function matchHashes() {
 	const combined = buffer.join("");
-	const hash = await getHash(combined);
+	const hash = await getHash(combined + dailySalt.value);
 	if (!combinationHashes.value.includes(hash)) {
 		return;
 	}
 	//console.log("Matched hash: ", hash);
-	const res = await axios.post(baseURL + "/presentation/keycombinations", {
+	const res = await axios.post("/presentation/keycombinations", {
 		keystrokes: combined,
 	}).catch((err) => {
 		//console.error(err);
@@ -50,12 +50,15 @@ async function matchHashes() {
 	}
 }
 async function getCombinations() {
-	const res = await axios.get(baseURL + "/presentation/keycombinations").catch((err) => {
+	const res = await axios.get("/presentation/keycombinations").catch((err) => {
 		//console.error(err);
-		return { data: [] };
+		return { data: { salt: "", hashes: [] } };
 	});
+	dailySalt.value = res.data.salt || "";
 	combinationHashes.value.splice(0, combinationHashes.value.length);
-	combinationHashes.value.push(...res.data);
+	if (res.data.hashes) {
+		combinationHashes.value.push(...res.data.hashes);
+	}
 	//console.debug("combinationHashes: ", combinationHashes.value);
 }
 
