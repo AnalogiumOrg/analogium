@@ -38,7 +38,7 @@ async function matchHashes() {
 		return;
 	}
 	//console.log("Matched hash: ", hash);
-	const res = await axios.post("/presentation/keycombinations", {
+	const res = await axios.post("/api/presentation/keycombinations", {
 		keystrokes: combined,
 	}).catch((err) => {
 		//console.error(err);
@@ -50,7 +50,7 @@ async function matchHashes() {
 	}
 }
 async function getCombinations() {
-	const res = await axios.get("/presentation/keycombinations").catch((err) => {
+	const res = await axios.get("/api/presentation/keycombinations").catch((err) => {
 		//console.error(err);
 		return { data: { salt: "", hashes: [] } };
 	});

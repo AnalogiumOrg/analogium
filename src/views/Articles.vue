@@ -3,9 +3,9 @@ import List from '@/components/Articles/List.vue';
 import ArticleView from '@/components/Articles/ArticleView.vue';
 import { computed, toRef } from 'vue';
 import { useRoute } from 'vue-router';
-
+const route = useRoute();
 const showArticles = computed(() => {
-	return toRef(useRoute(), 'path').value.endsWith('data');
+	return !route.params.slug;
 });
 </script>
 <template>

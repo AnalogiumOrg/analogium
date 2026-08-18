@@ -19,27 +19,27 @@
 
 @font-face {
 	font-family: 'Duke';
-	src: url(/fonts/duke_thin.ttf);
+	src: url(/fonts/duke_thin.ttf) format('truetype');
 }
 
 @font-face {
 	font-family: 'OldStyle';
-	src: url(/fonts/OldStyle.TTF);
+	src: url(/fonts/OldStyle.TTF) format('truetype');
 }
 
 @font-face {
 	font-family: 'CRAZY KILLER';
-	src: url(/fonts/crazy_killer.ttf);
+	src: url(/fonts/crazy_killer.ttf) format('truetype');
 }
 
 @font-face {
 	font-family: 'Through The Night';
-	src: url(/fonts/through_the_night.ttf);
+	src: url(/fonts/through_the_night.ttf) format('truetype');
 }
 
 @font-face {
 	font-family: 'DIEDIEDIE';
-	src: url(/fonts/diediedie.TTF);
+	src: url(/fonts/diediedie.TTF) format('truetype');
 }
 
 @font-face {
@@ -49,7 +49,7 @@
 
 @font-face {
 	font-family: '1942';
-	src: url(/fonts/report.ttf);
+	src: url(/fonts/report.ttf) format('truetype');
 }
 
 html {

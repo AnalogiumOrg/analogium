@@ -1,0 +1,118 @@
+/* Dark/Light mode conditional display */
+.article-content.dark-mode .light-only,
+.article-content.light-mode .dark-only {
+    display: none !important;
+}
+
+.article-content.dark-mode .dark-only,
+.article-content.light-mode .light-only {
+    display: block;
+}
+
+.article-content span.dark-only,
+.article-content span.light-only,
+.article-content a.dark-only,
+.article-content a.light-only {
+    display: inline-block;
+}
+
+.article-content .toggle-image,
+.article-content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+}
+
+/* Headings from legacy codebase */
+.article-content h4 {
+    text-align: right;
+    font-style: italic;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    opacity: 0.85;
+}
+
+/* Standard Blockquotes from legacy codebase */
+.article-content blockquote {
+    border: 1px solid var(--border, #999);
+    font-family: 'Through The Night', cursive, sans-serif;
+    color: inherit;
+    font-size: 0.95rem;
+    text-align: center;
+    padding: 0.75rem 1rem;
+    margin: 1.25rem 0;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Links unstyled — look like normal text unless given a {.} class */
+.article-content a {
+    color: inherit;
+    text-decoration: none;
+    cursor: default;
+}
+.article-content a:hover {
+    color: inherit;
+}
+
+/* Callout Alert Box Styles */
+.article-content .callout {
+    padding: 1rem 1.25rem;
+    margin: 1.5rem 0;
+    border-left: 5px solid var(--border, #999);
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.article-content .callout.is-info, .article-content .callout-info {
+    border-left-color: #5c7cfa;
+    background: rgba(92, 124, 250, 0.1);
+}
+
+.article-content .callout.is-warning, .article-content .callout-warning {
+    border-left: 5px dashed var(--border, #999);
+    background: rgba(255, 255, 255, 0.06);
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.07);
+}
+
+.article-content .callout.is-danger, .article-content .callout-danger {
+    border-left: 6px double var(--border, #999);
+    background: rgba(0, 0, 0, 0.18);
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.04);
+}
+
+.article-content .callout.is-success, .article-content .callout-success {
+    border-left-color: #4caf50;
+    background: rgba(76, 175, 80, 0.1);
+}
+
+.article-content .callout p {
+    margin: 0.4rem 0;
+}
+
+/* Fonts from StyleText.vue & legacy CSS */
+.article-content .font-lunarian { font-family: 'Graffio', 'Lunarian', sans-serif; font-size: 1.2em; }
+.article-content .font-nixon { font-family: 'Duke', 'Nixon', sans-serif; font-size: 1.1em; letter-spacing: 0.05em; }
+.article-content .font-serpent { font-family: 'Through The Night', 'Serpent', sans-serif; }
+.article-content .font-snow { font-family: 'CRAZY KILLER', 'Snow', sans-serif; }
+.article-content .font-youcant { font-family: 'DIEDIEDIE', 'YouCant', sans-serif; letter-spacing: 0.1em; }
+.article-content .font-golden { font-family: '1942', 'Golden', sans-serif; color: #ffd700; }
+
+/* Empty block gap removal via CSS :has() */
+.article-content.dark-mode p:has(> span.light-only:only-child),
+.article-content.light-mode p:has(> span.dark-only:only-child),
+.article-content.dark-mode h1:has(> span.light-only:only-child),
+.article-content.dark-mode h2:has(> span.light-only:only-child),
+.article-content.dark-mode h3:has(> span.light-only:only-child),
+.article-content.dark-mode h4:has(> span.light-only:only-child),
+.article-content.dark-mode h5:has(> span.light-only:only-child),
+.article-content.dark-mode h6:has(> span.light-only:only-child),
+.article-content.light-mode h1:has(> span.dark-only:only-child),
+.article-content.light-mode h2:has(> span.dark-only:only-child),
+.article-content.light-mode h3:has(> span.dark-only:only-child),
+.article-content.light-mode h4:has(> span.dark-only:only-child),
+.article-content.light-mode h5:has(> span.dark-only:only-child),
+.article-content.light-mode h6:has(> span.dark-only:only-child) {
+    display: none !important;
+}

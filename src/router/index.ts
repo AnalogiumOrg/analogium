@@ -15,7 +15,7 @@ const router = createRouter({
 			component: () => import('@/views/Origin.vue')
 		},
 		{
-			path: '/data',
+			path: '/data/:slug?',
 			name: 'data',
 			component: () => import('@/views/Articles.vue')
 		},

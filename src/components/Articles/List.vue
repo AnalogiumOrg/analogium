@@ -3,19 +3,22 @@ import { useArticles } from "@/stores/articles";
 import axios from "axios";
 import { computed, onMounted, ref, type Ref } from "vue";
 
+const articlesStore = useArticles();
 const posts = computed(() => {
-	return useArticles().articles;
+	return articlesStore.articles;
 });
 
-
+onMounted(() => {
+	articlesStore.fetchArticles();
+});
 </script>
 
 <template>
 	<ul class="article-list">
 		<li v-for="post in posts" :key="post.title" class="article-item">
-			<a :href="post.route">
+			<router-link :to="post.route">
 				<span :title="post.shortDesc">{{ post.title }}</span>
-			</a>
+			</router-link>
 		</li>
 	</ul>
 </template>
