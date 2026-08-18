@@ -18,6 +18,26 @@ const router = createRouter({
 			path: '/data',
 			name: 'data',
 			component: () => import('@/views/Articles.vue')
+		},
+		{
+			path: '/login',
+			name: 'login',
+			component: () => import('@/views/Login.vue')
+		},
+		{
+			path: '/admin',
+			name: 'admin',
+			component: () => import('@/views/Admin.vue')
+		},
+		{
+			path: '/staff',
+			name: 'staff',
+			component: () => import('@/views/Staff.vue')
+		},
+		{
+			path: '/staff/:slug',
+			name: 'staff-member',
+			component: () => import('@/views/StaffMember.vue')
 		}
 	]
 })

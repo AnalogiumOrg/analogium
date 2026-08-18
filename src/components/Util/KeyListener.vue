@@ -1,4 +1,4 @@
-<script lang="ts">
+<script setup lang="ts">
 import axios from "axios";
 import { onMounted, type Ref, ref } from "vue";
 import { useEvent } from "@/lib/events";
@@ -58,7 +58,10 @@ async function getCombinations() {
 	combinationHashes.value.push(...res.data);
 	//console.debug("combinationHashes: ", combinationHashes.value);
 }
-await getCombinations();
+
+onMounted(async () => {
+	await getCombinations();
+});
 </script>
 
 <template>
